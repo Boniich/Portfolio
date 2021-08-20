@@ -6,9 +6,11 @@ export function Main(){
 
     const $main = document.createElement("main");
 
+    $main.classList.add("main");
+
     $main.appendChild(AboutMeIntro());
     $main.appendChild(Proyects());
-    $main.appendChild(Skills());
+    // $main.appendChild(Skills());
 
     return $main;
 }

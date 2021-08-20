@@ -5,6 +5,9 @@ export function TextHeader(){
     $title = document.createElement("h1"),
     $author = document.createElement("p");
 
+
+    $TextHeader.classList.add("textHeader");
+
     $tag.innerHTML = "Porfolio";
     $title.innerHTML = "Desarrollador Full Stack";
     $author.innerHTML = "Por Ezequiel Bonino";
