@@ -1,15 +1,18 @@
 export function Skills(){
 
     const $skillsConteiner = document.createElement("div"),
-    $caja1 = document.createElement("div"),
+    $boxSkillsConteiner = document.createElement("div"),
     $titleSkills = document.createElement("h6"),
     $skillsBox = document.createElement("div"),
     $ulSkills = document.createElement("ul");
 
-    $skillsConteiner.classList.add("skillConteiner");
+    $skillsConteiner.id = "skillsConteiner"
+    $skillsConteiner.classList.add("conteiner");
+    $boxSkillsConteiner.classList.add("boxSkillsConteiner");
     $skillsBox.classList.add("skillBox");
+    $titleSkills.classList.add("skillsBoxTitle");
     $ulSkills.classList.add("skillsList");
-    $caja1.classList.add("caja1");
+   
 
 
     
@@ -30,11 +33,15 @@ export function Skills(){
      <li><img class="iconSkills" src="app/assets/trello.svg" width="50px" height="50px"></img></<li>
      <li><img class="iconSkills" src="app/assets/terminal.svg" width="50px" height="50px"></img></<li>
      `;
-
-    $skillsBox.appendChild($ulSkills);
+    
     $skillsConteiner.appendChild($titleSkills);
-    $caja1.appendChild($skillsBox);
-    $skillsConteiner.appendChild($caja1);
+    $skillsConteiner.appendChild($boxSkillsConteiner);
+    $boxSkillsConteiner.appendChild($skillsBox);
+    $skillsBox.appendChild($ulSkills);
+    
+    
+    
+   
 
 
     return $skillsConteiner;

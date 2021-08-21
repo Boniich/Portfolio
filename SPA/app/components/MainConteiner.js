@@ -4,7 +4,7 @@ export function MainConteiner(){
 
     const $mainConteiner = document.createElement("div");
 
-    $mainConteiner.classList.add("conteiner");
+    $mainConteiner.classList.add("mainConteiner");
 
 
     $mainConteiner.appendChild(Main());

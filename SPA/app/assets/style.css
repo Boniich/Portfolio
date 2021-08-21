@@ -5,6 +5,22 @@
     list-style: none;
 }
 
+
+/* ID */
+
+#skillsConteiner{
+
+    background-color: rgb(34, 129, 199);
+}
+
+
+
+/* Class */
+
+.conteiner{
+    padding: 120px 0;
+}
+
 .header{
     background-color:#0e0d0d;
     height: 100vh;
@@ -16,10 +32,7 @@
     display: none;
 }
 
-.conteiner{
-    /* display: flex;
-    justify-content: center; */
-}
+
 
 
 .main{
@@ -37,12 +50,12 @@
     padding-bottom: 20px;
 }
 
-.skillConteiner h6{
+.skillsBoxTitle{
 
-    color: #0e0d0d;
+    color: #fff;
     text-align: center;
-    font-size: 20px;
-    padding-bottom: 20px;
+    font-size: 30px;
+    padding-bottom: 30px;
 
 }
 
@@ -50,15 +63,11 @@
     font-size: 18px;
 }
 
-.caja1{
+.boxSkillsConteiner{
     margin: 0 auto;
     width: 90vw;
 }
 
-.skillConteiner{
-    background-color: rgb(34, 129, 199);;
-    padding: 120px 0;
-}
 
 .skillBox{
     height: auto;
@@ -104,7 +113,7 @@
 
 @media screen and (min-width: 600px) {
 
- .caja1{
+ .boxSkillsConteiner{
      width: 400px;
  }
 
@@ -113,7 +122,7 @@
 
 @media screen and (min-width: 740px) {
 
-    .caja1{
+    .boxSkillsConteiner{
         width: 600px;
     }
     
