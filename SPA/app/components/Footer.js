@@ -6,12 +6,17 @@ export function Footer(){
     $authorBox = document.createElement("div"),
     $nameAuthor = document.createElement("p");
 
-    $ulIcons.innerHTML = `
-    <li><a href="">Github</a></li>
-    <li><a href="">Linkedin</a></li>
-    <li><a href="">Mail</a></li>`
+    $footer.classList.add("footer");
+    $iconsBox.classList.add("iconsBox");
+    $ulIcons.classList.add("iconList");
+    $authorBox.classList.add("authorBox");
 
-    $nameAuthor.innerHTML = `Ezequiel Bonino`
+    $ulIcons.innerHTML = `
+    <li><a href=""><span class="icons"><i class="fab fa-github"></i></span></a></li>
+    <li><a href=""><span class="icons"><i class="fab fa-linkedin"></i></span></a></li>
+    <li><a href=""><span class="icons"><i class="fas fa-envelope"></i></span></a></li>`
+
+    $nameAuthor.innerHTML = `© Ezequiel Bonino`
 
 
     $iconsBox.appendChild($ulIcons);

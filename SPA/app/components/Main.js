@@ -10,7 +10,7 @@ export function Main(){
 
     $main.appendChild(AboutMeIntro());
     $main.appendChild(Proyects());
-    // $main.appendChild(Skills());
+    $main.appendChild(Skills());
 
     return $main;
 }
