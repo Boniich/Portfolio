@@ -7,8 +7,9 @@ export function TextHeader(){
 
 
     $TextHeader.classList.add("textHeader");
+    $tag.id = "tagPortfolio";
 
-    $tag.innerHTML = "Porfolio";
+    $tag.innerHTML = "Portfolio";
     $title.innerHTML = "Desarrollador Full Stack";
     $author.innerHTML = "Por Ezequiel Bonino";
 

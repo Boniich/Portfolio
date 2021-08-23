@@ -15,6 +15,10 @@
     background-color: var(--blue);
 }
 
+#tagPortfolio{
+    color: var(--blue);
+}
+
 
 
 /* Class */
@@ -28,6 +32,27 @@
     height: 100vh;
     padding: 0 20px;
 
+}
+
+.headerConteiner{
+    height: 60vh;
+    display: flex;
+    align-items: center;
+}
+
+
+.textHeader{
+    
+    color: #fff;
+
+}
+
+.textHeader p, .textHeader h1{
+    padding-bottom: 20px;
+}
+
+.textHeader h1{
+    font-size: 50px;
 }
 
 .conteinerCards{
@@ -203,7 +228,7 @@
     .nav ul li{
     
         display: inline-block;
-        padding: 5px 10px;
+        padding: 10px 10px;
        
     }
     
@@ -211,12 +236,12 @@
         color: #fff;
     }
     
-    .textHeader{
-    
-     color: #fff;
-     padding: 50px 70px;
-     
+    .headerConteiner{
+        margin: 0 auto;
+        max-width: 1500px;
+
     }
+
     
     .boxAboutMeConteiner{
         
