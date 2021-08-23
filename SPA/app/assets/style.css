@@ -34,8 +34,6 @@
     display: none;
 }
 
-
-
 .aboutMeIntro h6, .proyects h6{
     color: rgb(34, 129, 199);
     text-align: center;
@@ -105,13 +103,18 @@
 }
 
 .footer{
-    height: 100px;
+    
     background-color: #0e0d0d;
     padding: 0 20px;
+
+
+}
+
+.footerConteiner{
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 
@@ -122,11 +125,20 @@
 
 .icons{
     color: #fff;
-    font-size: 22px;
+    font-size: 30px;
+}
+
+.icons i:hover{
+    transform: scale(1.2);
+    transition: all 0.2;
 }
 
 .authorBox p {
     color: #fff;
+}
+
+.authorBox p:hover{
+    color: var(--blue);
 }
 
 /* slider */
@@ -289,5 +301,10 @@
     }
     .sliderConteiner{
         max-width: 1024px;
+    }
+    .footerConteiner{
+        
+        margin: 0 auto;
+        max-width: 1500px;
     }
 }
