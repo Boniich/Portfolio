@@ -1,3 +1,4 @@
+import { buttons } from "../helpers/buttons.js";
 import { AboutMeIntroCards } from "./AboutMeIntroCards.js";
 
 export function AboutMeIntro(){
@@ -14,10 +15,6 @@ export function AboutMeIntro(){
     $textBox = document.createElement("div"),
     $text = document.createElement("p");
 
-    // button box and button himself
-    const $buttonBox = document.createElement("div"),
-    $button = document.createElement("p");
-
     // classes
 
     $conteinerIntro.classList.add("conteiner");
@@ -33,9 +30,9 @@ export function AboutMeIntro(){
     $textBox.classList.add("textBox");
     
 
-    // classes of button
-    $buttonBox.classList.add("buttonBox");
-    $button.classList.add("btnAboutMe");
+    // const of helper component buttons
+    const textButton = "Mas Sobre Mi",
+    urlButton = "#";
 
     // title and text content
 
@@ -45,8 +42,6 @@ export function AboutMeIntro(){
     Pero no fue hasta mediados de 2020, en medio de la pandemia, que encontre distintos proyectos que queria hacer
     y la programacion web fue el mejor camino para llevarlos a cabo`;
 
-    // button
-    $button.innerHTML = `<a href="#">Mas Sobre mi</a>`;
     
     // appeding main divs
     $conteinerIntro.appendChild($aboutMeTitle);
@@ -58,11 +53,8 @@ export function AboutMeIntro(){
     // added the box in the text box
     $boxAboutMe.appendChild($textBox);
 
-    // added the button in his div
-    $buttonBox.appendChild($button);
-
-    // added button div in boxAboutMe div
-    $boxAboutMe.appendChild($buttonBox);
+    // added button's herper component
+    $boxAboutMe.appendChild(buttons(urlButton, textButton));
 
     // added the text box and button box in his main div
     $boxAboutMeConteiner.appendChild($boxAboutMe);

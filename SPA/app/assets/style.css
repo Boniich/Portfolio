@@ -55,21 +55,19 @@
     justify-content: flex-end;
 }
 
-.btnAboutMe{
+.btn_proyect_aboutMe{
     border-bottom: 1px solid #ccc;
     padding: 5px 8px;
     font-size: 20px;
 }
 
 
-
-
-.btnAboutMe a{
+.btn_proyect_aboutMe a{
 
     color: black;
 }
 
-.btnAboutMe a:hover, .btnAboutMe:hover {
+.btn_proyect_aboutMe a:hover, .btn_proyect_aboutMe:hover {
     color: var(--blue);
     border-color: #0e0d0d;
     
@@ -288,7 +286,6 @@
 
     .sliderList li{
         max-width: 1024px;
-        /* height: 250px; */
     }
     .sliderConteiner{
         max-width: 1024px;
