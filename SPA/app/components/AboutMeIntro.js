@@ -32,7 +32,7 @@ export function AboutMeIntro(){
 
     // const of helper component buttons
     const textButton = "Mas Sobre Mi",
-    urlButton = "#";
+    urlButton = "#/sobremi";
 
     // title and text content
 

@@ -9,7 +9,7 @@ export function Proyects(){
 
     // const of helper component buttons
     const textButton = "Mas Proyectos",
-    urlButton = "#";
+    urlButton = "#/proyectos";
 
     // css class
     $proyects.classList.add("conteiner");
