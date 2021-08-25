@@ -1,9 +1,11 @@
-export function Menu(){
+export function Nav(){
 
-    const $menu = document.createElement("nav"),
+    const $conteinerNav = document.createElement("div"),
+    $nav = document.createElement("nav"),
     $ul = document.createElement("ul");
 
-    $menu.classList.add("nav");
+    $conteinerNav.classList.add("header"),
+    $nav.classList.add("nav");
 
     // Creamos <li> y damos textos a los link del menu
 
@@ -14,8 +16,10 @@ export function Menu(){
     <li><a href="#/contactame">Contactame<a/></li>
     `
 
-    //agregamos nodos como hijos
-    $menu.appendChild($ul);
+    $nav.appendChild($ul);
 
-    return $menu;
+    $conteinerNav.appendChild($nav);
+   
+
+    return $conteinerNav;
 }

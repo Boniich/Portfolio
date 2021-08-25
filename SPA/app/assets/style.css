@@ -29,9 +29,15 @@
 
 .header{
     background-color:#0e0d0d;
-    height: 100vh;
+    
     padding: 0 20px;
 
+}
+
+.hero{
+    background-color:#0e0d0d;
+    height: 100vh;
+    padding: 0 20px;
 }
 
 .headerConteiner{
