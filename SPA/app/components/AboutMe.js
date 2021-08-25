@@ -1,8 +1,7 @@
-import { buttons } from "../helpers/buttons.js";
 import { fakeApi} from "../helpers/fakeApi.js";
 import { AboutMeIntroCards } from "./AboutMeIntroCards.js";
 
-export function AboutMeIntro(){
+export function AboutMe(){
 
     // one of main conteiner of aboutMeIntro and title of section
     const $conteinerIntro = document.createElement("div"),
@@ -22,24 +21,19 @@ export function AboutMeIntro(){
     $conteinerIntro.classList.add("aboutMeIntro");
 
     // class of text and button
-
+    $boxAboutMeConteiner.id = "boxAboutMeConteinerId";
     $boxAboutMeConteiner.classList.add("boxAboutMeConteiner");
 
     // classes of text
-
+    $boxAboutMe.id = "boxAboutMeId";
     $boxAboutMe.classList.add("boxAboutMe");
     $textBox.classList.add("textBox");
     
-
-    // const of helper component buttons
-    const textButton = "Mas Sobre Mi",
-    urlButton = "#/sobremi";
-
     // title and text content
 
     $aboutMeTitle.innerHTML = "Sobre Mi";
    
-    $text.innerHTML = fakeApi("intro");
+    $text.innerHTML = fakeApi();
    
     // appeding main divs
     $conteinerIntro.appendChild($aboutMeTitle);
@@ -50,9 +44,6 @@ export function AboutMeIntro(){
 
     // added the box in the text box
     $boxAboutMe.appendChild($textBox);
-
-    // added button's herper component
-    $boxAboutMe.appendChild(buttons(urlButton, textButton));
 
     // added the text box and button box in his main div
     $boxAboutMeConteiner.appendChild($boxAboutMe);

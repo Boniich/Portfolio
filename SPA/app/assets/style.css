@@ -66,7 +66,25 @@
     padding-bottom: 30px;
 }
 
+/* mover arriba */
+
+#boxAboutMeId{
+    border-right: 1px solid #ccc;
+    padding: 0 10px;
+}
+
+#boxAboutMeConteinerId{
+    display: flex;
+    gap: 15px;
+}
+
+#boxAboutMeConteinerId > .conteinerCards{
+    flex-direction: column;
+    gap: 15px;
+}
+
 .boxAboutMeConteiner{
+    
     margin: 0 auto;
     width: 90vw;
 }
@@ -260,7 +278,8 @@
  
     .conteinerCards{
         display: flex;
-        justify-content:space-around
+        justify-content:space-around;
+    
     }
 
     .box{
@@ -286,7 +305,8 @@
         left: -170px;
         border-radius: 100%;
         transition: all 300ms;
-        background: linear-gradient(to bottom, rgb(255, 115, 0), rgb(255,148, 48));
+        background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(57, 159, 202)); 
+        /* background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(45, 55, 59));  */
     }
 
     .box:hover .background-hover{

@@ -1,3 +1,4 @@
+import { AboutMe } from "./AboutMe.js";
 import { Main } from "./Main.js";
 
 
@@ -14,8 +15,9 @@ export function Router(){
         $MainConteiner.appendChild(Main());
 
     }else if (hash === "#/sobremi"){
-
-        $MainConteiner.innerHTML = "Seccion Sobre Mi";
+      
+        
+        $MainConteiner.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){
 

@@ -6,6 +6,8 @@ $(document).ready(function(){
 
   for(contar = 1; contar <= imgItems; contar++){
 
+    console.log(contar);
+
     $('.pagination').append('<li><span class="fa fas fa-circle"></span></li>');
   }
 

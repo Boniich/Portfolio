@@ -23,6 +23,7 @@ export function AboutMeIntroCards(){
 
 
     // classes
+    $conteinerCards.id = "cards";
     $conteinerCards.classList.add("conteinerCards");
 
     // interest classes
