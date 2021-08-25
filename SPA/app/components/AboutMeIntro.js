@@ -12,23 +12,23 @@ export function AboutMeIntro(){
     const $boxAboutMeConteiner = document.createElement("div"),
 
     // box of text and text himself
-    $boxAboutMe = document.createElement("div"),
+    $aboutMeBox = document.createElement("div"),
     $textBox = document.createElement("div"),
     $text = document.createElement("p");
 
     // classes
 
     $conteinerIntro.classList.add("conteiner");
-    $conteinerIntro.classList.add("aboutMeIntro");
+    $conteinerIntro.classList.add("about-me-intro");
 
-    // class of text and button
+    // class of text
 
-    $boxAboutMeConteiner.classList.add("boxAboutMeConteiner");
+    $boxAboutMeConteiner.classList.add("box-about-me-conteiner");
 
     // classes of text
 
-    $boxAboutMe.classList.add("boxAboutMe");
-    $textBox.classList.add("textBox");
+    $aboutMeBox.classList.add("about-me-box");
+    $textBox.classList.add("text-box");
     
 
     // const of helper component buttons
@@ -49,13 +49,13 @@ export function AboutMeIntro(){
     $textBox.appendChild($text);
 
     // added the box in the text box
-    $boxAboutMe.appendChild($textBox);
+    $aboutMeBox.appendChild($textBox);
 
     // added button's herper component
-    $boxAboutMe.appendChild(buttons(urlButton, textButton));
+    $aboutMeBox.appendChild(buttons(urlButton, textButton));
 
     // added the text box and button box in his main div
-    $boxAboutMeConteiner.appendChild($boxAboutMe);
+    $boxAboutMeConteiner.appendChild($aboutMeBox);
 
     // added component of cards/box (interest, softskills and hobbies)
     $boxAboutMeConteiner.appendChild(AboutMeIntroCards());

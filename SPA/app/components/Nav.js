@@ -1,10 +1,10 @@
 export function Nav(){
 
-    const $conteinerNav = document.createElement("div"),
+    const $navConteiner = document.createElement("div"),
     $nav = document.createElement("nav"),
     $ul = document.createElement("ul");
 
-    $conteinerNav.classList.add("header"),
+    $navConteiner.classList.add("nav-conteiner"),
     $nav.classList.add("nav");
 
     // Creamos <li> y damos textos a los link del menu
@@ -18,8 +18,8 @@ export function Nav(){
 
     $nav.appendChild($ul);
 
-    $conteinerNav.appendChild($nav);
+    $navConteiner.appendChild($nav);
    
 
-    return $conteinerNav;
+    return $navConteiner;
 }

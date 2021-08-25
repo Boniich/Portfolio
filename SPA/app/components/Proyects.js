@@ -14,7 +14,7 @@ export function Proyects(){
     // css class
     $proyects.classList.add("conteiner");
     $proyects.classList.add("proyects");
-    $sliderConteiner.classList.add("sliderConteiner");
+    $sliderConteiner.classList.add("slider-conteiner");
 
 
     // title

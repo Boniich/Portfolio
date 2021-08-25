@@ -1,52 +1,52 @@
 export function AboutMeIntroCards(){
 
     const $doc = document,
-    $conteinerCards = $doc.createElement("div");
+    $cardsConteiner = $doc.createElement("div");
 
     // box, title, list and animation's div of interest 
-    const $boxInterest  = $doc.createElement("div"),
-    $titleInterest = $doc.createElement("p"),
-    $ulInterest = $doc.createElement("ul"),
+    const $interestBox  = $doc.createElement("div"),
+    $interestTitle = $doc.createElement("p"),
+    $interestList = $doc.createElement("ul"),
     $interestAnimacion = $doc.createElement("div");
 
     // box, title, list and animation's div of soft skills
-    const $boxSoftSkills = $doc.createElement("div"),
-    $titleSkills = $doc.createElement("p"),
-    $ulSoftSkills = $doc.createElement("ul"),
+    const $softSkillsBox = $doc.createElement("div"),
+    $skillsTitle = $doc.createElement("p"),
+    $softSkillsList = $doc.createElement("ul"),
     $softSkillsAnimacion = $doc.createElement("div");
 
     // box, title, list and animation's div of hobbies
-    const $boxHobbies = $doc.createElement("div"),
-    $titleHobbies = $doc.createElement("p"),
-    $ulHobbies = $doc.createElement("ul"),
+    const $hobbiesBox = $doc.createElement("div"),
+    $hobbiesTitle = $doc.createElement("p"),
+    $hobbiesList = $doc.createElement("ul"),
     $hobbiesAnimacion = $doc.createElement("div");
 
 
     // classes
-    $conteinerCards.id = "cards";
-    $conteinerCards.classList.add("conteinerCards");
+    $cardsConteiner.id = "cards";
+    $cardsConteiner.classList.add("conteinerCards");
 
     // interest classes
 
-    $boxInterest.classList.add("boxInterest");
-    $boxInterest.classList.add("box");
-    $interestAnimacion.classList.add("background-hover");
+    $interestBox.classList.add("interest-box");
+    $interestBox.classList.add("box");
+    $interestAnimacion.classList.add("hover-animation");
 
      // soft skills classes
-    $boxSoftSkills.classList.add("boxSoftSkills");
-    $boxSoftSkills.classList.add("box");
-    $softSkillsAnimacion.classList.add("background-hover");
+    $softSkillsBox.classList.add("soft-skills-box");
+    $softSkillsBox.classList.add("box");
+    $softSkillsAnimacion.classList.add("hover-animation");
 
     // hobbies classes
-    $boxHobbies.classList.add("boxHobbies");
-    $boxHobbies.classList.add("box");
-    $hobbiesAnimacion.classList.add("background-hover");
+    $hobbiesBox.classList.add("hobbies-box");
+    $hobbiesBox.classList.add("box");
+    $hobbiesAnimacion.classList.add("hover-animation");
 
     // textual content of interest box
 
-    $titleInterest.innerHTML = "Intereses";
+    $interestTitle.innerHTML = "Intereses";
 
-    $ulInterest.innerHTML = `
+    $interestList.innerHTML = `
     <li>- Programacion</li>
     <li>- Aprender</li>
     <li>- Memes</li>
@@ -55,9 +55,9 @@ export function AboutMeIntroCards(){
 
     // textual content of soft skills box
 
-    $titleSkills.innerHTML = "Habilidades Blandas";
+    $skillsTitle.innerHTML = "Habilidades Blandas";
 
-    $ulSoftSkills.innerHTML = `
+    $softSkillsList.innerHTML = `
     <li>- Autodidacta</li>
     <li>- Pro Activo</li>
     <li>- Persistente</li>
@@ -66,9 +66,9 @@ export function AboutMeIntroCards(){
 
     // textual content of hobbies box
 
-    $titleHobbies.innerHTML = "Hobbies";
+    $hobbiesTitle.innerHTML = "Hobbies";
 
-    $ulHobbies.innerHTML = `
+    $hobbiesList.innerHTML = `
     <li>- Traducir</li>
     <li>- Juegos</li>
     <li>- Diseñar obj 3d</li>`;
@@ -76,27 +76,27 @@ export function AboutMeIntroCards(){
 
     // appending of interest
 
-    $boxInterest.appendChild($titleInterest);
-    $boxInterest.appendChild($ulInterest);
-    $boxInterest.appendChild($interestAnimacion);
+    $interestBox.appendChild($interestTitle);
+    $interestBox.appendChild($interestList);
+    $interestBox.appendChild($interestAnimacion);
 
     // appending of soft skills
 
-    $boxSoftSkills.appendChild($titleSkills);
-    $boxSoftSkills.appendChild($ulSoftSkills);
-    $boxSoftSkills.appendChild($softSkillsAnimacion);
+    $softSkillsBox.appendChild($skillsTitle);
+    $softSkillsBox.appendChild($softSkillsList);
+    $softSkillsBox.appendChild($softSkillsAnimacion);
 
     // appending of hobbies
     
-    $boxHobbies.appendChild($titleHobbies);
-    $boxHobbies.appendChild($ulHobbies);
-    $boxHobbies.appendChild($hobbiesAnimacion);
+    $hobbiesBox.appendChild($hobbiesTitle);
+    $hobbiesBox.appendChild($hobbiesList);
+    $hobbiesBox.appendChild($hobbiesAnimacion);
 
     // add the box at conteiner
 
-    $conteinerCards.appendChild($boxInterest);
-    $conteinerCards.appendChild($boxSoftSkills);
-    $conteinerCards.appendChild($boxHobbies);
+    $cardsConteiner.appendChild($interestBox);
+    $cardsConteiner.appendChild($softSkillsBox);
+    $cardsConteiner.appendChild($hobbiesBox);
 
-    return $conteinerCards;
+    return $cardsConteiner;
 }

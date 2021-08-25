@@ -5,19 +5,19 @@ import { Main } from "./Main.js";
 export function Router(){
 
     const $doc = document,
-    $MainConteiner = $doc.getElementById("MainConteiner");
+    $mainConteiner = $doc.getElementById("main-conteiner");
 
     let {hash} = location;
 
     if(!hash || hash === "#/"){
 
         
-        $MainConteiner.appendChild(Main());
+        $mainConteiner.appendChild(Main());
 
     }else if (hash === "#/sobremi"){
       
         
-        $MainConteiner.appendChild(AboutMe());
+        $mainConteiner.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){
 

@@ -10,12 +10,12 @@
 }
 /* ID */
 
-#skillsConteiner{
+#skills{
 
     background-color: var(--blue);
 }
 
-#tagPortfolio{
+#hero-tag{
     color: var(--blue);
 }
 
@@ -27,7 +27,7 @@
     padding: 120px 0;
 }
 
-.header{
+.nav-conteiner{
     background-color:#0e0d0d;
     
     padding: 0 20px;
@@ -40,24 +40,24 @@
     padding: 0 20px;
 }
 
-.headerConteiner{
+.hero-content{
     height: 60vh;
     display: flex;
     align-items: center;
 }
 
 
-.textHeader{
+.hero-texts{
     
     color: #fff;
 
 }
 
-.textHeader p, .textHeader h1{
+.hero-texts p, .hero-texts h1{
     padding-bottom: 20px;
 }
 
-.textHeader h1{
+.hero-texts h1{
     font-size: 50px;
 }
 
@@ -65,7 +65,7 @@
     display: none;
 }
 
-.aboutMeIntro h6, .proyects h6{
+.about-me-intro h6, .proyects h6{
     color: rgb(34, 129, 199);
     text-align: center;
     font-size: 30px;
@@ -74,54 +74,54 @@
 
 /* mover arriba */
 
-#boxAboutMeId{
+#id-about-me{
     border-right: 1px solid #ccc;
     padding: 0 10px;
 }
 
-#boxAboutMeConteinerId{
+#id-about-me-conteiner{
     display: flex;
     gap: 15px;
 }
 
-#boxAboutMeConteinerId > .conteinerCards{
+#id-about-me-conteiner > .conteinerCards{
     flex-direction: column;
     gap: 15px;
 }
 
-.boxAboutMeConteiner{
+.box-about-me-conteiner{
     
     margin: 0 auto;
     width: 90vw;
 }
 
 
-.buttonBox{
+.button-box{
     padding: 15px 0;
     display: flex;
     justify-content: flex-end;
 }
 
-.btn_proyect_aboutMe{
+.btn-proyect-aboutMe{
     border-bottom: 1px solid #ccc;
     padding: 5px 8px;
     font-size: 20px;
 }
 
 
-.btn_proyect_aboutMe a{
+.btn-proyect-aboutMe a{
 
     color: black;
 }
 
-.btn_proyect_aboutMe a:hover, .btn_proyect_aboutMe:hover {
+.btn-proyect-aboutMe a:hover, .btn-proyect-aboutMe:hover {
     color: var(--blue);
     border-color: #0e0d0d;
     
 }
 
 
-.skillsBoxTitle{
+.skills-title-box{
 
     color: #fff;
     text-align: center;
@@ -132,13 +132,13 @@
 
 
 
-.boxSkillsConteiner{
+.skills-box-conteiner{
     margin: 0 auto;
     width: 90vw;
 }
 
 
-.skillBox{
+.skill-box{
     height: auto;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -146,7 +146,7 @@
 }
 
 
-.skillsList li{
+.skills-list li{
     display: inline-block;
     padding: 5px 8px;
 }
@@ -159,7 +159,7 @@
 
 }
 
-.footerConteiner{
+.footer-conteiner{
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -167,26 +167,26 @@
 }
 
 
-.iconList li{
+.footer-icon-list li{
     display: inline-block;
     padding: 5px 8px;
 }
 
-.icons{
+.footer-icons{
     color: #fff;
     font-size: 30px;
 }
 
-.icons i:hover{
+.footer-icons i:hover{
     transform: scale(1.2);
     transition: all 0.2;
 }
 
-.authorBox p {
+.author-box p {
     color: #fff;
 }
 
-.authorBox p:hover{
+.author-box p:hover{
     color: var(--blue);
 }
 
@@ -196,17 +196,17 @@
     position: relative;
 }
 
-.sliderList li{
+.slider-list li{
     width: 90vw;
     height: 300px;
 }
 
-.sliderList img{
+.slider-list img{
     width: 100%;
     height: 100%;
 }
 
-.sliderConteiner{
+.slider-conteiner{
     margin: 0 auto;
     width: 90vw;
 }
@@ -225,11 +225,11 @@
 
 @media screen and (min-width: 600px) {
 
- .boxSkillsConteiner{
+ .skills-box-conteiner{
      width: 400px;
  }
 
- .sliderList li{
+ .slider-list li{
     height: auto;
 }
   
@@ -237,7 +237,7 @@
 
 @media screen and (min-width: 740px) {
 
-    .boxSkillsConteiner{
+    .skills-box-conteiner{
         width: 600px;
     }
     
@@ -260,23 +260,23 @@
         color: #fff;
     }
     
-    .headerConteiner{
+    .hero-content{
         margin: 0 auto;
         max-width: 1500px;
 
     }
 
     
-    .boxAboutMeConteiner{
+    .box-about-me-conteiner{
         
         max-width: 1024px;
     }
     
-    .aboutMeIntro h6{
+    .about-me-intro h6{
         font-size: 25px;
     }
     
-    .boxAboutMe{
+    .about-me-box{
         padding-bottom: 20px;
         font-size: 22px;
     }
@@ -303,7 +303,7 @@
         color: #fff;
     }
     
-    .box .background-hover{
+    .box .hover-animation{
         width: 100px;
         height: 100px;
         position: absolute;
@@ -315,7 +315,7 @@
         /* background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(45, 55, 59));  */
     }
 
-    .box:hover .background-hover{
+    .box:hover .hover-animation{
         width: 400px;
         height: 400px;
         top: -70px;
@@ -334,26 +334,26 @@
         padding: 0 8px 5px 8px;
     }
     
-    .boxInterest, .boxSoftSkills, .boxHobbies{
+    .interest-box, .soft-skills-box, .hobbies-box{
         width: 180px;
         border: 1px solid #ccc;
         border-radius: 4px;
     }
 
-    .iconSkills:hover{
+    .icon-skills:hover{
 
         transform: scale(1.2);
         transition: all 0.2s;
         
     }
 
-    .sliderList li{
+    .slider-list li{
         max-width: 1024px;
     }
-    .sliderConteiner{
+    .slider-conteiner{
         max-width: 1024px;
     }
-    .footerConteiner{
+    .footer-conteiner{
         
         margin: 0 auto;
         max-width: 1500px;

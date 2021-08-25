@@ -1,15 +1,15 @@
-import { TextHeader } from "./TextHeader.js";
+import { HeroTexts } from "./HeroTexts.js";
 
 export function Hero(){
 
     const $hero = document.createElement("div"),
-    $heroConteiner = document.createElement("div");
+    $heroContent = document.createElement("div");
 
     $hero.classList.add("hero");
-    $heroConteiner.classList.add("headerConteiner");
+    $heroContent.classList.add("hero-content");
 
-    $heroConteiner.appendChild(TextHeader());
-    $hero.appendChild($heroConteiner);
+    $heroContent.appendChild(HeroTexts());
+    $hero.appendChild($heroContent);
 
 
 

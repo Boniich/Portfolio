@@ -14,7 +14,7 @@ export function Slider(){
 
     
     $slider.classList.add("slider");
-    $ulSlider.classList.add("sliderList");
+    $ulSlider.classList.add("slider-list");
     $olSlider.classList.add("pagination");
 
     $slider.appendChild($ulSlider);
