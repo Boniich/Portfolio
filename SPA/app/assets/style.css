@@ -29,9 +29,29 @@
 
 .nav-conteiner{
     background-color:#0e0d0d;
-    
+    border-bottom: 1px solid #ccc;
     padding: 0 20px;
+    height: 50px;
+    top: 0;
+    position: fixed;
+    width: calc(100% - 40px);
+    z-index: 80;
+    transition: all 0.3s;
 
+}
+
+.nav-conteiner.down{
+    top: -50px;
+}
+
+
+/* .nav{
+  display: none
+} */
+
+.nav ul li{
+    display: block;
+    padding: 7px 13px;
 }
 
 .hero{
@@ -41,7 +61,7 @@
 }
 
 .hero-content{
-    height: 60vh;
+    height: 100vh;
     display: flex;
     align-items: center;
 }
@@ -244,20 +264,28 @@
 }
 
 @media screen and (min-width: 1024px) {
+
     .nav{
         display: flex;
         justify-content:flex-end;
+        align-items: center;
+        height: 50px;
     }
     
     .nav ul li{
     
         display: inline-block;
-        padding: 10px 10px;
+        padding: 0 10px;
        
     }
     
     .nav ul li a{
         color: #fff;
+        font-size: 18px;
+    }
+
+    .nav ul li a:hover{
+        color: var(--blue);
     }
     
     .hero-content{
