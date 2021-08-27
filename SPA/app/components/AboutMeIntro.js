@@ -36,7 +36,7 @@ export function AboutMeIntro(){
     urlButton = "#/sobremi";
 
     // title and text content
-
+    $aboutMeTitle.classList.add("title-aboutMe-proyects");
     $aboutMeTitle.innerHTML = "Sobre Mi";
    
     $text.innerHTML = fakeApi("intro");

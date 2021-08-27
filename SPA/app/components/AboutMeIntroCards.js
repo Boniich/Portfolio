@@ -43,7 +43,7 @@ export function AboutMeIntroCards(){
     $hobbiesAnimacion.classList.add("hover-animation");
 
     // textual content of interest box
-
+    $interestTitle.classList.add("titleCards");
     $interestTitle.innerHTML = "Intereses";
 
     $interestList.innerHTML = `
@@ -55,6 +55,7 @@ export function AboutMeIntroCards(){
 
     // textual content of soft skills box
 
+    $skillsTitle.classList.add("titleCards");
     $skillsTitle.innerHTML = "Habilidades Blandas";
 
     $softSkillsList.innerHTML = `
@@ -66,6 +67,7 @@ export function AboutMeIntroCards(){
 
     // textual content of hobbies box
 
+    $hobbiesTitle.classList.add("titleCards");
     $hobbiesTitle.innerHTML = "Hobbies";
 
     $hobbiesList.innerHTML = `

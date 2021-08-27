@@ -5,7 +5,8 @@ import { Main } from "./Main.js";
 export function Router(){
 
     const $doc = document,
-    $mainConteiner = $doc.getElementById("main-conteiner");
+    $mainConteiner = $doc.getElementById("main-conteiner"),
+    $hero = $doc.querySelector(".hero");
 
     let {hash} = location;
 
@@ -16,7 +17,7 @@ export function Router(){
 
     }else if (hash === "#/sobremi"){
       
-        
+        $hero.style.display = "none";
         $mainConteiner.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){

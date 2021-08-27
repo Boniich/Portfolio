@@ -19,6 +19,10 @@
     color: var(--blue);
 }
 
+#id-about-me{
+    padding: 0 10px;
+}
+
 
 
 /* Class */
@@ -44,10 +48,6 @@
     top: -50px;
 }
 
-
-/* .nav{
-  display: none
-} */
 
 .nav ul li{
     display: block;
@@ -85,28 +85,15 @@
     display: none;
 }
 
-.about-me-intro h6, .proyects h6{
+.title-aboutMe-proyects{
     color: rgb(34, 129, 199);
     text-align: center;
     font-size: 30px;
     padding-bottom: 30px;
 }
 
-/* mover arriba */
-
-#id-about-me{
-    border-right: 1px solid #ccc;
-    padding: 0 10px;
-}
-
-#id-about-me-conteiner{
-    display: flex;
-    gap: 15px;
-}
-
-#id-about-me-conteiner > .conteinerCards{
-    flex-direction: column;
-    gap: 15px;
+.about-me{
+    height: 100vh;
 }
 
 .box-about-me-conteiner{
@@ -265,6 +252,12 @@
 
 @media screen and (min-width: 1024px) {
 
+    /* ID */
+
+    #id-about-me{
+        border-right: 1px solid #ccc;
+    }
+
     .nav{
         display: flex;
         justify-content:flex-end;
@@ -307,6 +300,21 @@
     .about-me-box{
         padding-bottom: 20px;
         font-size: 22px;
+    }
+
+
+    #id-about-me-conteiner{
+        display: flex;
+        gap: 15px;
+    }
+    
+    #id-about-me-conteiner > .conteinerCards{
+        flex-direction: column;
+        gap: 15px;
+    }    
+
+    .titleCards{
+        text-align: center;
     }
 
  
@@ -355,7 +363,6 @@
     .conteiner p{
         font-size: 20px;
         padding-bottom: 8px;
-        text-align: center;
     }
     
     .conteiner li{

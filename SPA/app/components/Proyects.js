@@ -18,6 +18,7 @@ export function Proyects(){
 
 
     // title
+    $titleProyects.classList.add("title-aboutMe-proyects");
     $titleProyects.innerHTML = "Proyectos";
 
     $proyects.appendChild($titleProyects);

@@ -18,7 +18,7 @@ export function AboutMe(){
     // classes
 
     $aboutMeConteiner.classList.add("conteiner");
-    $aboutMeConteiner.classList.add("about-me-intro");
+    $aboutMeConteiner.classList.add("about-me");
 
     // class of text and button
     $boxAboutMeConteiner.id = "id-about-me-conteiner";
@@ -30,7 +30,7 @@ export function AboutMe(){
     $textBox.classList.add("text-box");
     
     // title and text content
-
+    $aboutMeTitle.classList.add("title-aboutMe-proyects");
     $aboutMeTitle.innerHTML = "Sobre Mi";
    
     $text.innerHTML = fakeApi();
