@@ -1,4 +1,6 @@
 import { AboutMe } from "./AboutMe.js";
+import { Hero } from "./Hero.js";
+import { HeroAboutMe } from "./HeroAboutMe.js";
 import { Main } from "./Main.js";
 
 
@@ -6,18 +8,18 @@ export function Router(){
 
     const $doc = document,
     $mainConteiner = $doc.getElementById("main-conteiner"),
-    $hero = $doc.querySelector(".hero");
+    $heroConteiner = $doc.getElementById("heroConteiner");
 
     let {hash} = location;
 
     if(!hash || hash === "#/"){
-
         
+        $heroConteiner.appendChild(Hero());
         $mainConteiner.appendChild(Main());
 
     }else if (hash === "#/sobremi"){
       
-        $hero.style.display = "none";
+        $heroConteiner.appendChild(HeroAboutMe());
         $mainConteiner.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){

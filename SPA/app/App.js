@@ -1,5 +1,5 @@
 import { Footer } from "./components/Footer.js";
-import { Hero } from "./components/Hero.js";
+import { HeroConteiner } from "./components/HeroConteiner.js";
 import { MainConteiner } from "./components/MainConteiner.js";
 import { Nav } from "./components/Nav.js";
 import { Router } from "./components/Router.js";
@@ -12,7 +12,7 @@ export function App(){
     $root.innerHTML = null;
 
     $root.appendChild(Nav());
-    $root.appendChild(Hero());
+    $root.appendChild(HeroConteiner());
     $root.appendChild(MainConteiner());
     $root.appendChild(Footer());
 

@@ -54,6 +54,8 @@
     padding: 7px 13px;
 }
 
+/* hero principal */
+
 .hero{
     background-color:#0e0d0d;
     height: 100vh;
@@ -73,12 +75,28 @@
 
 }
 
-.hero-texts p, .hero-texts h1{
+.padding-bottom{
     padding-bottom: 20px;
 }
 
+
 .hero-texts h1{
     font-size: 50px;
+}
+
+/* hero about me */
+
+.hero-about-me{
+    background-color:#fff;
+    height: 300px;
+}
+
+.hero-content-about-me{
+
+    height: 300px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .conteinerCards{
@@ -92,11 +110,11 @@
     padding-bottom: 30px;
 }
 
-.about-me{
+/* .about-me{
     height: 100vh;
-}
+} */
 
-.box-about-me-conteiner{
+.box-about-me-conteiner,.hero-content-about-me{
     
     margin: 0 auto;
     width: 90vw;
@@ -288,7 +306,9 @@
     }
 
     
-    .box-about-me-conteiner{
+
+    
+    .box-about-me-conteiner, .hero-content-about-me{
         
         max-width: 1024px;
     }

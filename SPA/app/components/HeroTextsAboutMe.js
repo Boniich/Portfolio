@@ -1,4 +1,4 @@
-export function HeroTexts(){
+export function HeroTextsAboutMe(){
 
     const $HeroTexts = document.createElement("div"),
     $tag = document.createElement('p'),
@@ -6,19 +6,16 @@ export function HeroTexts(){
     $author = document.createElement("p");
 
     // css
-    $HeroTexts.classList.add("hero-texts");
+
     $tag.classList.add("padding-bottom");
-    $title.classList.add("padding-bottom");
 
     $tag.id = "hero-tag";
 
-    $tag.innerHTML = "Portfolio";
-    $title.innerHTML = "Desarrollador Full Stack";
-    $author.innerHTML = "Por Ezequiel Bonino";
+    $tag.innerHTML = "About Me";
+    $title.innerHTML = "Ezequiel Bonino";
 
     $HeroTexts.appendChild($tag)
     $HeroTexts.appendChild($title)
-    $HeroTexts.appendChild($author);
 
 
     return $HeroTexts;
