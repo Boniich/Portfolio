@@ -1,7 +1,7 @@
 import { buttons } from "../helpers/buttons.js";
 import { Slider } from "./slider.js";
 
-export function Proyects(){
+export function ProyectsSlider(){
 
     const $proyects = document.createElement("div"),
     $titleProyects = document.createElement("h6"),
