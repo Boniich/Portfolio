@@ -1,15 +1,16 @@
+import { ajax } from "../helpers/ajax.js";
 import { AboutMe } from "./AboutMe.js";
 import { Hero } from "./Hero.js";
 import { HeroAboutMe } from "./HeroAboutMe.js";
 import { HeroProyects } from "./HeroProyects.js";
 import { Main } from "./Main.js";
-import { Proyects } from "./Proyects.js";
+import { ProyectsCards } from "./ProyectsCards.js";
 
 
-export function Router(){
+export async function Router(){
 
     const $doc = document,
-    $mainConteiner = $doc.getElementById("main-conteiner"),
+    $mainConteiner = $doc.getElementById("box-main"),
     $heroConteiner = $doc.getElementById("heroConteiner");
 
     let {hash} = location;
@@ -27,7 +28,22 @@ export function Router(){
     }else if (hash === "#/proyectos"){
 
         $heroConteiner.appendChild(HeroProyects());
-        $mainConteiner.appendChild(Proyects());
+
+        $mainConteiner.classList.add("grid-fluid");
+
+        await ajax({
+            url: `app/assets/json/proyects.json`,
+            cbSuccess: (proyects) =>{
+                console.log(proyects);
+
+                proyects.forEach(proyect => {
+
+                   $mainConteiner.appendChild(ProyectsCards(proyect));
+                });
+
+            }
+
+        });
 
     }else{
         $MainConteiner.innerHTML = "contactame";
