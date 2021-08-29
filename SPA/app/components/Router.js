@@ -10,26 +10,26 @@ import { ProyectsCards } from "./ProyectsCards.js";
 export async function Router(){
 
     const $doc = document,
-    $mainConteiner = $doc.getElementById("box-main"),
+    $main = $doc.getElementById("main-conteiner"),
     $heroConteiner = $doc.getElementById("heroConteiner");
 
     let {hash} = location;
 
     if(!hash || hash === "#/"){
-        
+       
         $heroConteiner.appendChild(Hero());
-        $mainConteiner.appendChild(Main());
+        $main.appendChild(Main());
 
     }else if (hash === "#/sobremi"){
       
         $heroConteiner.appendChild(HeroAboutMe());
-        $mainConteiner.appendChild(AboutMe());
+        $main.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){
 
         $heroConteiner.appendChild(HeroProyects());
 
-        $mainConteiner.classList.add("grid-fluid");
+        $main.classList.add("grid-fluid");
 
         await ajax({
             url: `app/assets/json/proyects.json`,
@@ -38,7 +38,7 @@ export async function Router(){
 
                 proyects.forEach(proyect => {
 
-                   $mainConteiner.appendChild(ProyectsCards(proyect));
+                   $main.appendChild(ProyectsCards(proyect));
                 });
 
             }
