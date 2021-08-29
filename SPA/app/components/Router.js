@@ -3,6 +3,7 @@ import { Hero } from "./Hero.js";
 import { HeroAboutMe } from "./HeroAboutMe.js";
 import { HeroProyects } from "./HeroProyects.js";
 import { Main } from "./Main.js";
+import { Proyects } from "./Proyects.js";
 
 
 export function Router(){
@@ -24,9 +25,9 @@ export function Router(){
         $mainConteiner.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){
-        
+
         $heroConteiner.appendChild(HeroProyects());
-        $mainConteiner.innerHTML = "Seccion de Proyectos";
+        $mainConteiner.appendChild(Proyects());
 
     }else{
         $MainConteiner.innerHTML = "contactame";
