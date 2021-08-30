@@ -4,8 +4,7 @@ import { AboutMeIntroCards } from "./AboutMeIntroCards.js";
 export function AboutMe(){
 
     // one of main conteiner of aboutMeIntro and title of section
-    const $aboutMeConteiner = document.createElement("div"),
-    $aboutMeTitle = document.createElement("h6");
+    const $aboutMeConteiner = document.createElement("div");
 
     // conteiner of text and button
     const $boxAboutMeConteiner = document.createElement("div"),
@@ -33,7 +32,6 @@ export function AboutMe(){
     $text.innerHTML = fakeApi();
    
     // appeding main divs
-    $aboutMeConteiner.appendChild($aboutMeTitle);
     $aboutMeConteiner.appendChild($boxAboutMeConteiner);
 
     // added the text to the box text
