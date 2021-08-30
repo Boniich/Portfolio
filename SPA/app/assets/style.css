@@ -438,7 +438,18 @@
     #id-about-me-conteiner > .conteinerCards{
         flex-direction: column;
         gap: 15px;
-    }    
+    }
+
+
+    .interest-box li, .soft-skills-box li, .hobbies-box li{
+        padding: 5px 8px;
+    }
+
+    .interest-box p, .soft-skills-box p, .hobbies-box p{
+        padding: 10px 0;
+        font-size: 20px;
+    }
+   
 
     .titleCards{
         text-align: center;
@@ -501,6 +512,8 @@
         border: 1px solid #ccc;
         border-radius: 4px;
     }
+
+    
 
     .icon-skills:hover{
 
