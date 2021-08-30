@@ -27,7 +27,6 @@ export function AboutMeIntroCards(){
     $cardsConteiner.classList.add("conteinerCards");
 
     // interest classes
-
     $interestBox.classList.add("interest-box");
     $interestBox.classList.add("box");
     $interestAnimacion.classList.add("hover-animation");
