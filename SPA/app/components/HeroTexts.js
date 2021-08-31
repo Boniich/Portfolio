@@ -1,16 +1,14 @@
 export function HeroTexts(){
 
     const $HeroTexts = document.createElement("div"),
-    $tag = document.createElement('p'),
+    $tag = document.createElement("p"),
     $title = document.createElement("h1"),
     $author = document.createElement("p");
 
     // css
     $HeroTexts.classList.add("hero-texts");
-    $tag.classList.add("padding-bottom");
+    $tag.classList.add("padding-bottom", "seccion-tag");
     $title.classList.add("padding-bottom");
-
-    $tag.id = "hero-tag";
 
     $tag.innerHTML = "Portfolio";
     $title.innerHTML = "Desarrollador Full Stack";
