@@ -4,6 +4,7 @@ export function Nav(){
     $nav = document.createElement("nav"),
     $ul = document.createElement("ul");
 
+    $navConteiner.id = "nav-id";
     $navConteiner.classList.add("nav-conteiner"),
     $nav.classList.add("nav");
 
