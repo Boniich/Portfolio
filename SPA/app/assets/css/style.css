@@ -22,10 +22,17 @@
 }
 
 
+.body-color{
+    background-color: #0e0d0d;
+}
 
 
 
 /* Class */
+
+.main, .about-me{
+    background-color: #fff;
+}
 
 .grid-fluid{
     margin: 16px auto;
@@ -129,6 +136,9 @@
     padding-bottom: 30px;
 }
 
+.contact-me{
+    margin: auto auto;
+}
 
 .box-about-me-conteiner,.hero-content-about-me, .contact-me{
     
@@ -370,9 +380,14 @@
 }
 
 
-.contact-me-box h1{
+.contactme-text h1{
+    font-size: 22px;
     padding-bottom: 20px;
     color: #fff;
+}
+
+.contact-me-box{
+    padding: 0 10px;
 }
 
 
@@ -403,6 +418,11 @@
 
     .skills-box-conteiner{
         width: 600px;
+    }
+
+    .contactme-text h1{
+        font-size: 25px;
+
     }
     
 }
@@ -568,5 +588,10 @@
         
         margin: 0 auto;
         max-width: 1500px;
+    }
+
+    .contactme-text h1{
+        font-size: 32px;
+
     }
 }
