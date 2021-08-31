@@ -1,8 +1,8 @@
 import { ajax } from "../helpers/ajax.js";
 import { AboutMe } from "./AboutMe.js";
+import { ContactMe } from "./ContactMe.js";
 import { Hero } from "./Hero.js";
-import { HeroAboutMe } from "./HeroAboutMe.js";
-import { HeroProyects } from "./HeroProyects.js";
+import { SecondaryHero } from "./SecondaryHero.js";
 import { Main } from "./Main.js";
 import { ProyectsCards } from "./ProyectsCards.js";
 
@@ -10,6 +10,7 @@ import { ProyectsCards } from "./ProyectsCards.js";
 export async function Router(){
 
     const $doc = document,
+    $nav = $doc.getElementById("nav-id"),
     $main = $doc.getElementById("main-conteiner"),
     $heroConteiner = $doc.getElementById("heroConteiner");
 
@@ -22,12 +23,12 @@ export async function Router(){
 
     }else if (hash === "#/sobremi"){
       
-        $heroConteiner.appendChild(HeroAboutMe());
+        $heroConteiner.appendChild(SecondaryHero());
         $main.appendChild(AboutMe());
 
     }else if (hash === "#/proyectos"){
 
-        $heroConteiner.appendChild(HeroProyects());
+        $heroConteiner.appendChild(SecondaryHero());
 
         $main.classList.add("grid-fluid");
 
@@ -46,7 +47,9 @@ export async function Router(){
         });
 
     }else{
-        $MainConteiner.innerHTML = "contactame";
+        $nav.style.position = "relative";
+        $heroConteiner.style.display = "none";
+        $main.appendChild(ContactMe());
     }
 
 
