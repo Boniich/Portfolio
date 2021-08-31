@@ -5,6 +5,7 @@
     list-style: none;
 }
 
+
 :root{
     --blue: rgb(34, 129, 199);
 }
@@ -15,9 +16,6 @@
     background-color: var(--blue);
 }
 
-#hero-tag{
-    color: var(--blue);
-}
 
 #id-about-me{
     padding: 0 10px;
@@ -62,6 +60,13 @@
 .nav ul li{
     display: block;
     padding: 7px 13px;
+}
+
+
+.seccion-tag{
+    color: var(--blue);
+    font-size: 18px;
+    padding-bottom: 20px;
 }
 
 /* hero principal */
@@ -125,11 +130,14 @@
 }
 
 
-.box-about-me-conteiner,.hero-content-about-me{
+.box-about-me-conteiner,.hero-content-about-me, .contact-me{
     
     margin: 0 auto;
     width: 90vw;
 }
+
+
+
 
 
 .button-box{
@@ -362,6 +370,21 @@
 }
 
 
+.contact-me-box h1{
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+
+.contact{
+    background-color: #0e0d0d;
+}
+
+.contact-description{
+    color: #fff;
+    font-size: 18px;
+}
+
 
 
 @media screen and (min-width: 600px) {
@@ -428,7 +451,7 @@
     }
 
     
-    .box-about-me-conteiner, .hero-content-about-me, .box-proyects{
+    .box-about-me-conteiner, .hero-content-about-me, .box-proyects, .contact-me{
 
         max-width: 1024px;
     }
