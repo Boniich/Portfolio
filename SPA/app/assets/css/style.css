@@ -567,6 +567,7 @@
     #id-about-me-conteiner > .conteinerCards{
         flex-direction: column;
         gap: 15px;
+        justify-content: initial;
     }
 
 

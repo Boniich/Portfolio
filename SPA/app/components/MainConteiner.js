@@ -4,6 +4,5 @@ export function MainConteiner(){
 
     $mainConteiner.id = "main-conteiner";
 
-
     return $mainConteiner; 
 }

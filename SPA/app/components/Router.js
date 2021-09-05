@@ -38,7 +38,6 @@ export async function Router(){
             url: `app/assets/json/proyects.json`,
             cbSuccess: (proyects) =>{
                 console.log(proyects);
-
                 proyects.forEach(proyect => {
 
                    $main.appendChild(ProyectsCards(proyect));
