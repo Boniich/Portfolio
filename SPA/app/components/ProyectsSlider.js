@@ -1,5 +1,5 @@
 import { buttons } from "../helpers/buttons.js";
-import { Slider } from "./slider.js";
+import { Slider } from "./Slider.js";
 
 export function ProyectsSlider(){
 
