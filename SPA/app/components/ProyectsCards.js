@@ -1,7 +1,8 @@
 export function ProyectsCards(props){
 
     let {name, img, description, tag, url} = props;
-
+    let length = tag.length;
+    let html = "";
 
     const $doc = document;
   
@@ -43,24 +44,20 @@ export function ProyectsCards(props){
 
 
 
-      var len = `${tag}`.length;
-      console.log(len);
+      
       // content
       $img.src = `${img}`;
       $titleBox.innerHTML = `${name}`;
       $DescriptionBox.innerHTML = `${description}`;
-      let html = "";
-
-
-      for(var e = 0; e <= 2; e++){
+      
+      for(let e = 0; e < length; e++){
         html += `<li><p id="${tag[e].idtag}" class="${tag[e].classtag}">${tag[e].tagname}</p></li>`
-        
       }
 
       $skillsList.innerHTML = html;
 
       $footerBox.innerHTML = `
-      <a class="button-proyect" href=""><span class="proyects-icons"><i class="fas fa-desktop"></i></span>Ver Demo</a>
+      <a class="button-proyect" href="${url}"><span class="proyects-icons"><i class="fas fa-desktop"></i></span>Ver Demo</a>
       <a class="button-proyect" href="${url}"><span class="proyects-icons"><i class="fab fa-github"></i></span> Repositorio</a>`;
 
 
