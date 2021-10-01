@@ -281,7 +281,9 @@ $nodejs: #57b857;
     border-radius: 4px;
     box-shadow: 0px 1px 4px rgb(174, 190, 205);
     margin: 16px auto;
-   
+    display: flex;
+    flex-direction: column;
+   justify-content: space-between;
 }
 
 .proyectCard:hover{
@@ -299,10 +301,12 @@ $nodejs: #57b857;
 }
 
 
+
 .footer-box{
     padding: 10px 5px;
     display: flex;
     justify-content:space-around;
+    
 }
 
 .button-proyect{
