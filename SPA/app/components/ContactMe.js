@@ -17,7 +17,7 @@ export function ContactMe(){
     $contactMeInfoConteiner.classList.add("contact-me");
     $contactMeTextBox.classList.add("contact-me-box");
     $text.classList.add("contact-description");
-    $textBox.classList.add("contactme-text")
+    $textBox.classList.add("contactme-text");
 
 
     
