@@ -13,7 +13,7 @@ export async function getProyects(element){
     }
 
     if(hash === "#/proyectos"){
-        urlProyects = `app/assets/json/proyects.json`
+        urlProyects = `app/assets/json/DataProjects.json`
     }
 
     await ajax({
