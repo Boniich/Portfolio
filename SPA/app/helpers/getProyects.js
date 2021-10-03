@@ -9,7 +9,7 @@ export async function getProyects(element){
 
 
     if(!hash || hash === "#/"){
-        urlProyects = `app/assets/json/PresentacionProyects.json`
+        urlProyects = `app/assets/json/DataProjectIntroduction.json`
     }
 
     if(hash === "#/proyectos"){
