@@ -1,5 +1,5 @@
 import { AboutMeIntro } from "./AboutMeIntro.js";
-import { ProyectsSlider } from "./ProyectsSlider.js";
+import { ProjectsIntroduction } from "./ProjectsIntroduction.js";
 import { Skills } from "./Skills.js";
 
 export function Main(){
@@ -9,7 +9,7 @@ export function Main(){
     $main.classList.add("main");
 
     $main.appendChild(AboutMeIntro());
-    $main.appendChild(ProyectsSlider());
+    $main.appendChild(ProjectsIntroduction());
     $main.appendChild(Skills());
 
     return $main;
