@@ -6,7 +6,7 @@ export function ProjectsIntroduction(){
     const $projectsBox = document.createElement("div"),
     $projectTitle = document.createElement("h6"),
     $cardProjectBox = document.createElement("div"),
-    $bottonsBox = document.createElement("div");
+    $buttonsBox = document.createElement("div");
 
     // const of helper component buttons
     const textButton = "Mas Proyectos",
@@ -16,7 +16,7 @@ export function ProjectsIntroduction(){
     $projectsBox.classList.add("conteiner");
     $projectsBox.classList.add("proyects");
     $cardProjectBox.classList.add("slider-conteiner");
-    $bottonsBox.classList.add("slider-conteiner");
+    $buttonsBox.classList.add("slider-conteiner");
 
 
     // title
@@ -31,10 +31,10 @@ export function ProjectsIntroduction(){
     // Call at ajax for show project cards
     getProyects($cardProjectBox);
 
-    $bottonsBox.appendChild(buttons(urlButton, textButton));
+    $buttonsBox.appendChild(buttons(urlButton, textButton));
 
     $projectsBox.appendChild($cardProjectBox);
-    $projectsBox.appendChild($bottonsBox);
+    $projectsBox.appendChild($buttonsBox);
 
     return $projectsBox;
 }
