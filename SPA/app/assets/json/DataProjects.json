@@ -1,0 +1,118 @@
+[
+  {
+      "id": 1,
+      "name": "Kinihongo",
+      "img": "app/assets/img/1.jpg",
+      "description": "Sitio web para un mini emprendimiento",
+      "url": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+      "tag":[
+        {
+          "idtag": "html",
+          "classtag": "skills-proyects",
+          "tagname": "Html"
+        },{
+
+          "idtag": "css",
+          "classtag": "skills-proyects",
+          "tagname": "Css"
+        },{
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      }
+  
+      ]
+  },
+
+  {
+    "id": 2,
+    "name": "MyIdea",
+    "img": "app/assets/img/2.jpg",
+    "description":"Web que guarda una idea y detalles sobre esta",
+    "url": "",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
+
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      },{
+  
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      },{
+  
+
+        "idtag": "nodejs",
+        "classtag": "skills-proyects",
+        "tagname": "Node.js"
+      }
+
+    ]
+  },
+  {
+    "id": 3,
+    "name": "CopyTedBlog",
+    "img": "app/assets/img/3.jpg",
+    "description": "Copia de TedBlog, usando WordPress API",
+    "url": "",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
+
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      },{
+  
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      }
+      
+
+    ]
+  
+  },
+  {
+    "id": 4,
+    "name": "CopyTedBlog",
+    "img": "app/assets/img/3.jpg",
+    "description": "Copia de TedBlog, usando WordPress API",
+    "url": "",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
+
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      },{
+  
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      }
+      
+
+    ]
+  
+  }
+
+
+]
