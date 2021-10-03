@@ -17,7 +17,7 @@ export function SecondaryHeroTexts(){
         $title.innerHTML = "Ezequiel Bonino";
     }else if(hash === "#/proyectos"){
         $tag.innerHTML = "Proyectos";
-        $title.innerHTML = "Selecciona un de los Proyectos que realize con mucho entuciasmo.";
+        $title.innerHTML = "Selecciona un Proyecto";
     }
  
     $secondaryHeroTexts.appendChild($tag)
