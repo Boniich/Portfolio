@@ -32,6 +32,7 @@ export function Skills(){
      <li><img class="icon-skills" src="app/assets/icons/git.svg" width="50px" height="50px"></img></<li>
      <li><img class="icon-skills" src="app/assets/icons/trello.svg" width="50px" height="50px"></img></<li>
      <li><img class="icon-skills" src="app/assets/icons/terminal.svg" width="50px" height="50px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/sass.svg" width="50px" height="50px"></img></<li>
      `;
     
     $skillsConteiner.appendChild($titleSkills);
