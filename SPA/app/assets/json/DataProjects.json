@@ -2,9 +2,10 @@
   {
       "id": 1,
       "name": "Kinihongo",
-      "img": "app/assets/img/1.jpg",
+      "img": "app/assets/img/kinihongo_img.jpg",
       "description": "Sitio web para un mini emprendimiento",
-      "url": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+      "urlDemo": "https://ezequielbonino.github.io/Kinihongo-Sitio-web-/",
+      "urlRepo": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
       "tag":[
         {
           "idtag": "html",
@@ -28,9 +29,10 @@
   {
     "id": 2,
     "name": "MyIdea",
-    "img": "app/assets/img/2.jpg",
+    "img": "app/assets/img/myidea_img.jpg",
     "description":"Web que guarda una idea y detalles sobre esta",
-    "url": "",
+    "urlDemo": "",
+    "urlRepo":"https://github.com/EzequielBonino/MyIdea",
     "tag":[
       {
         "idtag": "html",
@@ -60,9 +62,10 @@
   {
     "id": 3,
     "name": "CopyTedBlog",
-    "img": "app/assets/img/3.jpg",
+    "img": "app/assets/img/tedblog_img.jpg",
     "description": "Copia de TedBlog, usando WordPress API",
-    "url": "",
+    "urlDemo": "https://ezequielbonino.github.io/TedBlogCopy/SPA/index.html",
+    "urlRepo":"https://github.com/EzequielBonino/TedBlogCopy",
     "tag":[
       {
         "idtag": "html",
@@ -87,29 +90,43 @@
   },
   {
     "id": 4,
-    "name": "CopyTedBlog",
-    "img": "app/assets/img/3.jpg",
-    "description": "Copia de TedBlog, usando WordPress API",
-    "url": "",
+    "name": "Pokedex",
+    "img": "app/assets/img/pokedex_img.jpg",
+    "description": "A small Pokedex using React and PokeApi",
+    "urlDemo": "",
+    "urlRepo":"https://github.com/EzequielBonino/Pokedex",
     "tag":[
       {
-        "idtag": "html",
+        "idtag": "react",
         "classtag": "skills-proyects",
-        "tagname": "Html"
+        "tagname": "React"
       },{
 
         "idtag": "css",
         "classtag": "skills-proyects",
         "tagname": "Css"
-      },{
-  
-
-        "idtag": "js",
-        "classtag": "skills-proyects",
-        "tagname": "JavaScript"
       }
-      
 
+    ]
+  
+  },
+  {
+    "id": 5,
+    "name": "Random Passoword",
+    "img": "app/assets/img/randompassoword_img.jpg",
+    "description": "Genera una contraseña random y es posible guardarla junto al usuario y nombre de un sitio web",
+    "urlDemo": "",
+    "urlRepo":"https://github.com/EzequielBonino/RandomPassword",
+    "tag":[
+      {
+        "idtag": "react",
+        "classtag": "skills-proyects",
+        "tagname": "React"
+      },{
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      }
     ]
   
   }
