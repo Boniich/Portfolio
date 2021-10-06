@@ -8,7 +8,7 @@ export function Hero(){
     $boxPersonalImg = document.createElement("div"),
     $PersonalImg = document.createElement("img");
 
-    $PersonalImg.src = 'app/assets/img/personalImg.png';
+    $PersonalImg.src = 'app/assets/img/personalImg.jpg';
     $PersonalImg.id = "personal-img";
 
     $hero.classList.add("hero");
