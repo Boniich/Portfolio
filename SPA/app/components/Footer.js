@@ -14,8 +14,8 @@ export function Footer(){
     $authorBox.classList.add("author-box");
 
     $iconsList.innerHTML = `
-    <li><a href=""><span class="footer-icons"><i class="fab fa-github"></i></span></a></li>
-    <li><a href=""><span class="footer-icons"><i class="fab fa-linkedin"></i></span></a></li>`
+    <li><a href="https://github.com/EzequielBonino" target="_blank"><span class="footer-icons"><i class="fab fa-github"></i></span></a></li>
+    <li><a href="https://www.linkedin.com/in/ezequielboninodesarrolladorfrontend/" target="_blank"><span class="footer-icons"><i class="fab fa-linkedin"></i></span></a></li>`
 
     $authorName.innerHTML = `© Ezequiel Bonino`
 
