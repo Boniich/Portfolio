@@ -30,8 +30,8 @@
   background-color: #57b857;
 }
 
-.body-color {
-  background-color: #0e0d0d;
+#react {
+  background-color: #61dafb;
 }
 
 /* Class */
@@ -82,7 +82,7 @@
 }
 
 .nav-conteiner {
-  background-color: #0e0d0d;
+  background-color: #fff;
   border-bottom: 1px solid #ccc;
   padding: 0 20px;
   height: 50px;
@@ -121,7 +121,8 @@
     padding: 12px 15px;
 } */
 .nav > .navList li a {
-  color: #fff;
+  color: black;
+  text-transform: uppercase;
 }
 
 .seccion-tag {
@@ -132,7 +133,8 @@
 
 /* hero principal */
 .hero {
-  background-color: #0e0d0d;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
   height: 100vh;
   padding: 0 20px;
 }
@@ -141,6 +143,8 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
 }
 
 .hero-texts {
@@ -183,6 +187,9 @@
 }
 
 .contact-me {
+  background-color: #0e0d0d;
+  border-radius: 8px;
+  padding: 10px 10px;
   margin: auto auto;
 }
 
@@ -246,11 +253,11 @@
 }
 
 .description-proyects {
-  padding-left: 15px;
+  padding: 0px 12px;
 }
 
 .description-proyects h1 {
-  font-size: 28px;
+  font-size: 25px;
 }
 
 .footer-box {
@@ -280,7 +287,7 @@
 }
 
 .skill-tag-box {
-  padding: 20px 0 0 15px;
+  padding: 15px 12px 0 12px;
 }
 
 .skill-tag-card li {
@@ -306,7 +313,8 @@
 }
 
 .skill-box {
-  height: auto;
+  height: 150px;
+  overflow-y: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 10px 10px;
@@ -318,8 +326,9 @@
 }
 
 .footer {
-  background-color: #0e0d0d;
+  background-color: #fff;
   padding: 0 20px;
+  border-top: 1px solid #ccc;
 }
 
 .footer-conteiner {
@@ -335,7 +344,7 @@
 }
 
 .footer-icons {
-  color: #fff;
+  color: black;
   font-size: 30px;
 }
 
@@ -345,7 +354,7 @@
 }
 
 .author-box p {
-  color: #fff;
+  color: black;
 }
 
 .author-box p:hover {
@@ -392,12 +401,29 @@
 }
 
 .contact {
-  background-color: #0e0d0d;
+  height: 100vh;
+  background: url("../img/fondo.jpg");
+  background-size: cover;
 }
 
 .contact-description {
   color: #fff;
   font-size: 18px;
+}
+
+.conteiner-personal-img {
+  padding: 10px 10px;
+  margin: 0 auto;
+}
+
+#personal-img {
+  border-radius: 50%;
+}
+
+.box-personal-img {
+  height: 219px;
+  border: 3px solid #fff;
+  border-radius: 50%;
 }
 
 @media screen and (min-width: 600px) {
@@ -578,6 +604,10 @@
 
   .contactme-text h1 {
     font-size: 32px;
+  }
+
+  .conteiner-personal-img {
+    margin: 0 0;
   }
 }
 

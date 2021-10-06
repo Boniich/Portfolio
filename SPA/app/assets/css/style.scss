@@ -13,10 +13,12 @@
 $white: #fff;
 $black: #0e0d0d;
 $blue: rgb(34, 129, 199);
+//Tag's variables
 $html: orange;
 $css: cornflowerblue;
 $javaScript: yellow;
 $nodejs: #57b857;
+$react: #61dafb;
 
 
 /* ID */
@@ -45,9 +47,9 @@ $nodejs: #57b857;
     @include mixin.background($backgroundColor: $nodejs)
 }
 
-
-
-.body-color{@include mixin.background($backgroundColor: $black);}
+#react {
+    @include mixin.background($backgroundColor: $react)
+}
 
 
 /* Class */
@@ -101,7 +103,9 @@ $nodejs: #57b857;
 
 
 .nav-conteiner{
-    background-color:#0e0d0d;
+    // testing 
+    background-color: #fff;
+    // background-color:#0e0d0d;
     border-bottom: 1px solid #ccc;
     padding: 0 20px;
     height: 50px;
@@ -145,7 +149,8 @@ $nodejs: #57b857;
 } */
 
 .nav > .navList li a{
-    color: $white;
+    color: black;
+    text-transform: uppercase;
 }
 
 
@@ -158,7 +163,8 @@ $nodejs: #57b857;
 /* hero principal */
 
 .hero{
-    @include mixin.background($backgroundColor: $black);
+    background: url('../img/fondo.jpg');
+    background-size: cover;
     height: 100vh;
     padding: 0 20px;
 }
@@ -167,6 +173,8 @@ $nodejs: #57b857;
     height: 100vh;
     display: flex;
     align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
 }
 
 
@@ -216,6 +224,9 @@ $nodejs: #57b857;
 }
 
 .contact-me{
+    background-color: $black;
+    border-radius: 8px;
+    padding: 10px 10px;
     margin: auto auto;
 }
 
@@ -292,12 +303,12 @@ $nodejs: #57b857;
 
 .description-proyects{
 
-    padding-left: 15px;
+    padding: 0px 12px;
 
 }
 
 .description-proyects h1{
-    font-size: 28px;
+    font-size: 25px;
 }
 
 
@@ -333,7 +344,7 @@ $nodejs: #57b857;
 }
 
 .skill-tag-box{
-    padding: 20px 0 0 15px;
+    padding: 15px 12px 0 12px;
     
 }
 
@@ -369,7 +380,8 @@ $nodejs: #57b857;
 
 
 .skill-box{
-    height: auto;
+    height: 150px;
+    overflow-y: auto;
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 10px 10px;
@@ -383,10 +395,9 @@ $nodejs: #57b857;
 
 .footer{
     
-    background-color: #0e0d0d;
+    background-color: #fff;
     padding: 0 20px;
-
-
+    border-top: 1px solid #ccc;
 }
 
 .footer-conteiner{
@@ -403,7 +414,7 @@ $nodejs: #57b857;
 }
 
 .footer-icons{
-    color: $white;
+    color: black;
     font-size: 30px;
 }
 
@@ -413,7 +424,7 @@ $nodejs: #57b857;
 }
 
 .author-box p {
-    color: $white;
+    color: black;
 }
 
 .author-box p:hover{
@@ -450,7 +461,6 @@ $nodejs: #57b857;
     padding: 5px 5px;
 }
 
-
 .contactme-text h1{
     font-size: 22px;
     padding-bottom: 20px;
@@ -463,12 +473,32 @@ $nodejs: #57b857;
 
 
 .contact{
-    background-color: #0e0d0d;
+    height: 100vh;
+    background: url('../img/fondo.jpg');
+    background-size: cover;
 }
 
 .contact-description{
+    
     color: $white;
     font-size: 18px;
+}
+
+.conteiner-personal-img{
+    padding: 10px 10px;
+    margin: 0 auto;
+   
+}
+
+#personal-img{
+    border-radius: 50%;
+}
+
+.box-personal-img{
+    height: 219px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+  
 }
 
 
@@ -496,6 +526,7 @@ $nodejs: #57b857;
     }
     
 }
+
 
 @media screen and (min-width: 1024px) {
 
@@ -547,6 +578,7 @@ $nodejs: #57b857;
     .hero-content{
         margin: 0 auto;
         max-width: 1500px;
+     
 
     }
 
@@ -681,4 +713,10 @@ $nodejs: #57b857;
         font-size: 32px;
 
     }
+
+    .conteiner-personal-img{
+        margin: 0 0;
+    }
+
+   
 }
