@@ -1,6 +1,6 @@
 export function ProyectsCards(props){
 
-    let {name, img, description, tag, url} = props;
+    let {name, img, description, tag, urlDemo, urlRepo} = props;
     let length = tag.length;
     let html = "";
 
@@ -57,8 +57,8 @@ export function ProyectsCards(props){
       $skillsList.innerHTML = html;
 
       $footerBox.innerHTML = `
-      <a class="button-proyect" href="${url}"><span class="proyects-icons"><i class="fas fa-desktop"></i></span>Ver Demo</a>
-      <a class="button-proyect" href="${url}"><span class="proyects-icons"><i class="fab fa-github"></i></span> Repositorio</a>`;
+      <a class="button-proyect" href="${urlDemo}" target="_blank"><span class="proyects-icons"><i class="fas fa-desktop"></i></span>Ver Demo</a>
+      <a class="button-proyect" href="${urlRepo}" target="_blank"><span class="proyects-icons"><i class="fab fa-github"></i></span> Repositorio</a>`;
 
 
     $imgBox.appendChild($img);
