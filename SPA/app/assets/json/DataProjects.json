@@ -93,7 +93,7 @@
     "name": "Pokedex",
     "img": "app/assets/img/pokedex_img.jpg",
     "description": "A small Pokedex using React and PokeApi",
-    "urlDemo": "",
+    "urlDemo": "https://ezequielbonino.github.io/Pokedex/",
     "urlRepo":"https://github.com/EzequielBonino/Pokedex",
     "tag":[
       {
