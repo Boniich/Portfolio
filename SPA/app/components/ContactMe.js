@@ -22,7 +22,7 @@ export function ContactMe(){
 
     
     $tag.innerHTML = "Contactame";
-    $email.innerHTML = "EzequielDbo22@hotmail.com";
+    $email.innerHTML = "EzequielDbo25@gmail.com";
     $text.innerHTML = "Si deseas ponerte en contacto conmigo por trabajo, colaboracion o cualquier otra razon, mandame un mail"
 
 
