@@ -25,38 +25,37 @@
   
       ]
   },
-
   {
     "id": 2,
-    "name": "MyIdea",
-    "img": "app/assets/img/myidea_img.jpg",
-    "description":"Web que guarda una idea y detalles sobre esta",
-    "urlDemo": "",
-    "urlRepo":"https://github.com/EzequielBonino/MyIdea",
+    "name": "Calculadora",
+    "img": "app/assets/img/calculadoraImg.jpg",
+    "description":"Una calculadora similar a la de Windows - Modo Estandar",
+    "urlDemo": "https://ezequielbonino.github.io/Calculator/",
+    "urlRepo":"https://github.com/EzequielBonino/Calculator",
     "tag":[
       {
         "idtag": "html",
         "classtag": "skills-proyects",
         "tagname": "Html"
       },{
-
-        "idtag": "css",
+  
+        "idtag": "sass",
         "classtag": "skills-proyects",
-        "tagname": "Css"
+        "tagname": "Sass"
       },{
   
-
+  
         "idtag": "js",
         "classtag": "skills-proyects",
         "tagname": "JavaScript"
       },{
   
-
-        "idtag": "nodejs",
+  
+        "idtag": "test",
         "classtag": "skills-proyects",
-        "tagname": "Node.js"
+        "tagname": "Test"
       }
-
+  
     ]
   },
   {
