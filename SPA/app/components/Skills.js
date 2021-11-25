@@ -19,20 +19,20 @@ export function Skills(){
 
     $titleSkills.innerHTML = `Habilidades`;
     $ulSkills.innerHTML = `
-     <li><img class="icon-skills" src="app/assets/icons/react.svg" width="50px" height="50px"></img></li>
-     <li><img class="icon-skills" src="app/assets/icons/html.svg" width="50px" height="50px"></img></li>
-     <li><img class="icon-skills" src="app/assets/icons/css.svg" width="50px" height="50px"></img></li>
-     <li><img class="icon-skills" src="app/assets/icons/js.svg" width="50px" height="50px"></img></li>
-     <li><img class="icon-skills" src="app/assets/icons/nodejs.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/php.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/mysql.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/c.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/c++.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/java.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/git.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/trello.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/terminal.svg" width="50px" height="50px"></img></<li>
-     <li><img class="icon-skills" src="app/assets/icons/sass.svg" width="50px" height="50px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/react.svg" width="80px" height="80px"></img></li>
+     <li><img class="icon-skills" src="app/assets/icons/html.svg" width="80px" height="80px"></img></li>
+     <li><img class="icon-skills" src="app/assets/icons/css.svg" width="80px" height="80px"></img></li>
+     <li><img class="icon-skills" src="app/assets/icons/js.svg" width="80px" height="80px"></img></li>
+     <li><img class="icon-skills" src="app/assets/icons/nodejs.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/php.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/mysql.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/c.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/c++.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/java.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/git.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/trello.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/terminal.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/sass.svg" width="80px" height="80px"></img></<li>
      `;
     
     $skillsConteiner.appendChild($titleSkills);
