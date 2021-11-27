@@ -10,7 +10,7 @@ export function Skills(){
     $skillsConteiner.classList.add("conteiner");
     $skillsBoxConteiner.classList.add("skills-box-conteiner");
     $skillsBox.classList.add("skill-box");
-    $titleSkills.classList.add("skills-title-box");
+    $titleSkills.classList.add("title-sections");
     $ulSkills.classList.add("skills-list");
     
     $titleSkills.innerHTML = `Habilidades`;

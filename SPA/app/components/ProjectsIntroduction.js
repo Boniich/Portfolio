@@ -20,7 +20,7 @@ export function ProjectsIntroduction(){
 
 
     // title
-    $projectTitle.classList.add("title-aboutMe-proyects");
+    $projectTitle.classList.add("title-sections");
     $projectTitle.innerHTML = "Proyectos";
 
     $projectsBox.appendChild($projectTitle);

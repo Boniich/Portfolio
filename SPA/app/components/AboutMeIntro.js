@@ -29,17 +29,13 @@ export function AboutMeIntro(){
 
     $aboutMeBox.classList.add("about-me-box");
     $textBox.classList.add("text-box");
-    
 
-    // const of helper component buttons
-    const textButton = "Mas Sobre Mi",
-    urlButton = "#/sobremi";
 
     // title and text content
-    $aboutMeTitle.classList.add("title-aboutMe-proyects");
+    $aboutMeTitle.classList.add("title-sections");
     $aboutMeTitle.innerHTML = "Sobre Mi";
    
-    $text.innerHTML = fakeApi("intro");
+    $text.innerHTML = fakeApi();
    
     // appeding main divs
     $conteinerIntro.appendChild($aboutMeTitle);
@@ -50,9 +46,6 @@ export function AboutMeIntro(){
 
     // added the box in the text box
     $aboutMeBox.appendChild($textBox);
-
-    // added button's herper component
-    $aboutMeBox.appendChild(buttons(urlButton, textButton));
 
     // added the text box and button box in his main div
     $boxAboutMeConteiner.appendChild($aboutMeBox);
