@@ -1,4 +1,5 @@
 import { AboutMeIntro } from "./AboutMeIntro.js";
+import { ContactMe } from "./ContactMe.js";
 import { ProjectsIntroduction } from "./ProjectsIntroduction.js";
 import { Skills } from "./Skills.js";
 
@@ -11,6 +12,7 @@ export function Main(){
     $main.appendChild(AboutMeIntro());
     $main.appendChild(ProjectsIntroduction());
     $main.appendChild(Skills());
+    $main.appendChild(ContactMe());
 
     return $main;
 }
