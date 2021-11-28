@@ -1,8 +1,8 @@
-import { Footer } from "./components/Footer.js";
-import { HeroConteiner } from "./components/HeroConteiner.js";
-import { MainConteiner } from "./components/MainConteiner.js";
-import { Nav } from "./components/Nav.js";
-import { Router } from "./components/Router.js";
+import { Footer } from "./components/footer/Footer.js";
+import { HeroConteiner } from "./components/hero/HeroConteiner.js";
+import { MainConteiner } from "./components/main/MainConteiner.js";
+import { Nav } from "./components/nav/Nav.js";
+import { Router } from "./components/router/Router.js";
 
 
 export function App(){
