@@ -1,5 +1,5 @@
 import { ajax } from "../helpers/ajax.js";
-import { ProyectsCards } from "../components/ProyectsCards.js";
+import { ProyectsCards } from "../components/proyects/proyectCards/ProyectsCards.js";
 
 
 
@@ -8,7 +8,8 @@ export async function getProyects(element){
     let urlProyects = ``;
 
 
-    if(!hash || hash === "#/"){
+    if(!hash || hash === "#/" || hash === "#contact" 
+    || hash === "#aboutMe-section" || hash === "#projectIntro-section" || hash === "#skill-section"){
         urlProyects = `app/assets/json/DataProjectIntroduction.json`
     }
 
