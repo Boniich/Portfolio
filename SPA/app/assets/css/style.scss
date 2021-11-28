@@ -16,15 +16,15 @@ $blue: rgb(34, 129, 199);
 //Tag's variables
 $html: orange;
 $css: cornflowerblue;
+$sass: #ff4d94;
 $javaScript: yellow;
 $nodejs: #57b857;
 $react: #61dafb;
+$test: #85adad;
+
 
 
 /* ID */
-
-#skills{@include mixin.background($backgroundColor: $blue);}
-
 
 #id-about-me{
     padding: 0 10px;
@@ -39,6 +39,11 @@ $react: #61dafb;
 
 }
 
+#sass{
+    @include mixin.background($backgroundColor: $sass)
+
+}
+
 #js{
     @include mixin.background($backgroundColor: $javaScript)
 }
@@ -50,7 +55,17 @@ $react: #61dafb;
 #react {
     @include mixin.background($backgroundColor: $react)
 }
+#test {
+    @include mixin.background($backgroundColor: $test)
+}
 
+#link-linkeding{
+    color: $black
+}
+
+#link-linkeding:hover{
+    color: $blue;
+}
 
 /* Class */
 .main, .about-me{
@@ -60,7 +75,6 @@ $react: #61dafb;
 .grid-fluid{
     margin: 16px auto;
     max-width: 1024px;
-    padding: 120px 0;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(260px, 1fr));
 }
@@ -81,14 +95,13 @@ $react: #61dafb;
 .nav{
     display: flex;
     justify-content:flex-end;
-    align-items: center;
     height: 50px;
 }
 
 .nav > .navList li{
     
     display: inline-block;
-    padding: 0 10px;
+    padding: 15px 10px;
    
 }
 
@@ -103,9 +116,7 @@ $react: #61dafb;
 
 
 .nav-conteiner{
-    // testing 
     background-color: #fff;
-    // background-color:#0e0d0d;
     border-bottom: 1px solid #ccc;
     padding: 0 20px;
     height: 50px;
@@ -119,6 +130,18 @@ $react: #61dafb;
 
 .nav-conteiner.down{
     top: -50px;
+}
+
+.sub-nav{
+    display: none;
+    position: absolute;
+    top: 51px;
+    background-color: $white;
+    border: 1px solid #ccc;
+}
+
+.nav li:hover .sub-nav{
+    display: block;
 }
 
 /* doesnt work good */
@@ -216,17 +239,11 @@ $react: #61dafb;
     display: none;
 }
 
-.title-aboutMe-proyects{
-    color: rgb(34, 129, 199);
-    text-align: center;
-    font-size: 30px;
-    padding-bottom: 30px;
-}
-
 .contact-me{
-    background-color: $black;
+    background-color: $white;
     border-radius: 8px;
     padding: 10px 10px;
+    box-shadow: 0px 1px 4px #aebecd;
     margin: auto auto;
 }
 
@@ -246,21 +263,29 @@ $react: #61dafb;
     justify-content: flex-end;
 }
 
+
+
+
 .btn-proyect-aboutMe{
-    border-bottom: 1px solid #ccc;
-    padding: 5px 8px;
+    font-weight: bold;
+    height: 43px;
     font-size: 20px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px #aebecd;
 }
 
 
 .btn-proyect-aboutMe a{
 
-    color: black;
+    color: $blue;
+    padding: 10px 13px;
+    display: flex;
 }
 
 .btn-proyect-aboutMe a:hover, .btn-proyect-aboutMe:hover {
-    color: $blue;
-    border-color: #0e0d0d;
+    color: $white;
+    background-color: $blue;
+    border-radius: 4px;
     
 }
 
@@ -286,18 +311,18 @@ $react: #61dafb;
 }
 
 .proyectCard{
-    width: 245px;
+    width: 15.4rem;
     height: auto;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-shadow: 0px 1px 4px rgb(174, 190, 205);
-    margin: 16px auto;
+    margin: 1rem auto;
     display: flex;
     flex-direction: column;
    justify-content: space-between;
 }
 
-.proyectCard:hover{
+.proyectCard:hover, .btn-proyect-aboutMe:hover {
     box-shadow: 3px 3px 10px rgb(174, 190, 205);
 }
 
@@ -362,12 +387,11 @@ $react: #61dafb;
 
 
 
-.skills-title-box{
+.title-sections{
 
-    color: $white;
+    color: $blue;
     text-align: center;
     font-size: 30px;
-    padding-bottom: 30px;
 
 }
 
@@ -380,11 +404,11 @@ $react: #61dafb;
 
 
 .skill-box{
-    height: 150px;
+    height: 22rem;
     overflow-y: auto;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    padding: 10px 10px;
+    padding: 20px 10px;
+    box-shadow: rgb(174 190 205) 0px 1px 4px;
 }
 
 
@@ -431,23 +455,7 @@ $react: #61dafb;
     color: $blue;
 }
 
-/* slider */
-
-.slider{
-    position: relative;
-}
-
-.slider-list li{
-    width: 90vw;
-    height: 300px;
-}
-
-.slider-list img{
-    width: 100%;
-    height: 100%;
-}
-
-.slider-conteiner{
+.button-conteiner{
     margin: 0 auto;
     width: 90vw;
 }
@@ -464,7 +472,8 @@ $react: #61dafb;
 .contactme-text h1{
     font-size: 22px;
     padding-bottom: 20px;
-    color: $white;
+    color: $black;
+    text-align: center;
 }
 
 .contact-me-box{
@@ -472,16 +481,11 @@ $react: #61dafb;
 }
 
 
-.contact{
-    height: 100vh;
-    background: url('../img/fondo.jpg');
-    background-size: cover;
-}
-
 .contact-description{
     
-    color: $white;
-    font-size: 18px;
+    color: $black;
+    font-size: 1.2rem;
+    text-align: center;
 }
 
 .conteiner-personal-img{
@@ -501,23 +505,31 @@ $react: #61dafb;
   
 }
 
+.box-about-me-conteiner,.grid-fluid,.skills-box-conteiner, .contact-me{
+    margin: 120px auto;
+}
+
+.box-about-me-conteiner{
+    box-shadow: 0px 1px 4px #aebecd;
+    padding: 20px 20px;
+}
 
 @media screen and (min-width: 600px) {
 
  .skills-box-conteiner{
-     width: 400px;
+     width: 600px;
  }
-
- .slider-list li{
-    height: auto;
-}
   
 }
 
 @media screen and (min-width: 740px) {
 
+    .skill-box{
+        height: 16rem;
+    }
+
     .skills-box-conteiner{
-        width: 600px;
+        width: 740px;
     }
 
     .contactme-text h1{
@@ -534,6 +546,11 @@ $react: #61dafb;
 
     #id-about-me{
         border-right: 1px solid #ccc;
+    }
+
+    .skills-box-conteiner{
+        width: 1000px;
+        
     }
 
 
@@ -588,6 +605,8 @@ $react: #61dafb;
         max-width: 1024px;
     }
 
+
+  
     
     .box-about-me-conteiner, .hero-content-about-me, .box-proyects, .contact-me{
 
@@ -599,8 +618,8 @@ $react: #61dafb;
     }
     
     .about-me-box{
-        padding-bottom: 20px;
-        font-size: 20px;
+        padding-bottom: 1.5rem;
+        font-size: 1.3rem;
     }
 
 
@@ -623,6 +642,7 @@ $react: #61dafb;
     .interest-box p, .soft-skills-box p, .hobbies-box p{
         padding: 10px 0;
         font-size: 20px;
+        
     }
    
 
@@ -686,6 +706,7 @@ $react: #61dafb;
         width: 180px;
         border: 1px solid #ccc;
         border-radius: 4px;
+        box-shadow: 0px 1px 1px #aebecd;
     }
 
     
@@ -697,10 +718,7 @@ $react: #61dafb;
         
     }
 
-    .slider-list li{
-        max-width: 1024px;
-    }
-    .slider-conteiner{
+    .button-conteiner{
         max-width: 1024px;
     }
     .footer-conteiner{
