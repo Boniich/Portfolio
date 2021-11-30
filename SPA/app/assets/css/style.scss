@@ -22,6 +22,9 @@ $nodejs: #57b857;
 $react: #61dafb;
 $test: #85adad;
 
+.hidden{
+    overflow: hidden;
+}
 
 
 /* ID */
@@ -83,97 +86,50 @@ $test: #85adad;
     padding: 120px 0;
 }
 
-.icon{
-    padding: 10px; 
+.icon i{
+    padding: 11px 10px;
     font-size: 28px;
     cursor: pointer;
-    color: $white;
-    display: none;
+    color: $black;
 }
 
-/* Provisorio */
 .nav{
-    display: flex;
-    justify-content:flex-end;
     height: 50px;
-}
-
-.nav > .navList li{
-    
-    display: inline-block;
-    padding: 15px 10px;
-   
-}
-
-.nav > .navList li a{
-    color: $white;
-    font-size: 18px;
-}
-
-.nav > .navList li a:hover{
-    color: $blue;
-}
-
-
-.nav-conteiner{
-    background-color: #fff;
-    border-bottom: 1px solid #ccc;
-    padding: 0 20px;
-    height: 50px;
-    top: 0;
     position: fixed;
-    width: calc(100% - 40px);
-    z-index: 80;
-    transition: all 0.3s;
-
-}
-
-.nav-conteiner.down{
-    top: -50px;
-}
-
-.sub-nav{
-    display: none;
-    position: absolute;
-    top: 51px;
     background-color: $white;
-    border: 1px solid #ccc;
-}
-
-.nav li:hover .sub-nav{
-    display: block;
-}
-
-/* doesnt work good */
-
-/* .nav{
-    height: 50px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .navList{
  position: absolute;
- height: calc(100vh - 50px);
- top: 50px;
+ height: calc(100vh - 51px);
+ top: 51px;
  left: 0;
  text-align: center;
- background-color: var($blue);
+ background-color: $white;
  width: 100vw;
  display: none;
+ opacity: 90%;
 
-} */
+}
 
-/* .navList.open{
+.navList.open{
     display: block;
-} */
+}
 
-/* .nav > .navList li{
+.nav > .navList li{
     display: block;
-    padding: 12px 15px;
-} */
+    padding: 15px 10px;
+} 
 
 .nav > .navList li a{
     color: black;
     text-transform: uppercase;
+}
+
+.navList li a:hover{
+    color: $blue;
 }
 
 
@@ -204,6 +160,8 @@ $test: #85adad;
 .hero-texts{
     
     color: $white;
+    padding: 30px 20px;
+    border-radius: 4px;
 
 }
 
@@ -241,7 +199,7 @@ $test: #85adad;
 
 .contact-me{
     background-color: $white;
-    border-radius: 8px;
+    border-radius: 4px;
     padding: 10px 10px;
     box-shadow: 0px 1px 4px #aebecd;
     margin: auto auto;
@@ -511,11 +469,11 @@ $test: #85adad;
 
 .box-about-me-conteiner{
     box-shadow: 0px 1px 4px #aebecd;
-    padding: 20px 20px;
+    padding: 20px 10px;
+    border-radius: 4px;
 }
 
 @media screen and (min-width: 600px) {
-
  .skills-box-conteiner{
      width: 600px;
  }
@@ -523,6 +481,73 @@ $test: #85adad;
 }
 
 @media screen and (min-width: 740px) {
+
+    .nav{
+        display: flex;
+        justify-content:center;
+    }
+
+    .navList{
+        position:relative;
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: $white;
+        width: auto;
+       display: inline;
+       opacity: 100;
+    }
+    
+    .nav > .navList li{
+        
+        display: inline-block;
+       
+    }
+    
+    .nav > .navList li a{
+        color: $white;
+        font-size: 18px;
+    }
+    
+    .nav > .navList li a:hover{
+        color: $blue;
+    }
+    
+    
+    .nav-conteiner{
+        top: 0;
+        position: fixed;
+        width: calc(100% - 40px);
+        z-index: 80;
+        transition: all 0.3s;
+    
+    }
+    
+    .nav-conteiner.down{
+        top: -50px;
+    }
+    
+    .sub-nav{
+        display: none;
+        position: absolute;
+        top: 51px;
+        background-color: $white;
+        border: 1px solid #ccc;
+    }
+    
+    .nav li:hover .sub-nav{
+        display: block;
+    }
+
+    .nav > .navList li a{
+        color: black;
+        text-transform: uppercase;
+    }
+
+    .icon{
+        display: none;
+    }
+
 
     .skill-box{
         height: 16rem;
@@ -553,45 +578,6 @@ $test: #85adad;
         
     }
 
-
-
-    /* .nav{
-        display: flex;
-        justify-content:flex-end;
-        align-items: center;
-        height: 50px;
-    } */
-    .icon{
-        display: none;
-    }
-/* 
-    .navList{
-        position: inherit;
-        height: auto;
-        text-align: right;
-        background-color: inherit;
-        width: auto;
-        display:unset;
-    
-       
-    } */
-    
-    /* .nav > .navList li{
-    
-        display: inline-block;
-        padding: 0 10px;
-       
-    }
-    
-    .nav ul li a{
-        color: $white;
-        font-size: 18px;
-    }
-
-    .nav ul li a:hover{
-        color: var($blue);
-    }
-     */
     .hero-content{
         margin: 0 auto;
         max-width: 1500px;
@@ -691,16 +677,6 @@ $test: #85adad;
         left: -70px;
         
     }
-    
-    
-    /* .conteiner p{
-        font-size: 20px;
-        padding-bottom: 8px;
-    } */
-    
-    /* .conteiner li{
-        padding: 0 8px 5px 8px;
-    } */
     
     .interest-box, .soft-skills-box, .hobbies-box{
         width: 180px;
