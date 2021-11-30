@@ -46,11 +46,11 @@ export function AboutMeIntroCards(){
     $interestTitle.innerHTML = "Intereses";
 
     $interestList.innerHTML = `
-    <li>- Programacion</li>
-    <li>- Aprender</li>
-    <li>- Memes</li>
-    <li>- Mi Familia</li>
-    <li>- Libros</li>`;
+    <li>⚡️ Programacion</li>
+    <li>⚡️ Aprender</li>
+    <li>⚡️ Ejercicio Fis.</li>
+    <li>⚡️ Mi Familia</li>
+    <li>⚡️ Libros</li>`;
 
     // textual content of soft skills box
 
@@ -58,11 +58,11 @@ export function AboutMeIntroCards(){
     $skillsTitle.innerHTML = "Habilidades Blandas";
 
     $softSkillsList.innerHTML = `
-    <li>- Autodidacta</li>
-    <li>- Pro Activo</li>
-    <li>- Persistente</li>
-    <li>- Manejo del Tiempo</li>
-    <li>- Amable</li>`;
+    <li>🔥 Autodidacta</li>
+    <li>🔥 Responsable</li>
+    <li>🔥 Persistente</li>
+    <li>🔥 Manejo del Tiempo</li>
+    <li>🔥 Amable</li>`;
 
     // textual content of hobbies box
 
@@ -70,9 +70,9 @@ export function AboutMeIntroCards(){
     $hobbiesTitle.innerHTML = "Hobbies";
 
     $hobbiesList.innerHTML = `
-    <li>- Traducir</li>
-    <li>- Juegos</li>
-    <li>- Diseñar obj 3d</li>`;
+    <li>❄️ Traducir</li>
+    <li>❄️ Juegos</li>
+    <li>❄️ Diseñar obj 3d</li>`;
     
 
     // appending of interest
