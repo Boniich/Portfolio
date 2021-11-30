@@ -11,29 +11,6 @@ export function Nav(){
     $label.classList.add("icon");
     $ul.classList.add("navList");
 
-    
-    // addEventListener("DOMContentLoaded", () =>{
-    //     const button = document.querySelector(".icon");
-
-    //     button.addEventListener("click", ()=>{
-    //         if(button){
-    //             const menu = document.querySelector(".navList");
-    //             menu.classList.toggle("open");
-    //             const n = document.querySelector(".navList.open");
-               
-
-    //             if(n){
-    //                 document.body.style.overflow = "hidden";
-    //             }else{
-    //                 document.body.style.overflow = "scroll";
-    //             }
-                
-    //         }
-    //     })
-    // })
-
-
-    // Creamos <li> y damos textos a los link del menu
 
     $label.innerHTML = `<i class="fas fa-bars"></i>`;
 
