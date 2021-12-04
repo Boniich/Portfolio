@@ -44,6 +44,7 @@ export function ProyectsCards(props){
     $imgBox.classList.add("padding-bottom");
     $infoBox.classList.add("description-proyects");
     $titleVersionBox.classList.add("titleVersionBox","padding-bottom");
+    $titleBox.classList.add("title-box")
     $versionBox.classList.add("versionBox");
 
 
