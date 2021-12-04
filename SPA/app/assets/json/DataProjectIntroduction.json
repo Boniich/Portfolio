@@ -6,6 +6,8 @@
     "description": "Sitio web para un mini emprendimiento",
     "urlDemo": "https://ezequielbonino.github.io/Kinihongo-Sitio-web-/",
     "urlRepo": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-/blob/master/version.md",
     "tag":[
       {
         "idtag": "html",
@@ -25,7 +27,6 @@
 
     ]
 },
-
 {
   "id": 2,
   "name": "Calculadora",
@@ -33,6 +34,8 @@
   "description":"Una calculadora similar a la de Windows - Modo Estandar",
   "urlDemo": "https://ezequielbonino.github.io/Calculator/",
   "urlRepo":"https://github.com/EzequielBonino/Calculator",
+  "version": "1.27.3",
+  "urlVersion": "https://github.com/EzequielBonino/Calculator/blob/main/version.md",
   "tag":[
     {
       "idtag": "html",
@@ -66,6 +69,8 @@
   "description": "Copia de TedBlog, usando WordPress API",
   "urlDemo": "https://ezequielbonino.github.io/TedBlogCopy/SPA/index.html",
   "urlRepo":"https://github.com/EzequielBonino/TedBlogCopy",
+  "version": "1.0.0",
+  "urlVersion": "https://github.com/EzequielBonino/TedBlogCopy/blob/main/version.md",
   "tag":[
     {
       "idtag": "html",
