@@ -473,6 +473,38 @@ $test: #85adad;
     border-radius: 4px;
 }
 
+.titleVersionBox{
+    display: flex;
+    justify-content:space-between;
+}
+
+.versionBox{
+    // padding: 5px 5px;
+    border-radius: 4px;
+    background-color: #ccc;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+.versionBox:hover{
+    background-color: $blue;
+    transition: all 1s;
+}
+
+.version{
+    display: flex;
+    padding: 5px 5px;
+    font-size: 1rem;
+    color: $black;
+}
+
+.version:hover{
+    color: $white;
+    transition: all 1s;
+    
+}
+
 @media screen and (min-width: 600px) {
  .skills-box-conteiner{
      width: 600px;

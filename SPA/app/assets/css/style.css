@@ -403,6 +403,35 @@
   border-radius: 4px;
 }
 
+.titleVersionBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+.versionBox {
+  border-radius: 4px;
+  background-color: #ccc;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.versionBox:hover {
+  background-color: #2281c7;
+  transition: all 1s;
+}
+
+.version {
+  display: flex;
+  padding: 5px 5px;
+  font-size: 1rem;
+  color: #0e0d0d;
+}
+
+.version:hover {
+  color: #fff;
+  transition: all 1s;
+}
+
 @media screen and (min-width: 600px) {
   .skills-box-conteiner {
     width: 600px;
