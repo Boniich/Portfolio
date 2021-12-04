@@ -255,6 +255,7 @@
 
 .button-proyect {
   display: inline-block;
+  box-shadow: 0px 1px 4px #aebecd;
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 3px 5px;
@@ -263,6 +264,7 @@
 
 .button-proyect:hover {
   background-color: #2281c7;
+  border-color: #fff;
   color: #fff;
   transition: all 1s;
 }
@@ -409,14 +411,16 @@
 }
 
 .versionBox {
+  box-shadow: 0px 1px 4px #aebecd;
   border-radius: 4px;
-  background-color: #ccc;
+  border: 1px solid #ccc;
   cursor: pointer;
   font-weight: bold;
 }
 
 .versionBox:hover {
   background-color: #2281c7;
+  border-color: #fff;
   transition: all 1s;
 }
 
