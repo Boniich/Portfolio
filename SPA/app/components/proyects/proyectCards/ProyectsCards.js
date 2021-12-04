@@ -1,6 +1,6 @@
 export function ProyectsCards(props){
 
-    let {name, img, description, tag, urlDemo, urlRepo} = props;
+    let {name, img, description, tag, urlDemo, urlRepo,version,urlVersion} = props;
     let length = tag.length;
     let html = "";
 
@@ -10,8 +10,11 @@ export function ProyectsCards(props){
     $imgBox = $doc.createElement("div"),
     $img = $doc.createElement("img"),
     $infoBox = $doc.createElement("div"),
-    $titleBox = $doc.createElement("h1"),
-    $DescriptionBox = $doc.createElement("p");
+    $titleBox = $doc.createElement("div"),
+    $title = $doc.createElement("h1"),
+    $description = $doc.createElement("p"),
+    $titleVersionBox = $doc.createElement("div"),
+    $versionBox = $doc.createElement("div");
 
     // footer of cards
 
@@ -40,15 +43,18 @@ export function ProyectsCards(props){
     $img.classList.add("imgCard");
     $imgBox.classList.add("padding-bottom");
     $infoBox.classList.add("description-proyects");
-    $titleBox.classList.add("padding-bottom");
+    $titleVersionBox.classList.add("titleVersionBox","padding-bottom");
+    $versionBox.classList.add("versionBox");
+
 
 
 
       
       // content
       $img.src = `${img}`;
-      $titleBox.innerHTML = `${name}`;
-      $DescriptionBox.innerHTML = `${description}`;
+      $title .innerHTML = `${name}`;
+      $description.innerHTML = `${description}`;
+      $versionBox.innerHTML = `<a class="version" href="${urlVersion}" target="_blank">v${version}</a>`;
       
       for(let e = 0; e < length; e++){
         html += `<li><p id="${tag[e].idtag}" class="${tag[e].classtag}">${tag[e].tagname}</p></li>`
@@ -62,11 +68,14 @@ export function ProyectsCards(props){
 
 
     $imgBox.appendChild($img);
-    $conteinerBoxCard.appendChild($imgBox);
-    $infoBox.appendChild($titleBox);
-    $infoBox.appendChild($DescriptionBox);
+    $conteinerBoxCard.appendChild($imgBox); 
+    $titleBox.appendChild($title);
+    $titleVersionBox.appendChild($titleBox);
+    $titleVersionBox.appendChild($versionBox);
+    $infoBox.appendChild($titleVersionBox);
+    $infoBox.appendChild($description); 
     $skillsBox.appendChild($skillsList);
-    $conteinerBoxCard.appendChild($infoBox);
+    $conteinerBoxCard.appendChild($infoBox); 
     $conteinerBoxCard.appendChild($skillsBox);
     $footerProyectCards.appendChild($footerBox)
     $card.appendChild($conteinerBoxCard);
