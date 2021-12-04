@@ -6,6 +6,8 @@
       "description": "Sitio web para un mini emprendimiento",
       "urlDemo": "https://ezequielbonino.github.io/Kinihongo-Sitio-web-/",
       "urlRepo": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+      "version": "1.0.0",
+      "urlVersion": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-/blob/master/version.md",
       "tag":[
         {
           "idtag": "html",
@@ -32,6 +34,8 @@
     "description":"Una calculadora similar a la de Windows - Modo Estandar",
     "urlDemo": "https://ezequielbonino.github.io/Calculator/",
     "urlRepo":"https://github.com/EzequielBonino/Calculator",
+    "version": "1.27.3",
+    "urlVersion": "https://github.com/EzequielBonino/Calculator/blob/main/version.md",
     "tag":[
       {
         "idtag": "html",
@@ -65,6 +69,8 @@
     "description": "Copia de TedBlog, usando WordPress API",
     "urlDemo": "https://ezequielbonino.github.io/TedBlogCopy/SPA/index.html",
     "urlRepo":"https://github.com/EzequielBonino/TedBlogCopy",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/TedBlogCopy/blob/main/version.md",
     "tag":[
       {
         "idtag": "html",
@@ -94,6 +100,8 @@
     "description": "Una pequeña pokedex usando React y PokeApi",
     "urlDemo": "https://ezequielbonino.github.io/Pokedex/",
     "urlRepo":"https://github.com/EzequielBonino/Pokedex",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/Pokedex/blob/main/version.md",
     "tag":[
       {
         "idtag": "react",
@@ -111,11 +119,13 @@
   },
   {
     "id": 5,
-    "name": "Random Passoword",
+    "name": "Random Pass",
     "img": "app/assets/img/randompassoword_img.jpg",
     "description": "Genera una contraseña random y es posible guardarla junto al usuario y nombre de un sitio web",
     "urlDemo": "",
     "urlRepo":"https://github.com/EzequielBonino/RandomPassword",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/RandomPassword/blob/V1.0/version.md",
     "tag":[
       {
         "idtag": "react",
