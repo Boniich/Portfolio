@@ -64,10 +64,10 @@
   },
   {
     "id": 3,
-    "name": "CopyTedBlog",
+    "name": "TedBlogCopy",
     "img": "app/assets/img/tedblog_img.jpg",
     "description": "Copia de TedBlog, usando WordPress API",
-    "urlDemo": "https://boniich.github.io/TedBlogCopy/SPA/index.html",
+    "urlDemo": "https://boniich.github.io/TedBlogCopy/",
     "urlRepo":"https://github.com/boniich/TedBlogCopy",
     "version": "1.0.0",
     "urlVersion": "https://github.com/boniich/TedBlogCopy/blob/main/version.md",
