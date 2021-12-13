@@ -4,10 +4,10 @@
     "name": "Kinihongo",
     "img": "app/assets/img/kinihongo_img.jpg",
     "description": "Sitio web para un mini emprendimiento",
-    "urlDemo": "https://ezequielbonino.github.io/Kinihongo-Sitio-web-/",
-    "urlRepo": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+    "urlDemo": "https://boniich.github.io/Kinihongo-Sitio-web-/",
+    "urlRepo": "https://github.com/boniich/Kinihongo-Sitio-web-",
     "version": "1.0.0",
-    "urlVersion": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-/blob/master/version.md",
+    "urlVersion": "https://github.com/boniich/Kinihongo-Sitio-web-/blob/master/version.md",
     "tag":[
       {
         "idtag": "html",
@@ -32,10 +32,10 @@
   "name": "Calculadora",
   "img": "app/assets/img/calculadoraImg.jpg",
   "description":"Una calculadora similar a la de Windows - Modo Estandar",
-  "urlDemo": "https://ezequielbonino.github.io/Calculator/",
-  "urlRepo":"https://github.com/EzequielBonino/Calculator",
-  "version": "1.27.3",
-  "urlVersion": "https://github.com/EzequielBonino/Calculator/blob/main/version.md",
+  "urlDemo": "https://boniich.github.io/Calculator/",
+  "urlRepo":"https://github.com/boniich/Calculator",
+  "version": "1.36.8",
+  "urlVersion": "https://github.com/boniich/Calculator/blob/main/version.md",
   "tag":[
     {
       "idtag": "html",
@@ -67,10 +67,10 @@
   "name": "CopyTedBlog",
   "img": "app/assets/img/tedblog_img.jpg",
   "description": "Copia de TedBlog, usando WordPress API",
-  "urlDemo": "https://ezequielbonino.github.io/TedBlogCopy/SPA/index.html",
-  "urlRepo":"https://github.com/EzequielBonino/TedBlogCopy",
+  "urlDemo": "https://boniich.github.io/TedBlogCopy/SPA/index.html",
+  "urlRepo":"https://github.com/boniich/TedBlogCopy",
   "version": "1.0.0",
-  "urlVersion": "https://github.com/EzequielBonino/TedBlogCopy/blob/main/version.md",
+  "urlVersion": "https://github.com/boniich/TedBlogCopy/blob/main/version.md",
   "tag":[
     {
       "idtag": "html",
