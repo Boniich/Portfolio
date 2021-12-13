@@ -1,0 +1,144 @@
+[
+  {
+      "id": 1,
+      "name": "Kinihongo",
+      "img": "app/assets/img/kinihongo_img.jpg",
+      "description": "Sitio web para un mini emprendimiento",
+      "urlDemo": "https://ezequielbonino.github.io/Kinihongo-Sitio-web-/",
+      "urlRepo": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-",
+      "version": "1.0.0",
+      "urlVersion": "https://github.com/EzequielBonino/Kinihongo-Sitio-web-/blob/master/version.md",
+      "tag":[
+        {
+          "idtag": "html",
+          "classtag": "skills-proyects",
+          "tagname": "Html"
+        },{
+
+          "idtag": "css",
+          "classtag": "skills-proyects",
+          "tagname": "Css"
+        },{
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      }
+  
+      ]
+  },
+  {
+    "id": 2,
+    "name": "Calculadora",
+    "img": "app/assets/img/calculadoraImg.jpg",
+    "description":"Una calculadora similar a la de Windows - Modo Estandar",
+    "urlDemo": "https://ezequielbonino.github.io/Calculator/",
+    "urlRepo":"https://github.com/EzequielBonino/Calculator",
+    "version": "1.27.3",
+    "urlVersion": "https://github.com/EzequielBonino/Calculator/blob/main/version.md",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
+  
+        "idtag": "sass",
+        "classtag": "skills-proyects",
+        "tagname": "Sass"
+      },{
+  
+  
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      },{
+  
+  
+        "idtag": "test",
+        "classtag": "skills-proyects",
+        "tagname": "Test"
+      }
+  
+    ]
+  },
+  {
+    "id": 3,
+    "name": "CopyTedBlog",
+    "img": "app/assets/img/tedblog_img.jpg",
+    "description": "Copia de TedBlog, usando WordPress API",
+    "urlDemo": "https://ezequielbonino.github.io/TedBlogCopy/SPA/index.html",
+    "urlRepo":"https://github.com/EzequielBonino/TedBlogCopy",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/TedBlogCopy/blob/main/version.md",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
+
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      },{
+  
+
+        "idtag": "js",
+        "classtag": "skills-proyects",
+        "tagname": "JavaScript"
+      }
+      
+
+    ]
+  
+  },
+  {
+    "id": 4,
+    "name": "Pokedex",
+    "img": "app/assets/img/pokedex_img.jpg",
+    "description": "Una pequeña pokedex usando React y PokeApi",
+    "urlDemo": "https://ezequielbonino.github.io/Pokedex/",
+    "urlRepo":"https://github.com/EzequielBonino/Pokedex",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/Pokedex/blob/main/version.md",
+    "tag":[
+      {
+        "idtag": "react",
+        "classtag": "skills-proyects",
+        "tagname": "React"
+      },{
+
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      }
+
+    ]
+  
+  },
+  {
+    "id": 5,
+    "name": "Random Pass",
+    "img": "app/assets/img/randompassoword_img.jpg",
+    "description": "Genera una contraseña random y es posible guardarla junto al usuario y nombre de un sitio web",
+    "urlDemo": "",
+    "urlRepo":"https://github.com/EzequielBonino/RandomPassword",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/EzequielBonino/RandomPassword/blob/V1.0/version.md",
+    "tag":[
+      {
+        "idtag": "react",
+        "classtag": "skills-proyects",
+        "tagname": "React"
+      },{
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      }
+    ]
+  
+  }
+
+
+]
