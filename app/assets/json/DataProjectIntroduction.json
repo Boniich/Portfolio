@@ -69,7 +69,7 @@
   "description": "Copia de TedBlog, usando WordPress API",
   "urlDemo": "https://boniich.github.io/TedBlogCopy/",
   "urlRepo":"https://github.com/boniich/TedBlogCopy",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "urlVersion": "https://github.com/boniich/TedBlogCopy/blob/main/version.md",
   "tag":[
     {
