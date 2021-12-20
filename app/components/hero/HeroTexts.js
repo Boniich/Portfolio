@@ -11,7 +11,7 @@ export function HeroTexts(){
     $title.classList.add("padding-bottom");
 
     $tag.innerHTML = "Portfolio";
-    $title.innerHTML = "Desarrollador Full Stack";
+    $title.innerHTML = "Desarrollador Front End";
     $author.innerHTML = "Por Ezequiel Bonino";
 
     $HeroTexts.appendChild($tag)
