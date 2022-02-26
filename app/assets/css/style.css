@@ -53,7 +53,7 @@
 /* Class */
 .main,
 .about-me {
-  background-color: #fff;
+  background-color: #0e0d0d;
 }
 
 .grid-fluid {
@@ -544,9 +544,9 @@
   }
 
   .box-about-me-conteiner,
-  .hero-content-about-me,
-  .box-proyects,
-  .contact-me {
+.hero-content-about-me,
+.box-proyects,
+.contact-me {
     max-width: 1024px;
   }
 
@@ -571,14 +571,14 @@
   }
 
   .interest-box li,
-  .soft-skills-box li,
-  .hobbies-box li {
+.soft-skills-box li,
+.hobbies-box li {
     padding: 5px 8px;
   }
 
   .interest-box p,
-  .soft-skills-box p,
-  .hobbies-box p {
+.soft-skills-box p,
+.hobbies-box p {
     padding: 10px 0;
     font-size: 20px;
   }
@@ -598,13 +598,13 @@
   }
 
   .box p,
-  .box ul li {
+.box ul li {
     position: relative;
     z-index: 1;
   }
 
   .box:hover p,
-  .box:hover li {
+.box:hover li {
     color: #fff;
   }
 
@@ -628,8 +628,8 @@
   }
 
   .interest-box,
-  .soft-skills-box,
-  .hobbies-box {
+.soft-skills-box,
+.hobbies-box {
     width: 180px;
     border: 1px solid #ccc;
     border-radius: 4px;
