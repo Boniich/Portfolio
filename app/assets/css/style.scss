@@ -68,8 +68,7 @@ $test: #85adad;
 /* Class */
 .main,
 .about-me {
-  background-color: #0e0d0d;
-  //   @include mixin.background;
+  @include mixin.background;
 }
 
 .grid-fluid {
