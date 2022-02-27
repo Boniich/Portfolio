@@ -33,7 +33,7 @@ export function ProyectsCards(props) {
   $conteinerBoxCard.classList.add("conteinerBoxCard");
 
   $skillsBox.classList.add("skill-tag-box");
-  $skillsList.classList.add("skill-tag-card");
+  $skillsList.classList.add("skill-tag-list");
 
   $card.classList.add("proyectCard");
 
