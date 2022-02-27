@@ -17,7 +17,13 @@ $css: cornflowerblue;
 $sass: #ff4d94;
 $javaScript: yellow;
 $nodejs: #57b857;
+$boostrap: #7952b3;
+$sweetAlert: #786b8b;
 $react: #61dafb;
+$styledComponent: #d87093;
+$redux: #8e6fc0;
+$axios: #10663eb6;
+$fetch: #036c74;
 $test: #85adad;
 
 .hidden {
@@ -50,11 +56,23 @@ $test: #85adad;
   @include mixin.background($backgroundColor: $nodejs);
 }
 
+#boostrap {
+  @include mixin.background($backgroundColor: $boostrap);
+}
+
+#sweetAlert {
+  @include mixin.background($backgroundColor: $sweetAlert);
+}
+
 #react {
   @include mixin.background($backgroundColor: $react);
 }
 #test {
   @include mixin.background($backgroundColor: $test);
+}
+
+#axios {
+  @include mixin.background($backgroundColor: $axios);
 }
 
 #link-linkeding {
@@ -126,6 +144,12 @@ $test: #85adad;
 .navList li a:hover {
   color: $blue;
 }
+
+// .sub-nav {
+//   height: 10px;
+//   overflow: hidden;
+//   transition: all 0.3s;
+// }
 
 .seccion-tag {
   color: $blue;
