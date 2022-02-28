@@ -26,6 +26,16 @@ $axios: #10663eb6;
 $fetch: #036c74;
 $test: #85adad;
 
+/*Tags*/
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $blue;
+}
+
 .hidden {
   overflow: hidden;
 }
@@ -329,6 +339,14 @@ $test: #85adad;
 .skill-tag-list {
   height: 56px;
   overflow: auto;
+}
+
+.skill-tag-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.skill-tag-list::-webkit-scrollbar-thumb {
+  background-color: $blue;
 }
 
 .skill-tag-list li {

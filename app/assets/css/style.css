@@ -5,6 +5,15 @@
   list-style: none;
 }
 
+/*Tags*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2283c9;
+}
+
 .hidden {
   overflow: hidden;
 }
@@ -299,6 +308,14 @@
 .skill-tag-list {
   height: 56px;
   overflow: auto;
+}
+
+.skill-tag-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.skill-tag-list::-webkit-scrollbar-thumb {
+  background-color: #2283c9;
 }
 
 .skill-tag-list li {
