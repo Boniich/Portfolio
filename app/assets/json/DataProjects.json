@@ -1,32 +1,41 @@
-[
-  {
-      "id": 1,
-      "name": "Kinihongo",
-      "img": "app/assets/img/kinihongo_img.jpg",
-      "description": "Sitio web para un mini emprendimiento",
-      "urlDemo": "https://boniich.github.io/Kinihongo-Sitio-web-/",
-      "urlRepo": "https://github.com/boniich/Kinihongo-Sitio-web-",
-      "version": "1.0.0",
-      "urlVersion": "https://github.com/boniich/Kinihongo-Sitio-web-/blob/master/version.md",
-      "tag":[
-        {
-          "idtag": "html",
-          "classtag": "skills-proyects",
-          "tagname": "Html"
-        },{
+[{
+  "id": 1,
+  "name": "Hotel la Montaña",
+  "img": "app/assets/img/hotellamontana_img.jpg",
+  "description": "Esta app te mostrara un menu y todos sus valores",
+  "urlDemo": "https://github.com/Boniich/HotelLaMontana/blob/main/demo.md",
+  "urlRepo": "https://github.com/Boniich/HotelLaMontana",
+  "version": "1.7.2",
+  "urlVersion": "https://github.com/Boniich/HotelLaMontana/blob/main/version.md",
+  "tag":[
+    {
 
-          "idtag": "css",
-          "classtag": "skills-proyects",
-          "tagname": "Css"
-        },{
+      "idtag": "react",
+      "classtag": "skills-proyects",
+      "tagname": "React"
+    },
+    {
+      "idtag": "boostrap",
+      "classtag": "skills-proyects",
+      "tagname": "Boostrap"
+    },{
 
-        "idtag": "js",
-        "classtag": "skills-proyects",
-        "tagname": "JavaScript"
-      }
-  
-      ]
-  },
+      "idtag": "css",
+      "classtag": "skills-proyects",
+      "tagname": "Css"
+    },{
+
+      "idtag": "axios",
+      "classtag": "skills-proyects",
+      "tagname": "Axios"
+    },{
+
+      "idtag": "sweetAlert",
+      "classtag": "skills-proyects",
+      "tagname": "Sweet Alert"
+    }
+  ]
+},
   {
     "id": 2,
     "name": "Calculadora",
@@ -138,7 +147,33 @@
       }
     ]
   
-  }
+  },{
+    "id": 6,
+    "name": "Kinihongo",
+    "img": "app/assets/img/kinihongo_img.jpg",
+    "description": "Sitio web para un mini emprendimiento",
+    "urlDemo": "https://boniich.github.io/Kinihongo-Sitio-web-/",
+    "urlRepo": "https://github.com/boniich/Kinihongo-Sitio-web-",
+    "version": "1.0.0",
+    "urlVersion": "https://github.com/boniich/Kinihongo-Sitio-web-/blob/master/version.md",
+    "tag":[
+      {
+        "idtag": "html",
+        "classtag": "skills-proyects",
+        "tagname": "Html"
+      },{
 
+        "idtag": "css",
+        "classtag": "skills-proyects",
+        "tagname": "Css"
+      },{
+
+      "idtag": "js",
+      "classtag": "skills-proyects",
+      "tagname": "JavaScript"
+    }
+
+    ]
+}
 
 ]

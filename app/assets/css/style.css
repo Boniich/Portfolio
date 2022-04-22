@@ -5,6 +5,15 @@
   list-style: none;
 }
 
+/*Tags*/
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #2283c9;
+}
+
 .hidden {
   overflow: hidden;
 }
@@ -34,12 +43,24 @@
   background-color: #57b857;
 }
 
+#boostrap {
+  background-color: #7952b3;
+}
+
+#sweetAlert {
+  background-color: #786b8b;
+}
+
 #react {
   background-color: #61dafb;
 }
 
 #test {
   background-color: #85adad;
+}
+
+#axios {
+  background-color: #10663eb6;
 }
 
 #link-linkeding {
@@ -284,7 +305,20 @@
   padding: 15px 12px 0 12px;
 }
 
-.skill-tag-card li {
+.skill-tag-list {
+  height: 56px;
+  overflow: auto;
+}
+
+.skill-tag-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.skill-tag-list::-webkit-scrollbar-thumb {
+  background-color: #2283c9;
+}
+
+.skill-tag-list li {
   display: inline-block;
   padding: 3px;
 }
@@ -419,6 +453,7 @@
 }
 
 .versionBox {
+  height: 28px;
   box-shadow: 0px 1px 4px #aebecd;
   border-radius: 4px;
   border: 1px solid #ccc;

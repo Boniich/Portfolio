@@ -17,8 +17,24 @@ $css: cornflowerblue;
 $sass: #ff4d94;
 $javaScript: yellow;
 $nodejs: #57b857;
+$boostrap: #7952b3;
+$sweetAlert: #786b8b;
 $react: #61dafb;
+$styledComponent: #d87093;
+$redux: #8e6fc0;
+$axios: #10663eb6;
+$fetch: #036c74;
 $test: #85adad;
+
+/*Tags*/
+
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $blue;
+}
 
 .hidden {
   overflow: hidden;
@@ -50,11 +66,23 @@ $test: #85adad;
   @include mixin.background($backgroundColor: $nodejs);
 }
 
+#boostrap {
+  @include mixin.background($backgroundColor: $boostrap);
+}
+
+#sweetAlert {
+  @include mixin.background($backgroundColor: $sweetAlert);
+}
+
 #react {
   @include mixin.background($backgroundColor: $react);
 }
 #test {
   @include mixin.background($backgroundColor: $test);
+}
+
+#axios {
+  @include mixin.background($backgroundColor: $axios);
 }
 
 #link-linkeding {
@@ -126,6 +154,12 @@ $test: #85adad;
 .navList li a:hover {
   color: $blue;
 }
+
+// .sub-nav {
+//   height: 10px;
+//   overflow: hidden;
+//   transition: all 0.3s;
+// }
 
 .seccion-tag {
   color: $blue;
@@ -302,7 +336,20 @@ $test: #85adad;
   padding: 15px 12px 0 12px;
 }
 
-.skill-tag-card li {
+.skill-tag-list {
+  height: 56px;
+  overflow: auto;
+}
+
+.skill-tag-list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.skill-tag-list::-webkit-scrollbar-thumb {
+  background-color: $blue;
+}
+
+.skill-tag-list li {
   display: inline-block;
   padding: 3px;
 }
@@ -437,6 +484,7 @@ $test: #85adad;
 }
 
 .versionBox {
+  height: 28px;
   box-shadow: 0px 1px 4px #aebecd;
   border-radius: 4px;
   border: 1px solid #ccc;

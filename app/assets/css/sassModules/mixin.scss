@@ -1,3 +1,4 @@
-@mixin background ($backgroundColor: #fff){
-    background-color: $backgroundColor;
+@mixin background($backgroundColor: #fff) {
+  background-color: $backgroundColor;
+  color: #0e0d0d;
 }
