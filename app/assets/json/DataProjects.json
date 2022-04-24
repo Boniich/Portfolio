@@ -4,7 +4,7 @@
   "img": "app/assets/img/hotellamontana_img.jpg",
   "description": "Esta app te mostrara un menu y todos sus valores",
   "urlDemo": "https://github.com/Boniich/HotelLaMontana/blob/main/demo.md",
-  "urlRepo": "https://github.com/Boniich/HotelLaMontana",
+  "urlRepo": "https://hotel-la-montana.vercel.app/",
   "version": "1.7.2",
   "urlVersion": "https://github.com/Boniich/HotelLaMontana/blob/main/version.md",
   "tag":[
