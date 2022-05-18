@@ -85,6 +85,10 @@ body::-webkit-scrollbar-thumb {
   @include mixin.background($backgroundColor: $axios);
 }
 
+#redux {
+  @include mixin.background($backgroundColor: $redux);
+}
+
 #link-linkeding {
   color: $black;
 }
@@ -105,6 +109,7 @@ body::-webkit-scrollbar-thumb {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+
 
 .conteiner {
   padding: 120px 0;

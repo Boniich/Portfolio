@@ -73,6 +73,11 @@ body::-webkit-scrollbar-thumb {
   color: #0e0d0d;
 }
 
+#redux {
+  background-color: #8e6fc0;
+  color: #0e0d0d;
+}
+
 #link-linkeding {
   color: #0e0d0d;
 }

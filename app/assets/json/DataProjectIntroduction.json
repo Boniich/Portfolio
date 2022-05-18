@@ -71,21 +71,26 @@
       "tagname": "Sweet Alert"
     }
   ]
-},
-{
+},{
   "id": 3,
-  "name": "TedBlogCopy",
-  "img": "app/assets/img/tedblog_img.jpg",
-  "description": "Copia de TedBlog, usando WordPress API",
-  "urlDemo": "https://boniich.github.io/TedBlogCopy/",
-  "urlRepo":"https://github.com/boniich/TedBlogCopy",
-  "version": "1.0.1",
-  "urlVersion": "https://github.com/boniich/TedBlogCopy/blob/main/version.md",
+  "name": "Somos Mas",
+  "img": "app/assets/img/somos_mas_img.jpg",
+  "description": "(Proyecto Grupal) App desarrollada en la aceleracion de React en Alkemy",
+  "urlDemo": "https://somos-mas-ten.vercel.app/",
+  "urlRepo": "https://github.com/Boniich/OT161-React-client",
+  "version": "1.0.0",
+  "urlVersion": "",
   "tag":[
     {
-      "idtag": "html",
+
+      "idtag": "react",
       "classtag": "skills-proyects",
-      "tagname": "Html"
+      "tagname": "React"
+    },
+    {
+      "idtag": "boostrap",
+      "classtag": "skills-proyects",
+      "tagname": "Boostrap"
     },{
 
       "idtag": "css",
@@ -93,15 +98,24 @@
       "tagname": "Css"
     },{
 
-
-      "idtag": "js",
+      "idtag": "axios",
       "classtag": "skills-proyects",
-      "tagname": "JavaScript"
+      "tagname": "Axios"
+    },{
+
+      "idtag": "sweetAlert",
+      "classtag": "skills-proyects",
+      "tagname": "Sweet Alert"
+    },{
+      "idtag": "redux",
+      "classtag": "skills-proyects",
+      "tagname": "Redux"
+    },{
+      "idtag": "test",
+      "classtag": "skills-proyects",
+      "tagname": "React Test Library"
     }
-    
-
   ]
-
 }
 
 ]
