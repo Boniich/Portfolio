@@ -85,6 +85,10 @@ body::-webkit-scrollbar-thumb {
   @include mixin.background($backgroundColor: $axios);
 }
 
+#redux {
+  @include mixin.background($backgroundColor: $redux);
+}
+
 #link-linkeding {
   color: $black;
 }

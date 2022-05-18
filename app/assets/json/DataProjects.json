@@ -125,28 +125,51 @@
 
     ]
   
-  },
-  {
+  },{
     "id": 5,
-    "name": "Random Pass",
-    "img": "app/assets/img/randompassoword_img.jpg",
-    "description": "Genera una contraseña random y es posible guardarla junto al usuario y nombre de un sitio web",
-    "urlDemo": "",
-    "urlRepo":"https://github.com/boniich/RandomPassword",
+    "name": "Somos Mas",
+    "img": "app/assets/img/somos_mas_img.jpg",
+    "description": "(Proyecto Grupal) App desarrollada en la aceleracion de React en Alkemy",
+    "urlDemo": "https://somos-mas-ten.vercel.app/",
+    "urlRepo": "https://github.com/Boniich/OT161-React-client",
     "version": "1.0.0",
-    "urlVersion": "https://github.com/boniich/RandomPassword/blob/V1.0/version.md",
+    "urlVersion": "",
     "tag":[
       {
+  
         "idtag": "react",
         "classtag": "skills-proyects",
         "tagname": "React"
+      },
+      {
+        "idtag": "boostrap",
+        "classtag": "skills-proyects",
+        "tagname": "Boostrap"
       },{
+  
         "idtag": "css",
         "classtag": "skills-proyects",
         "tagname": "Css"
+      },{
+  
+        "idtag": "axios",
+        "classtag": "skills-proyects",
+        "tagname": "Axios"
+      },{
+  
+        "idtag": "sweetAlert",
+        "classtag": "skills-proyects",
+        "tagname": "Sweet Alert"
+      },{
+        "idtag": "redux",
+        "classtag": "skills-proyects",
+        "tagname": "Redux"
+      },{
+        "idtag": "test",
+        "classtag": "skills-proyects",
+        "tagname": "React Test Library"
       }
     ]
-  
   },{
     "id": 6,
     "name": "Kinihongo",

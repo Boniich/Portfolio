@@ -25,42 +25,57 @@ body::-webkit-scrollbar-thumb {
 
 #html {
   background-color: orange;
+  color: #0e0d0d;
 }
 
 #css {
   background-color: cornflowerblue;
+  color: #0e0d0d;
 }
 
 #sass {
   background-color: #ff4d94;
+  color: #0e0d0d;
 }
 
 #js {
   background-color: yellow;
+  color: #0e0d0d;
 }
 
 #nodejs {
   background-color: #57b857;
+  color: #0e0d0d;
 }
 
 #boostrap {
   background-color: #7952b3;
+  color: #0e0d0d;
 }
 
 #sweetAlert {
   background-color: #786b8b;
+  color: #0e0d0d;
 }
 
 #react {
   background-color: #61dafb;
+  color: #0e0d0d;
 }
 
 #test {
   background-color: #85adad;
+  color: #0e0d0d;
 }
 
 #axios {
   background-color: #10663eb6;
+  color: #0e0d0d;
+}
+
+#redux {
+  background-color: #8e6fc0;
+  color: #0e0d0d;
 }
 
 #link-linkeding {
@@ -75,6 +90,7 @@ body::-webkit-scrollbar-thumb {
 .main,
 .about-me {
   background-color: #fff;
+  color: #0e0d0d;
 }
 
 .grid-fluid {
@@ -176,6 +192,7 @@ body::-webkit-scrollbar-thumb {
 /* hero about me */
 .hero-about-me {
   background-color: #fff;
+  color: #0e0d0d;
   height: 300px;
 }
 
