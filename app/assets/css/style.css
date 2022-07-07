@@ -11,7 +11,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #2283c9;
+  background-color: rgb(34, 131, 201);
 }
 
 .hidden {
@@ -69,7 +69,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #axios {
-  background-color: #10663eb6;
+  background-color: rgba(16, 102, 62, 0.7137254902);
   color: #0e0d0d;
 }
 
@@ -78,12 +78,17 @@ body::-webkit-scrollbar-thumb {
   color: #0e0d0d;
 }
 
+#styledComponentes {
+  background-color: #d87093;
+  color: #0e0d0d;
+}
+
 #link-linkeding {
   color: #0e0d0d;
 }
 
 #link-linkeding:hover {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
 }
 
 /* Class */
@@ -146,11 +151,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navList li a:hover {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
 }
 
 .seccion-tag {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
   font-size: 18px;
   padding-bottom: 20px;
 }
@@ -236,7 +241,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-proyect-aboutMe a {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
   padding: 10px 13px;
   display: flex;
 }
@@ -244,7 +249,7 @@ body::-webkit-scrollbar-thumb {
 .btn-proyect-aboutMe a:hover,
 .btn-proyect-aboutMe:hover {
   color: #fff;
-  background-color: #2283c9;
+  background-color: rgb(34, 131, 201);
   border-radius: 4px;
 }
 
@@ -270,7 +275,7 @@ body::-webkit-scrollbar-thumb {
   height: auto;
   border: 1px solid #ccc;
   border-radius: 4px;
-  box-shadow: 0px 1px 4px #aebecd;
+  box-shadow: 0px 1px 4px rgb(174, 190, 205);
   margin: 1rem auto;
   display: flex;
   flex-direction: column;
@@ -279,7 +284,7 @@ body::-webkit-scrollbar-thumb {
 
 .proyectCard:hover,
 .btn-proyect-aboutMe:hover {
-  box-shadow: 3px 3px 10px #aebecd;
+  box-shadow: 3px 3px 10px rgb(174, 190, 205);
 }
 
 .description-proyects {
@@ -306,7 +311,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .button-proyect:hover {
-  background-color: #2283c9;
+  background-color: rgb(34, 131, 201);
   border-color: #fff;
   color: #fff;
   transition: all 1s;
@@ -332,7 +337,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skill-tag-list::-webkit-scrollbar-thumb {
-  background-color: #2283c9;
+  background-color: rgb(34, 131, 201);
 }
 
 .skill-tag-list li {
@@ -346,7 +351,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title-sections {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
   text-align: center;
   font-size: 30px;
 }
@@ -361,7 +366,7 @@ body::-webkit-scrollbar-thumb {
   overflow-y: auto;
   border-radius: 4px;
   padding: 20px 10px;
-  box-shadow: #aebecd 0px 1px 4px;
+  box-shadow: rgb(174, 190, 205) 0px 1px 4px;
 }
 
 .skills-list li {
@@ -402,7 +407,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .author-box p:hover {
-  color: #2283c9;
+  color: rgb(34, 131, 201);
 }
 
 .button-conteiner {
@@ -479,7 +484,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .versionBox:hover {
-  background-color: #2283c9;
+  background-color: rgb(34, 131, 201);
   border-color: #fff;
   transition: all 1s;
 }
@@ -506,7 +511,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     justify-content: center;
   }
-
   .navList {
     position: relative;
     height: auto;
@@ -517,20 +521,16 @@ body::-webkit-scrollbar-thumb {
     display: inline;
     opacity: 100;
   }
-
   .nav > .navList li {
     display: inline-block;
   }
-
   .nav > .navList li a {
     color: #fff;
     font-size: 18px;
   }
-
   .nav > .navList li a:hover {
-    color: #2283c9;
+    color: rgb(34, 131, 201);
   }
-
   .nav-conteiner {
     top: 0;
     position: fixed;
@@ -538,11 +538,9 @@ body::-webkit-scrollbar-thumb {
     z-index: 80;
     transition: all 0.3s;
   }
-
   .nav-conteiner.down {
     top: -50px;
   }
-
   .sub-nav {
     display: none;
     position: absolute;
@@ -550,28 +548,22 @@ body::-webkit-scrollbar-thumb {
     background-color: #fff;
     border: 1px solid #ccc;
   }
-
   .nav li:hover .sub-nav {
     display: block;
   }
-
   .nav > .navList li a {
     color: black;
     text-transform: uppercase;
   }
-
   .icon {
     display: none;
   }
-
   .skill-box {
     height: 16rem;
   }
-
   .skills-box-conteiner {
     width: 740px;
   }
-
   .contactme-text h1 {
     font-size: 25px;
   }
@@ -581,85 +573,69 @@ body::-webkit-scrollbar-thumb {
   #id-about-me {
     border-right: 1px solid #ccc;
   }
-
   .skills-box-conteiner {
     width: 1000px;
   }
-
   .hero-content {
     margin: 0 auto;
     max-width: 1500px;
   }
-
   .box-main {
     max-width: 1024px;
   }
-
   .box-about-me-conteiner,
 .hero-content-about-me,
 .box-proyects,
 .contact-me {
     max-width: 1024px;
   }
-
   .about-me-intro h6 {
     font-size: 25px;
   }
-
   .about-me-box {
     padding-bottom: 1.5rem;
     font-size: 1.2rem;
   }
-
   #id-about-me-conteiner {
     display: flex;
     gap: 15px;
   }
-
   #id-about-me-conteiner > .conteinerCards {
     flex-direction: column;
     gap: 15px;
     justify-content: initial;
   }
-
   .interest-box li,
 .soft-skills-box li,
 .hobbies-box li {
     padding: 5px 8px;
   }
-
   .interest-box p,
 .soft-skills-box p,
 .hobbies-box p {
     padding: 10px 0;
     font-size: 20px;
   }
-
   .titleCards {
     text-align: center;
   }
-
   .conteinerCards {
     display: flex;
     justify-content: space-around;
   }
-
   .box {
     position: relative;
     overflow: hidden;
   }
-
   .box p,
 .box ul li {
     position: relative;
     z-index: 1;
   }
-
   .box:hover p,
 .box:hover li {
     color: #fff;
   }
-
   .box .hover-animation {
     width: 100px;
     height: 100px;
@@ -668,17 +644,15 @@ body::-webkit-scrollbar-thumb {
     left: -170px;
     border-radius: 100%;
     transition: all 300ms;
-    background: linear-gradient(to bottom, #2281c7, #399fca);
+    background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(57, 159, 202));
     /* background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(45, 55, 59));  */
   }
-
   .box:hover .hover-animation {
     width: 400px;
     height: 400px;
     top: -70px;
     left: -70px;
   }
-
   .interest-box,
 .soft-skills-box,
 .hobbies-box {
@@ -687,25 +661,20 @@ body::-webkit-scrollbar-thumb {
     border-radius: 4px;
     box-shadow: 0px 1px 1px #aebecd;
   }
-
   .icon-skills:hover {
     transform: scale(1.2);
     transition: all 0.2s;
   }
-
   .button-conteiner {
     max-width: 1024px;
   }
-
   .footer-conteiner {
     margin: 0 auto;
     max-width: 1500px;
   }
-
   .contactme-text h1 {
     font-size: 32px;
   }
-
   .conteiner-personal-img {
     margin: 0 0;
   }

@@ -1,5 +1,33 @@
 [{
   "id": 1,
+  "name": "Home Banking San Patrick",
+  "img": "app/assets/img/homebanking.jpg",
+  "description": "(Grupal) Home Banking desarrollado bajo la iniciativa Idea for Idea. Datos de Acceso: Email: anarod@gmail.com pass: BushidoTrooper123" 
+  ,
+  "urlDemo": "https://home-banking-psi.vercel.app/",
+  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+  "version": "1.0.0",
+  "urlVersion": "",
+  "tag":[
+    {
+
+      "idtag": "react",
+      "classtag": "skills-proyects",
+      "tagname": "React"
+    },
+    {
+      "idtag": "styledComponentes",
+      "classtag": "skills-proyects",
+      "tagname": "Styled component"
+    },{
+
+      "idtag": "axios",
+      "classtag": "skills-proyects",
+      "tagname": "Axios"
+    }
+  ]
+},{
+  "id": 2,
   "name": "Hotel la Montaña",
   "img": "app/assets/img/hotellamontana_img.jpg",
   "description": "Esta app te mostrara un menu y todos sus valores",
@@ -37,7 +65,7 @@
   ]
 },
   {
-    "id": 2,
+    "id": 3,
     "name": "Calculadora",
     "img": "app/assets/img/calculadoraImg.jpg",
     "description":"Una calculadora similar a la de Windows - Modo Estandar",
@@ -72,7 +100,7 @@
     ]
   },
   {
-    "id": 3,
+    "id": 4,
     "name": "TedBlogCopy",
     "img": "app/assets/img/tedblog_img.jpg",
     "description": "Copia de TedBlog, usando WordPress API",
@@ -98,30 +126,6 @@
         "tagname": "JavaScript"
       }
       
-
-    ]
-  
-  },
-  {
-    "id": 4,
-    "name": "Pokedex",
-    "img": "app/assets/img/pokedex_img.jpg",
-    "description": "Una pequeña pokedex usando React y PokeApi",
-    "urlDemo": "https://boniich.github.io/Pokedex/",
-    "urlRepo":"https://github.com/boniich/Pokedex",
-    "version": "1.0.0",
-    "urlVersion": "https://github.com/boniich/Pokedex/blob/main/version.md",
-    "tag":[
-      {
-        "idtag": "react",
-        "classtag": "skills-proyects",
-        "tagname": "React"
-      },{
-
-        "idtag": "css",
-        "classtag": "skills-proyects",
-        "tagname": "Css"
-      }
 
     ]
   
@@ -167,29 +171,24 @@
     ]
   },{
     "id": 6,
-    "name": "Kinihongo",
-    "img": "app/assets/img/kinihongo_img.jpg",
-    "description": "Sitio web para un mini emprendimiento",
-    "urlDemo": "https://boniich.github.io/Kinihongo-Sitio-web-/",
-    "urlRepo": "https://github.com/boniich/Kinihongo-Sitio-web-",
+    "name": "Juego de la vida",
+    "img": "app/assets/img/gameoflife.jpg",
+    "description": "Simulacion celular creada por el matematico Convay",
+    "urlDemo": "https://game-of-life-boniich.vercel.app",
+    "urlRepo": "https://github.com/Boniich/GameOfLife",
     "version": "1.0.0",
-    "urlVersion": "https://github.com/boniich/Kinihongo-Sitio-web-/blob/master/version.md",
+    "urlVersion": "",
     "tag":[
       {
-        "idtag": "html",
+        "idtag": "react",
         "classtag": "skills-proyects",
-        "tagname": "Html"
+        "tagname": "React"
       },{
 
         "idtag": "css",
         "classtag": "skills-proyects",
         "tagname": "Css"
-      },{
-
-      "idtag": "js",
-      "classtag": "skills-proyects",
-      "tagname": "JavaScript"
-    }
+      }
 
     ]
 }

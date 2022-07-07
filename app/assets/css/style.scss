@@ -20,7 +20,7 @@ $nodejs: #57b857;
 $boostrap: #7952b3;
 $sweetAlert: #786b8b;
 $react: #61dafb;
-$styledComponent: #d87093;
+$styledComponentes: #d87093;
 $redux: #8e6fc0;
 $axios: #10663eb6;
 $fetch: #036c74;
@@ -88,6 +88,11 @@ body::-webkit-scrollbar-thumb {
 #redux {
   @include mixin.background($backgroundColor: $redux);
 }
+
+#styledComponentes {
+  @include mixin.background($backgroundColor: $styledComponentes);
+}
+
 
 #link-linkeding {
   color: $black;

@@ -36,13 +36,14 @@
 },
 {
   "id": 2,
-  "name": "Hotel la Montaña",
-  "img": "app/assets/img/hotellamontana_img.jpg",
-  "description": "Esta app te mostrara un menu y todos sus valores",
-  "urlDemo": "https://hotel-la-montana.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/HotelLaMontana",
-  "version": "1.7.2",
-  "urlVersion": "https://github.com/Boniich/HotelLaMontana/blob/main/version.md",
+  "name": "Home Banking San Patrick",
+  "img": "app/assets/img/homebanking.jpg",
+  "description": "(Grupal) Home Banking desarrollado bajo la iniciativa Idea for Idea. Datos de Acceso: Email: anarod@gmail.com pass: BushidoTrooper123" 
+  ,
+  "urlDemo": "https://home-banking-psi.vercel.app/",
+  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+  "version": "1.0.0",
+  "urlVersion": "",
   "tag":[
     {
 
@@ -51,24 +52,14 @@
       "tagname": "React"
     },
     {
-      "idtag": "boostrap",
+      "idtag": "styledComponentes",
       "classtag": "skills-proyects",
-      "tagname": "Boostrap"
-    },{
-
-      "idtag": "css",
-      "classtag": "skills-proyects",
-      "tagname": "Css"
+      "tagname": "Styled component"
     },{
 
       "idtag": "axios",
       "classtag": "skills-proyects",
       "tagname": "Axios"
-    },{
-
-      "idtag": "sweetAlert",
-      "classtag": "skills-proyects",
-      "tagname": "Sweet Alert"
     }
   ]
 },{

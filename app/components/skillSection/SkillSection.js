@@ -36,6 +36,7 @@ export function SkillSection() {
      <li><img class="icon-skills" src="app/assets/icons/redux.svg" width="80px" height="80px"></img></<li>
      <li><img class="icon-skills" src="app/assets/icons/jira.svg" width="80px" height="80px"></img></<li>
      <li><img class="icon-skills" src="app/assets/icons/githubProjects.svg" width="80px" height="80px"></img></<li>
+     <li><img class="icon-skills" src="app/assets/icons/styledcomponents.svg" width="80px" height="80px"></img></<li>
 
      `;
 
