@@ -269,9 +269,35 @@ body::-webkit-scrollbar-thumb {
   transition: all 300ms;
 }
 
+.hero-text-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
 .role{
-  font-size: 18px;
+  font-size: 30px;
   color: #373737;
+}
+
+.hero-button-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+.downloadCv-button{
+  width: 100px;
+  height: 35px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 
@@ -285,7 +311,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .hero-texts h1 {
-  font-size: 50px;
+  font-size: 45px;
 }
 
 /* hero about me */
@@ -841,5 +867,9 @@ body::-webkit-scrollbar-thumb {
 
   .conteiner-personal-img {
     margin: 0 0;
+  }
+
+  .hero-texts h1 {
+    font-size: 50px;
   }
 }
