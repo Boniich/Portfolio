@@ -459,7 +459,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .skill-box {
-  height: 22rem;
+  height: 18rem;
   overflow-y: auto;
   border-radius: 4px;
   padding: 20px 10px;
@@ -469,6 +469,23 @@ body::-webkit-scrollbar-thumb {
 .skills-list li {
   display: inline-block;
   padding: 5px 8px;
+}
+
+.skills-box-content {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.stacks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.stacks-container > p {
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .footer {
@@ -673,7 +690,7 @@ body::-webkit-scrollbar-thumb {
     display: none;
   }
   .skill-box {
-    height: 16rem;
+    height: 6rem;
   }
   .skills-box-conteiner {
     width: 740px;
