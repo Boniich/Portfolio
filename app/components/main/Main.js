@@ -1,17 +1,16 @@
 import { AboutMeSection } from "../aboutMeSection/AboutMeSection.js";
 import { ContactMeSection } from "../contactMeSection/ContactMeSection.js";
 import { ProjectsIntroSection } from "../proyects/proyectIntro/ProjectsIntroSection.js";
-import { SkillSection } from "../skillSection/SkillSection.js";
+import { StackSection } from "../stackSection/StackSection.js";
 
-export function Main(){
+export function Main() {
+  const $main = document.createElement("main");
 
-    const $main = document.createElement("main");
+  $main.classList.add("main");
 
-    $main.classList.add("main");
-
-    $main.appendChild(AboutMeSection());
-    $main.appendChild(ProjectsIntroSection());
-    $main.appendChild(SkillSection());
-    $main.appendChild(ContactMeSection());
-    return $main;
+  $main.appendChild(AboutMeSection());
+  $main.appendChild(ProjectsIntroSection());
+  $main.appendChild(StackSection());
+  $main.appendChild(ContactMeSection());
+  return $main;
 }
