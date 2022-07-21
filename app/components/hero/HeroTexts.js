@@ -17,14 +17,15 @@ export function HeroTexts() {
   $role.innerHTML = "Desarrollador Front end";
   $downloadCvButton.innerHTML = "Descargar Cv";
 
-  $downloadCvButton.href =
-    "http://127.0.0.1:5500/app/assets/pdf/Ezequiel Bonino-cv-port.pdf";
-  $downloadCvButton.target = "_blank";
+  $downloadCvButton.addEventListener("click", () => {
+    $downloadCvButton.href =
+      "http://127.0.0.1:5500/app/assets/pdf/Ezequiel Bonino-cv-port.pdf";
+    $downloadCvButton.target = "_blank";
+  });
 
   $heroTextContent.appendChild($author);
   $heroTextContent.appendChild($role);
   $buttonContainer.appendChild($downloadCvButton);
-  $downloadCvButton.click();
   $HeroTexts.appendChild($heroTextContent);
   $HeroTexts.appendChild($buttonContainer);
 
