@@ -11,7 +11,7 @@ export function Main() {
   $main.appendChild(AboutMeSection());
   $main.appendChild(ProjectsIntroSection("grupal"));
   $main.appendChild(StackSection());
-  $main.appendChild(ProjectsIntroSection("individual")); // individual project
+  $main.appendChild(ProjectsIntroSection("individual"));
   $main.appendChild(ContactMeSection());
   return $main;
 }
