@@ -33,17 +33,15 @@
     }
 
   ]
-},
-{
+},{
   "id": 2,
-  "name": "Home Banking San Patrick",
-  "img": "app/assets/img/homebanking.jpg",
-  "description": "(Grupal) Home Banking desarrollado bajo la iniciativa Idea for Idea. Datos de Acceso: Email: anarod@gmail.com pass: BushidoTrooper123" 
-  ,
-  "urlDemo": "https://home-banking-psi.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
-  "version": "1.0.0",
-  "urlVersion": "",
+  "name": "Hotel la Montaña",
+  "img": "app/assets/img/hotellamontana_img.jpg",
+  "description": "Esta app te mostrara un menu y todos sus valores",
+  "urlDemo": "https://hotel-la-montana.vercel.app",
+  "urlRepo": "https://github.com/Boniich/HotelLaMontana",
+  "version": "1.7.2",
+  "urlVersion": "https://github.com/Boniich/HotelLaMontana/blob/main/version.md",
   "tag":[
     {
 
@@ -52,33 +50,10 @@
       "tagname": "React"
     },
     {
-      "idtag": "styledComponentes",
+      "idtag": "boostrap",
       "classtag": "skills-proyects",
-      "tagname": "Styled component"
+      "tagname": "Boostrap"
     },{
-
-      "idtag": "axios",
-      "classtag": "skills-proyects",
-      "tagname": "Axios"
-    }
-  ]
-},{
-  "id": 3,
-  "name": "Somos Mas",
-  "img": "app/assets/img/somos_mas_img.jpg",
-  "description": "(Proyecto Grupal) App desarrollada en la aceleracion de React en Alkemy",
-  "urlDemo": "https://somos-mas-ten.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/OT161-React-client",
-  "version": "1.0.0",
-  "urlVersion": "",
-  "tag":[
-    {
-
-      "idtag": "react",
-      "classtag": "skills-proyects",
-      "tagname": "React"
-    }
-    ,{
 
       "idtag": "css",
       "classtag": "skills-proyects",
@@ -93,15 +68,29 @@
       "idtag": "sweetAlert",
       "classtag": "skills-proyects",
       "tagname": "Sweet Alert"
-    },{
-      "idtag": "redux",
-      "classtag": "skills-proyects",
-      "tagname": "Redux"
-    },{
-      "idtag": "test",
-      "classtag": "skills-proyects",
-      "tagname": "React Test Library"
     }
+  ]
+},{
+  "id": 6,
+  "name": "Juego de la vida",
+  "img": "app/assets/img/gameoflife.jpg",
+  "description": "Simulacion celular creada por el matematico Convay",
+  "urlDemo": "https://game-of-life-boniich.vercel.app",
+  "urlRepo": "https://github.com/Boniich/GameOfLife",
+  "version": "1.0.0",
+  "urlVersion": "",
+  "tag":[
+    {
+      "idtag": "react",
+      "classtag": "skills-proyects",
+      "tagname": "React"
+    },{
+
+      "idtag": "css",
+      "classtag": "skills-proyects",
+      "tagname": "Css"
+    }
+
   ]
 }
 

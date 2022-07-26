@@ -9,8 +9,9 @@ export function Main() {
   $main.classList.add("main");
 
   $main.appendChild(AboutMeSection());
-  $main.appendChild(ProjectsIntroSection());
+  $main.appendChild(ProjectsIntroSection("grupal"));
   $main.appendChild(StackSection());
+  $main.appendChild(ProjectsIntroSection("individual")); // individual project
   $main.appendChild(ContactMeSection());
   return $main;
 }

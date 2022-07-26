@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "name": "Home Banking San Patrick",
+      "img": "app/assets/img/homebanking.jpg",
+      "description": "(Grupal) Home Banking desarrollado bajo la iniciativa Idea for Idea. Datos de Acceso: Email: anarod@gmail.com pass: BushidoTrooper123" 
+      ,
+      "urlDemo": "https://home-banking-psi.vercel.app/",
+      "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+      "version": "1.0.0",
+      "urlVersion": "",
+      "tag":[
+        {
+    
+          "idtag": "react",
+          "classtag": "skills-proyects",
+          "tagname": "React"
+        },
+        {
+          "idtag": "styledComponentes",
+          "classtag": "skills-proyects",
+          "tagname": "Styled component"
+        },{
+    
+          "idtag": "axios",
+          "classtag": "skills-proyects",
+          "tagname": "Axios"
+        }
+      ]
+    },{
+      "id": 2,
+      "name": "Somos Mas",
+      "img": "app/assets/img/somos_mas_img.jpg",
+      "description": "(Proyecto Grupal) App desarrollada en la aceleracion de React en Alkemy",
+      "urlDemo": "https://somos-mas-ten.vercel.app/",
+      "urlRepo": "https://github.com/Boniich/OT161-React-client",
+      "version": "1.0.0",
+      "urlVersion": "",
+      "tag":[
+        {
+    
+          "idtag": "react",
+          "classtag": "skills-proyects",
+          "tagname": "React"
+        }
+        ,{
+    
+          "idtag": "css",
+          "classtag": "skills-proyects",
+          "tagname": "Css"
+        },{
+    
+          "idtag": "axios",
+          "classtag": "skills-proyects",
+          "tagname": "Axios"
+        },{
+    
+          "idtag": "sweetAlert",
+          "classtag": "skills-proyects",
+          "tagname": "Sweet Alert"
+        },{
+          "idtag": "redux",
+          "classtag": "skills-proyects",
+          "tagname": "Redux"
+        },{
+          "idtag": "test",
+          "classtag": "skills-proyects",
+          "tagname": "React Test Library"
+        }
+      ]
+    }
+    
+    ]
