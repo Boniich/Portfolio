@@ -1,6 +1,17 @@
-export function ProyectsCards(props, typeProject, onInitiative) {
-  let { name, img, description, tag, urlDemo, urlRepo, version, urlVersion } =
-    props;
+export function ProyectsCards(props, typeProject) {
+  let {
+    name,
+    img,
+    description,
+    tag,
+    urlDemo,
+    urlRepo,
+    version,
+    urlVersion,
+    dataAccess,
+    dataAccessUrl,
+    iniciative,
+  } = props;
   let length = tag.length;
   let html = "";
 
@@ -58,8 +69,8 @@ export function ProyectsCards(props, typeProject, onInitiative) {
   // content
   $img.src = `${img}`;
   $title.innerHTML = `${name}`;
-  $initiative.innerHTML = "Iniciativa: Alkemy";
-  $accessDataBox.innerHTML = `<a class="version"  title="Datos de acceso" href="${urlVersion}" target="_blank">Data</a>`;
+  $initiative.innerHTML = `<strong>Iniciativa</strong>: ${iniciative}`;
+  $accessDataBox.innerHTML = `<a class="version"  title="Datos de acceso" href="${dataAccessUrl}" target="_blank">Data</a>`;
   $description.innerHTML = `${description}`;
   $versionBox.innerHTML = `<a class="version" href="${urlVersion}" target="_blank">v${version}</a>`;
   $membersBox.innerHTML = `<a class="member-box" href="" target="_blank">Participantes</a>`;
@@ -78,7 +89,10 @@ export function ProyectsCards(props, typeProject, onInitiative) {
   $conteinerBoxCard.appendChild($imgBox);
   $titleBox.appendChild($title);
   $accessAndVersionBox.appendChild($versionBox);
-  $accessAndVersionBox.appendChild($accessDataBox);
+  if (dataAccess) {
+    $accessAndVersionBox.appendChild($accessDataBox);
+  }
+
   $initiativeBox.appendChild($initiative);
   $titleVersionBox.appendChild($titleBox);
   $titleVersionBox.appendChild($accessAndVersionBox);

@@ -9,6 +9,9 @@
       "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
       "version": "1.0.0",
       "urlVersion": "",
+      "dataAccess": true,
+      "dataAccessUrl": "",
+      "iniciative": "Id for Idea",
       "tag":[
         {
     
@@ -27,15 +30,19 @@
           "tagname": "Axios"
         }
       ]
+
     },{
       "id": 2,
       "name": "Somos Mas",
       "img": "app/assets/img/somos_mas_img.jpg",
-      "description": "App desarrollada en la aceleracion de React en Alkemy",
+      "description": "Una ONG que ayuda a los niños a tener un mejor futuro",
       "urlDemo": "https://somos-mas-ten.vercel.app/",
       "urlRepo": "https://github.com/Boniich/OT161-React-client",
       "version": "1.0.0",
       "urlVersion": "",
+      "dataAccess": false,
+      "dataAccessUrl": "",
+      "iniciative": "Alkemy",
       "tag":[
         {
     
