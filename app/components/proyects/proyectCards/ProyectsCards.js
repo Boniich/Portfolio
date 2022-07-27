@@ -1,4 +1,4 @@
-export function ProyectsCards(props) {
+export function ProyectsCards(props, typeProject) {
   let { name, img, description, tag, urlDemo, urlRepo, version, urlVersion } =
     props;
   let length = tag.length;
@@ -7,6 +7,7 @@ export function ProyectsCards(props) {
   const $doc = document;
 
   const $card = $doc.createElement("div"),
+    $cardContainer = $doc.createElement("div"),
     $imgBox = $doc.createElement("div"),
     $img = $doc.createElement("img"),
     $infoBox = $doc.createElement("div"),
@@ -14,7 +15,8 @@ export function ProyectsCards(props) {
     $title = $doc.createElement("h1"),
     $description = $doc.createElement("p"),
     $titleVersionBox = $doc.createElement("div"),
-    $versionBox = $doc.createElement("div");
+    $versionBox = $doc.createElement("div"),
+    $membersBox = $doc.createElement("div");
 
   // footer of cards
 
@@ -35,7 +37,8 @@ export function ProyectsCards(props) {
   $skillsBox.classList.add("skill-tag-box");
   $skillsList.classList.add("skill-tag-list");
 
-  $card.classList.add("proyectCard");
+  $card.classList.add("card");
+  $cardContainer.classList.add("proyectCard");
 
   $img.classList.add("imgCard");
   $imgBox.classList.add("padding-bottom");
@@ -43,12 +46,14 @@ export function ProyectsCards(props) {
   $titleVersionBox.classList.add("titleVersionBox", "padding-bottom");
   $titleBox.classList.add("title-box");
   $versionBox.classList.add("versionBox");
+  $membersBox.classList.add("member-box");
 
   // content
   $img.src = `${img}`;
   $title.innerHTML = `${name}`;
   $description.innerHTML = `${description}`;
   $versionBox.innerHTML = `<a class="version" href="${urlVersion}" target="_blank">v${version}</a>`;
+  $membersBox.innerHTML = `<a class="member-box" href="" target="_blank">Participantes</a>`;
 
   for (let e = 0; e < length; e++) {
     html += `<li><p id="${tag[e].idtag}" class="${tag[e].classtag}">${tag[e].tagname}</p></li>`;
@@ -71,8 +76,14 @@ export function ProyectsCards(props) {
   $conteinerBoxCard.appendChild($infoBox);
   $conteinerBoxCard.appendChild($skillsBox);
   $footerProyectCards.appendChild($footerBox);
-  $card.appendChild($conteinerBoxCard);
-  $card.appendChild($footerProyectCards);
+  $cardContainer.appendChild($conteinerBoxCard);
+  $cardContainer.appendChild($footerProyectCards);
+
+  if (typeProject === "group") {
+    $card.appendChild($membersBox);
+  }
+
+  $card.appendChild($cardContainer);
 
   return $card;
 }

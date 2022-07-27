@@ -8,7 +8,7 @@ export async function printGrupalProjects(element) {
     cbSuccess: (proyects) => {
       console.log(proyects);
       proyects.forEach((proyect) => {
-        element.appendChild(ProyectsCards(proyect));
+        element.appendChild(ProyectsCards(proyect, "group"));
       });
     },
   });

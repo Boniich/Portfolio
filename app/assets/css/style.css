@@ -367,9 +367,13 @@ body::-webkit-scrollbar-thumb {
   flex-wrap: wrap;
 }
 
+.card {
+  margin: 1rem auto;
+}
+
 .proyectCard {
   width: 15.4rem;
-  height: auto;
+  height: 411px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0px 1px 4px rgb(174, 190, 205);
@@ -612,6 +616,22 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid #ccc;
   cursor: pointer;
   font-weight: bold;
+}
+
+.member-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #fff;
+  padding: 3px 10px;
+  width: 100px;
+  height: 28px;
+  background-color: rgb(34, 131, 201);
+}
+
+.member-box:hover {
+  background: rgb(65, 142, 197);
 }
 
 .versionBox:hover {
