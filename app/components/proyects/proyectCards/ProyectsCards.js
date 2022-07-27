@@ -1,4 +1,4 @@
-export function ProyectsCards(props, typeProject) {
+export function ProyectsCards(props, typeProject, onInitiative) {
   let { name, img, description, tag, urlDemo, urlRepo, version, urlVersion } =
     props;
   let length = tag.length;
@@ -16,7 +16,11 @@ export function ProyectsCards(props, typeProject) {
     $description = $doc.createElement("p"),
     $titleVersionBox = $doc.createElement("div"),
     $versionBox = $doc.createElement("div"),
-    $membersBox = $doc.createElement("div");
+    $membersBox = $doc.createElement("div"),
+    $initiativeBox = $doc.createElement("div"),
+    $initiative = $doc.createElement("p"),
+    $accessDataBox = $doc.createElement("div"),
+    $accessAndVersionBox = $doc.createElement("div");
 
   // footer of cards
 
@@ -47,10 +51,15 @@ export function ProyectsCards(props, typeProject) {
   $titleBox.classList.add("title-box");
   $versionBox.classList.add("versionBox");
   $membersBox.classList.add("member-box");
+  $initiativeBox.classList.add("initiative-box");
+  $accessDataBox.classList.add("versionBox", "accessDataBox");
+  $accessAndVersionBox.classList.add("access-version-box");
 
   // content
   $img.src = `${img}`;
   $title.innerHTML = `${name}`;
+  $initiative.innerHTML = "Iniciativa: Alkemy";
+  $accessDataBox.innerHTML = `<a class="version"  title="Datos de acceso" href="${urlVersion}" target="_blank">Data</a>`;
   $description.innerHTML = `${description}`;
   $versionBox.innerHTML = `<a class="version" href="${urlVersion}" target="_blank">v${version}</a>`;
   $membersBox.innerHTML = `<a class="member-box" href="" target="_blank">Participantes</a>`;
@@ -68,20 +77,25 @@ export function ProyectsCards(props, typeProject) {
   $imgBox.appendChild($img);
   $conteinerBoxCard.appendChild($imgBox);
   $titleBox.appendChild($title);
+  $accessAndVersionBox.appendChild($versionBox);
+  $accessAndVersionBox.appendChild($accessDataBox);
+  $initiativeBox.appendChild($initiative);
   $titleVersionBox.appendChild($titleBox);
-  $titleVersionBox.appendChild($versionBox);
+  $titleVersionBox.appendChild($accessAndVersionBox);
   $infoBox.appendChild($titleVersionBox);
   $infoBox.appendChild($description);
+
+  if (typeProject === "group") {
+    $card.appendChild($membersBox);
+    $infoBox.appendChild($initiativeBox);
+  }
+
   $skillsBox.appendChild($skillsList);
   $conteinerBoxCard.appendChild($infoBox);
   $conteinerBoxCard.appendChild($skillsBox);
   $footerProyectCards.appendChild($footerBox);
   $cardContainer.appendChild($conteinerBoxCard);
   $cardContainer.appendChild($footerProyectCards);
-
-  if (typeProject === "group") {
-    $card.appendChild($membersBox);
-  }
 
   $card.appendChild($cardContainer);
 

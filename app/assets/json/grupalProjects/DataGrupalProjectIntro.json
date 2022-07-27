@@ -3,7 +3,7 @@
       "id": 1,
       "name": "Home Banking San Patrick",
       "img": "app/assets/img/homebanking.jpg",
-      "description": "Home Banking desarrollado bajo la iniciativa Idea for Idea. Datos de Acceso en el Readme" 
+      "description": "Puedes ver tu saldo bancario y hacer transferencias" 
       ,
       "urlDemo": "https://home-banking-psi.vercel.app/",
       "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",

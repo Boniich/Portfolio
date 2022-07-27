@@ -354,6 +354,12 @@ body::-webkit-scrollbar-thumb {
   font-size: 18px;
 }
 
+.access-version-box {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
 /* Proyects  */
 .imgCard {
   width: 100%;
@@ -373,7 +379,7 @@ body::-webkit-scrollbar-thumb {
 
 .proyectCard {
   width: 15.4rem;
-  height: 411px;
+  height: 422px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-shadow: 0px 1px 4px rgb(174, 190, 205);
@@ -618,6 +624,12 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
 }
 
+.accessDataBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .member-box {
   display: flex;
   justify-content: center;
@@ -638,6 +650,10 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(34, 131, 201);
   border-color: #fff;
   transition: all 1s;
+}
+
+.initiative-box {
+  margin-top: 5px;
 }
 
 .version {
