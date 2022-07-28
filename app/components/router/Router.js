@@ -15,18 +15,11 @@ export async function Router() {
     hash === "#/" ||
     hash === "#contact" ||
     hash === "#aboutMe-section" ||
-    hash === "#projectIntro-section" ||
+    hash === "#individualProject-section" ||
+    hash === "#grupalProject-section" ||
     hash === "#skill-section"
   ) {
     $heroConteiner.appendChild(Hero());
     $main.appendChild(Main());
   }
-  //   it will be enabled if i add more project some day
-  // else if (hash === "#/proyectos"){
-  //     $heroConteiner.appendChild(heroProject());
-  //     $main.classList.add("grid-fluid");
-  //     //call async function that render proyects cards
-  //     getProyects($main);
-
-  // }
 }

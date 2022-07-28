@@ -15,9 +15,10 @@ export function Nav() {
     <li><a href="#/">Inicio</a></li>
     <li><a href="#aboutMe-section">Sobre Mi</a></li>
     <li><a href="#skill-section">Habilidades</a></li>
-    <li><a href="#projectIntro-section">Proyectos</a> 
+    <li><a>Proyectos</a> 
     <ul class="sub-nav">
-    <li><a href="#/proyectos">Mas Proyectos</a></li>
+    <li><a href="#grupalProject-section">Proyectos Grupales</a></li>
+    <li><a href="#individualProject-section">Proyectos Individuales</a></li>
     </ul></li>
     <li><a href="#contact">Contactame</a></li>
     `;

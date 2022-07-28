@@ -31,13 +31,13 @@ export function ProjectsIntroSection(typeProject) {
   // Call at ajax for show project cards
   if (typeProject === "individual") {
     getProyects($cardProjectBox);
-    $projectsIntroSection.id = "individualProjectIntro-section";
+    $projectsIntroSection.id = "individualProject-section";
     $projectTitle.innerHTML = individualSectionTitle;
     // $buttonsBox.appendChild(buttons(urlButton, textButton));
   } else {
-    $projectsIntroSection.id = "grupalProjectIntro-section";
     printGrupalProjects($cardProjectBox);
     $projectTitle.innerHTML = grupalSectionTitle;
+    $projectsIntroSection.id = "grupalProject-section";
   }
   $projectsIntroSection.appendChild($projectTitle);
   $projectsIntroSection.appendChild($cardProjectBox);

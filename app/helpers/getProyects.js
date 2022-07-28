@@ -2,24 +2,8 @@ import { ajax } from "../helpers/ajax.js";
 import { ProyectsCards } from "../components/proyects/proyectCards/ProyectsCards.js";
 
 export async function getProyects(element) {
-  let { hash } = location;
   let relativeUrl = `app/assets/json/individualProjects`;
-  let urlProyects = ``;
-
-  if (
-    !hash ||
-    hash === "#/" ||
-    hash === "#contact" ||
-    hash === "#aboutMe-section" ||
-    hash === "#projectIntro-section" ||
-    hash === "#skill-section"
-  ) {
-    urlProyects = `${relativeUrl}/DataProjectIntroduction.json`;
-  }
-
-  //   if (hash === "#/proyectos") {
-  //     urlProyects = `${relativeUrl}/DataProjects.json`;
-  //   }
+  let urlProyects = `${relativeUrl}/DataProjectIntroduction.json`;
 
   await ajax({
     url: urlProyects,
