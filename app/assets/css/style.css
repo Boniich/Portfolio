@@ -119,9 +119,14 @@ body::-webkit-scrollbar-thumb {
 .nav {
   height: 50px;
   position: fixed;
-  background-color: #fff;
+  background-color: rgb(34, 131, 201);
   width: 100%;
+}
+
+nav.change-color-nav {
+  background-color: #fff;
   border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 10px -2px rgba(9, 28, 24, 0.11);
 }
 
 .navList {
@@ -700,18 +705,30 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (min-width: 740px) {
   .nav {
+    height: 70px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: rgb(34, 131, 201);
   }
   .navList {
     position: relative;
     height: auto;
     top: 0;
     left: 0;
-    background-color: #fff;
+    background-color: rgb(34, 131, 201);
     width: auto;
     display: inline;
     opacity: 100;
+  }
+  .navList.change-color-nav {
+    background-color: #fff;
+  }
+  .nav > .navList.change-color-nav li a {
+    color: black;
+  }
+  .nav > .navList.change-color-nav li a:hover {
+    color: rgb(34, 131, 201);
   }
   .nav > .navList li {
     display: inline-block;
@@ -719,9 +736,11 @@ body::-webkit-scrollbar-thumb {
   .nav > .navList li a {
     color: #fff;
     font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
   .nav > .navList li a:hover {
-    color: rgb(34, 131, 201);
+    color: #373737;
   }
   .nav-conteiner {
     top: 0;
@@ -730,22 +749,34 @@ body::-webkit-scrollbar-thumb {
     z-index: 80;
     transition: all 0.3s;
   }
-  .nav-conteiner.down {
-    top: -50px;
-  }
   .sub-nav {
+    width: 250px;
     display: none;
+    flex-direction: column;
+    gap: 15px;
     position: absolute;
     top: 51px;
     background-color: #fff;
+    padding: 20px 0px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 10px -2px rgba(9, 28, 24, 0.11);
     border: 1px solid #ccc;
   }
-  .nav li:hover .sub-nav {
-    display: block;
-  }
-  .nav > .navList li a {
+  .nav > .navList li > .sub-nav li a {
     color: black;
-    text-transform: uppercase;
+  }
+  .nav > .navList li > .sub-nav li {
+    padding: 0;
+  }
+  .nav > .navList li > .sub-nav li {
+    padding: 5px 0px;
+    width: 100%;
+  }
+  .nav > .navList li > .sub-nav li a:hover {
+    color: rgb(34, 131, 201);
+  }
+  .nav li:hover .sub-nav {
+    display: flex;
   }
   .icon {
     display: none;

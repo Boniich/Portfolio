@@ -128,9 +128,15 @@ body::-webkit-scrollbar-thumb {
 .nav {
   height: 50px;
   position: fixed;
-  background-color: $white;
+  background-color: $blue;
   width: 100%;
+  
+}
+
+nav.change-color-nav{
+  background-color: $white;
   border-bottom: 1px solid #ccc;
+  box-shadow: 0px 2px 10px -2px rgba(9,28,24,0.11);
 }
 
 .navList {
@@ -730,8 +736,11 @@ body::-webkit-scrollbar-thumb {
 
 @media screen and (min-width: 740px) {
   .nav {
+    height: 70px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    background-color: $blue;
   }
 
   .navList {
@@ -739,10 +748,22 @@ body::-webkit-scrollbar-thumb {
     height: auto;
     top: 0;
     left: 0;
-    background-color: $white;
+    background-color: $blue;
     width: auto;
     display: inline;
     opacity: 100;
+  }
+
+  .navList.change-color-nav{
+    background-color: $white;
+  }
+
+  .nav > .navList.change-color-nav li a{
+    color: black;
+  }
+
+  .nav > .navList.change-color-nav li a:hover{
+    color: $blue;
   }
 
   .nav > .navList li {
@@ -752,10 +773,12 @@ body::-webkit-scrollbar-thumb {
   .nav > .navList li a {
     color: $white;
     font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
   }
 
   .nav > .navList li a:hover {
-    color: $blue;
+    color: #373737;
   }
 
   .nav-conteiner {
@@ -766,25 +789,40 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s;
   }
 
-  .nav-conteiner.down {
-    top: -50px;
-  }
 
   .sub-nav {
+    width: 250px;
     display: none;
+    flex-direction: column;
+    gap: 15px;
     position: absolute;
     top: 51px;
     background-color: $white;
+    padding: 20px 0px;
+    border-radius: 14px;
+    box-shadow: 0px 2px 10px -2px rgba(9,28,24,0.11);
     border: 1px solid #ccc;
   }
 
-  .nav li:hover .sub-nav {
-    display: block;
+  .nav > .navList li > .sub-nav li a {
+    color: black;
   }
 
-  .nav > .navList li a {
-    color: black;
-    text-transform: uppercase;
+  .nav > .navList li > .sub-nav li{
+    padding: 0;
+  }
+
+  .nav > .navList li > .sub-nav li{
+    padding: 5px 0px;
+    width: 100%;
+  }
+
+  .nav > .navList li > .sub-nav li a:hover{
+    color: $blue;
+  }
+
+  .nav li:hover .sub-nav {
+    display: flex;
   }
 
   .icon {
