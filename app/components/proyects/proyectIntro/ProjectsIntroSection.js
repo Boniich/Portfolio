@@ -1,6 +1,6 @@
-import { buttons } from "../../../helpers/buttons.js";
+// import { buttons } from "../../../helpers/buttons.js";
 import { getProyects } from "../../../helpers/getProyects.js";
-import { printGrupalProjects } from "../printGrupalProjects/PrintGrupalProjects.js";
+import { printGrupalProjects } from "../printGrupalProjects/printGrupalProjects.js";
 
 export function ProjectsIntroSection(typeProject) {
   const individualSectionTitle = "Proyectos individuales";
