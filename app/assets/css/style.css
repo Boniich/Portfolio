@@ -740,7 +740,6 @@ nav.change-color-nav {
     background-color: rgb(34, 131, 201);
     width: auto;
     display: inline;
-    opacity: 100;
     margin: 0 auto;
   }
   .navList.change-color-nav {

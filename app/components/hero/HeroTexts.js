@@ -13,13 +13,13 @@ export function HeroTexts() {
   $downloadCvButton.classList.add("downloadCv-button");
   $role.classList.add("role");
 
-  $author.innerHTML = "Ezequiel Bonino";
-  $role.innerHTML = "Desarrollador Front end";
+  $author.innerHTML = `Ezequiel Bonino`;
+  $role.innerHTML = "Desarrollador Frontend";
   $downloadCvButton.innerHTML = "Descargar Cv";
 
   $downloadCvButton.addEventListener("click", () => {
     $downloadCvButton.href =
-      "http://127.0.0.1:5500/app/assets/pdf/Ezequiel Bonino-cv-port.pdf";
+      "http://127.0.0.1:5500/app/assets/pdf/EzequielBonino-es.pdf";
     $downloadCvButton.target = "_blank";
   });
 
