@@ -21,7 +21,7 @@ export function ContactMeSection() {
   $titleContactMe.innerHTML = "Contactame";
   $email.innerHTML = "BoniichDev@gmail.com";
   $text.innerHTML = `Si deseas ponerte en contacto conmigo por trabajo, colaboracion o cualquier otra razon,
-     mandame un mail o agregame a <a id="link-linkeding" href="https://www.linkedin.com/in/ezequielboninodesarrolladorfrontend/" target="_blank">Linkedin</a>`;
+     mandame un mail o agregame a <a id="link-linkeding" href="https://www.linkedin.com/in/boniich/" target="_blank">Linkedin</a>`;
 
   $textBox.appendChild($email);
   $textBox.appendChild($text);

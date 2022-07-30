@@ -89,6 +89,7 @@ body::-webkit-scrollbar-thumb {
 
 #link-linkeding {
   color: #0e0d0d;
+  font-weight: bold;
 }
 
 #link-linkeding:hover {
