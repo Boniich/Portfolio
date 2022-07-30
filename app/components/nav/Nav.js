@@ -24,7 +24,7 @@ export function Nav() {
   $brand.innerHTML = `<span class="startBrandSign">$ { </span><span  class="brandName">Boniich</span><span class="endBrandSign"> }</span>`;
 
   $ul.innerHTML = `
-    <li><a href="#/">Inicio</a></li>
+    <li><a href="#heroConteiner">Inicio</a></li>
     <li><a href="#aboutMe-section">Sobre Mi</a></li>
     <li><a href="#skill-section">Stacks</a></li>
     <li><a>Proyectos</a> 

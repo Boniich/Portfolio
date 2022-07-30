@@ -8,18 +8,6 @@ export async function Router() {
     $main = $doc.getElementById("main-conteiner"),
     $heroConteiner = $doc.getElementById("heroConteiner");
 
-  let { hash } = location;
-
-  if (
-    !hash ||
-    hash === "#/" ||
-    hash === "#contact" ||
-    hash === "#aboutMe-section" ||
-    hash === "#individualProject-section" ||
-    hash === "#grupalProject-section" ||
-    hash === "#skill-section"
-  ) {
-    $heroConteiner.appendChild(Hero());
-    $main.appendChild(Main());
-  }
+  $heroConteiner.appendChild(Hero());
+  $main.appendChild(Main());
 }
