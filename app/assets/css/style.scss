@@ -26,6 +26,17 @@ $axios: #10663eb6;
 $fetch: #036c74;
 $test: #85adad;
 
+// class beta
+
+// used to test add of brand
+
+
+.changeBrandSign{
+  color: $blue;
+}
+
+//
+
 /*Tags*/
 
 body::-webkit-scrollbar {
@@ -120,9 +131,13 @@ body::-webkit-scrollbar-thumb {
 
 .icon i {
   padding: 11px 10px;
-  font-size: 28px;
+  font-size: 32px;
   cursor: pointer;
-  color: $black;
+  color: $white;
+}
+
+.changeColorIcon i {
+  color: $blue;
 }
 
 .nav {
@@ -130,6 +145,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   background-color: $blue;
   width: 100%;
+  z-index: 100;
   
 }
 
@@ -148,7 +164,6 @@ nav.change-color-nav{
   background-color: $white;
   width: 100vw;
   display: none;
-  opacity: 90%;
 }
 
 .navList.open {
@@ -167,6 +182,19 @@ nav.change-color-nav{
 
 .navList li a:hover {
   color: $blue;
+}
+
+.brandContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.brand{
+  font-weight: bold;
+  color: $white;
+  font-size: 20px;
 }
 
 /* hero principal */
@@ -190,7 +218,7 @@ nav.change-color-nav{
 }
 
 .hero-content {
-  height: 60vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap-reverse;
@@ -739,7 +767,7 @@ nav.change-color-nav{
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: $blue;
   }
 
@@ -752,6 +780,7 @@ nav.change-color-nav{
     width: auto;
     display: inline;
     opacity: 100;
+    margin: 0 auto;
   }
 
   .navList.change-color-nav{
@@ -825,6 +854,12 @@ nav.change-color-nav{
     display: flex;
   }
 
+  .brandContainer{
+    padding: 0;
+    padding-left: 70px;
+  }
+
+
   .icon {
     display: none;
   }
@@ -862,6 +897,7 @@ nav.change-color-nav{
   }
 
   .hero-content {
+    height: 60vh;
     margin: 0 auto;
     max-width: 1500px;
   }

@@ -5,6 +5,10 @@
   list-style: none;
 }
 
+.changeBrandSign {
+  color: rgb(34, 131, 201);
+}
+
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
@@ -111,9 +115,13 @@ body::-webkit-scrollbar-thumb {
 
 .icon i {
   padding: 11px 10px;
-  font-size: 28px;
+  font-size: 32px;
   cursor: pointer;
-  color: #0e0d0d;
+  color: #fff;
+}
+
+.changeColorIcon i {
+  color: rgb(34, 131, 201);
 }
 
 .nav {
@@ -121,6 +129,7 @@ body::-webkit-scrollbar-thumb {
   position: fixed;
   background-color: rgb(34, 131, 201);
   width: 100%;
+  z-index: 100;
 }
 
 nav.change-color-nav {
@@ -138,7 +147,6 @@ nav.change-color-nav {
   background-color: #fff;
   width: 100vw;
   display: none;
-  opacity: 90%;
 }
 
 .navList.open {
@@ -159,6 +167,19 @@ nav.change-color-nav {
   color: rgb(34, 131, 201);
 }
 
+.brandContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+
+.brand {
+  font-weight: bold;
+  color: #fff;
+  font-size: 20px;
+}
+
 /* hero principal */
 .hero {
   position: relative;
@@ -175,7 +196,7 @@ nav.change-color-nav {
 }
 
 .hero-content {
-  height: 60vh;
+  height: 75vh;
   display: flex;
   align-items: center;
   flex-wrap: wrap-reverse;
@@ -708,7 +729,7 @@ nav.change-color-nav {
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     background-color: rgb(34, 131, 201);
   }
   .navList {
@@ -720,6 +741,7 @@ nav.change-color-nav {
     width: auto;
     display: inline;
     opacity: 100;
+    margin: 0 auto;
   }
   .navList.change-color-nav {
     background-color: #fff;
@@ -778,6 +800,10 @@ nav.change-color-nav {
   .nav li:hover .sub-nav {
     display: flex;
   }
+  .brandContainer {
+    padding: 0;
+    padding-left: 70px;
+  }
   .icon {
     display: none;
   }
@@ -806,6 +832,7 @@ nav.change-color-nav {
     width: 1000px;
   }
   .hero-content {
+    height: 60vh;
     margin: 0 auto;
     max-width: 1500px;
   }
