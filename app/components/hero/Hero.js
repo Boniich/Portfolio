@@ -35,7 +35,6 @@ function HeroTexts() {
     $role = document.createElement("h2");
 
   $HeroTexts.classList.add("hero-texts");
-  $role.classList.add("padding-bottom");
 
   $author.innerHTML = "Ezequiel Bonino (Boniich)";
   $role.innerHTML = "Game Developer";
