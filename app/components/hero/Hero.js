@@ -1,26 +1,32 @@
 export function Hero() {
   const $hero = document.createElement("div"),
-    $heroContent = document.createElement("div"),
-    $conteinerPersonalImg = document.createElement("div"),
-    $boxPersonalImg = document.createElement("div"),
-    $PersonalImg = document.createElement("img");
-
-  $PersonalImg.src = "app/assets/img/personalImg.jpg";
-  $PersonalImg.id = "personal-img";
+    $heroContent = document.createElement("div");
 
   $hero.classList.add("hero");
   $heroContent.classList.add("hero-content");
-  $conteinerPersonalImg.classList.add("conteiner-personal-img");
-  $boxPersonalImg.classList.add("box-personal-img");
-
-  $boxPersonalImg.appendChild($PersonalImg);
 
   $heroContent.appendChild(HeroTexts());
-  $conteinerPersonalImg.appendChild($boxPersonalImg);
-  $heroContent.appendChild($conteinerPersonalImg);
+  $heroContent.appendChild(PersonalImage());
   $hero.appendChild($heroContent);
 
   return $hero;
+}
+
+function PersonalImage() {
+  const $personalImageContainer = document.createElement("div"),
+    $personalImageBox = document.createElement("div"),
+    $image = document.createElement("img");
+
+  $image.src = "app/assets/img/personalImages/personal-image.png";
+  $image.id = "personal-img";
+
+  $personalImageContainer.classList.add("conteiner-personal-img");
+  $personalImageBox.classList.add("box-personal-img");
+
+  $personalImageBox.appendChild($image);
+  $personalImageContainer.appendChild($personalImageBox);
+
+  return $personalImageContainer;
 }
 
 function HeroTexts() {

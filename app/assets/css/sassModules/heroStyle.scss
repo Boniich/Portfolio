@@ -1,5 +1,3 @@
-/* hero principal */
-
 .hero {
     background: url("../img/fondo.jpg");
     background-size: cover;
@@ -35,5 +33,20 @@
  .hero-texts h2{
     font-size: 35px;
 } 
+
+.conteiner-personal-img {
+    padding: 10px 10px;
+    margin: 0 auto;
+  }
   
+  
+#personal-img {
+    border-radius: 50%;
+  }
+  
+  .box-personal-img {
+    height: 200px;
+    border: 2px solid #fc5f22;
+    border-radius: 50%;
+  }
   
