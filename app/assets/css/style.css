@@ -5,6 +5,86 @@
   list-style: none;
 }
 
+.new-nav {
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  background-color: #fff;
+}
+
+.icon i {
+  padding: 11px 10px;
+  font-size: 28px;
+  cursor: pointer;
+  color: #0e0d0d;
+}
+
+.linksList {
+  position: absolute;
+  height: calc(100vh - 51px);
+  top: 51px;
+  left: 0;
+  text-align: center;
+  background-color: #fff;
+  width: 100vw;
+  display: none;
+  opacity: 90%;
+}
+
+.linksList.open {
+  display: block;
+}
+
+.nav-list-container > .linksList li {
+  display: block;
+  padding: 15px 10px;
+}
+
+.nav-list-container > .linksList li a {
+  color: black;
+  text-transform: uppercase;
+}
+
+.linksList li a:hover {
+  color: rgb(34, 131, 201);
+}
+
+.socialMediaList {
+  display: flex;
+  gap: 8px;
+}
+
+.socialMediaIcon {
+  color: black;
+  font-size: 26px;
+}
+
+@media screen and (min-width: 1024px) {
+  .linksList {
+    position: relative;
+    height: auto;
+    top: 0;
+    left: 0;
+    background-color: none;
+    width: auto;
+    display: flex;
+    align-items: center;
+    opacity: 100;
+  }
+  .nav-list-container > .linksList li {
+    display: inline-block;
+    padding: 14px 10px;
+  }
+  .nav-list-container > .linksList li a {
+    color: #0e0d0d;
+    font-size: 18px;
+  }
+  .nav-list-container > .linksList li a:hover {
+    color: rgb(34, 131, 201);
+  }
+}
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
@@ -532,6 +612,7 @@ body::-webkit-scrollbar-thumb {
     color: rgb(34, 131, 201);
   }
   .nav-conteiner {
+    display: flex;
     top: 0;
     position: fixed;
     width: calc(100% - 40px);
@@ -570,6 +651,10 @@ body::-webkit-scrollbar-thumb {
 }
 @media screen and (min-width: 1024px) {
   /* ID */
+  .nav {
+    height: 64px;
+    align-items: center;
+  }
   #id-about-me {
     border-right: 1px solid #ccc;
   }
