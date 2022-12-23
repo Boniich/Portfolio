@@ -1,4 +1,5 @@
 @use "./sassModules/mixin.scss";
+@use "./sassModules/navStyle.scss";
 
 * {
   margin: 0;
@@ -26,101 +27,7 @@ $axios: #10663eb6;
 $fetch: #036c74;
 $test: #85adad;
 
-// Tests
-
-// NEW NAV
-
-.new-nav{
-  margin: 0 20px;
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  height: 50px;
-  background-color: #fff;
-}
-
-.icon i {
-  padding: 11px 10px;
-  font-size: 28px;
-  cursor: pointer;
-  color: $black;
-}
-
-.linksList {
-  position: absolute;
-  height: calc(100vh - 51px);
-  top: 51px;
-  left: 0;
-  text-align: center;
-  background-color: $white;
-  width: 100vw;
-  display: none;
-  opacity: 90%;
-}
-
-.linksList.open {
-  display: block;
-}
-
-
-.nav-list-container > .linksList li {
-  display: block;
-  padding: 15px 10px;
-}
-
-.nav-list-container > .linksList  li a {
-  color: black;
-  text-transform: uppercase;
-}
-
-.linksList li a:hover {
-  color: $blue;
-}
-
-.socialMediaList{
-  display: flex;
-  gap: 8px;
-}
-
-.socialMediaIcon{
-  color: black;
-  font-size: 26px;
-}
-
-@media screen and (min-width: 1024px){
-  
-  .linksList {
-    position: relative;
-    height: auto;
-    top: 0;
-    left: 0;
-    background-color: none;
-    width: auto;
-    display: flex;
-    align-items: center;
-    opacity: 100;
-  }
-
-  .nav-list-container > .linksList  li {
-    display: inline-block;
-    padding: 14px 10px;
-  }
-
-
-  .nav-list-container > .linksList li a {
-    color: $black;
-    font-size: 18px;
-  }
-
-  .nav-list-container > .linksList li a:hover {
-    color: $blue;
-  }
-
-}
-
-
 /*Tags*/
-
 body::-webkit-scrollbar {
   width: 12px;
 }
@@ -212,57 +119,6 @@ body::-webkit-scrollbar-thumb {
 .conteiner {
   padding: 120px 0;
 }
-//borrar
-.icon i {
-  padding: 11px 10px;
-  font-size: 28px;
-  cursor: pointer;
-  color: $black;
-}
-
-.nav {
-  height: 50px;
-  position: fixed;
-  background-color: $white;
-  width: 100%;
-  border-bottom: 1px solid #ccc;
-}
-
-.navList {
-  position: absolute;
-  height: calc(100vh - 51px);
-  top: 51px;
-  left: 0;
-  text-align: center;
-  background-color: $white;
-  width: 100vw;
-  display: none;
-  opacity: 90%;
-}
-
-.navList.open {
-  display: block;
-}
-///Borrar despues
-.nav > .navList li {
-  display: block;
-  padding: 15px 10px;
-}
-
-.nav > .navList li a {
-  color: black;
-  text-transform: uppercase;
-}
-
-.navList li a:hover {
-  color: $blue;
-}
-
-// .sub-nav {
-//   height: 10px;
-//   overflow: hidden;
-//   transition: all 0.3s;
-// }
 
 .seccion-tag {
   color: $blue;
@@ -620,66 +476,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 740px) {
-  .nav {
-    display: flex;
-    justify-content: center;
-  }
-
-  .navList {
-    position: relative;
-    height: auto;
-    top: 0;
-    left: 0;
-    background-color: $white;
-    width: auto;
-    display: inline;
-    opacity: 100;
-  }
-
-  .nav > .navList li {
-    display: inline-block;
-  }
-
-  .nav > .navList li a {
-    color: $white;
-    font-size: 18px;
-  }
-
-  .nav > .navList li a:hover {
-    color: $blue;
-  }
-
-  .nav-conteiner {
-    display: flex;
-    top: 0;
-    position: fixed;
-    width: calc(100% - 40px);
-    z-index: 80;
-    transition: all 0.3s;
-  }
-
-  .nav-conteiner.down {
-    top: -50px;
-  }
-
-  .sub-nav {
-    display: none;
-    position: absolute;
-    top: 51px;
-    background-color: $white;
-    border: 1px solid #ccc;
-  }
-
-  .nav li:hover .sub-nav {
-    display: block;
-  }
-
-  .nav > .navList li a {
-    color: black;
-    text-transform: uppercase;
-  }
-
-  .icon {
+ 
+  .nav-icon-mobile {
     display: none;
   }
 
@@ -697,12 +495,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 1024px) {
-  /* ID */
-
-  .nav{
-    height: 64px;
-    align-items: center;
-  }
 
   #id-about-me {
     border-right: 1px solid #ccc;
