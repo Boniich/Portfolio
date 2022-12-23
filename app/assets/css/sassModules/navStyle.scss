@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+$black: #1c191a;
+$white: #fff;
+$orange: #fc5f22;
+$red-youtube: #fc2222;
+$blue-linkedin:#2283c9;
+
 .nav-container{
   position: fixed;
   width: 100%;
-  background-color: #fff;
+  background-color: $black;
   z-index: 100;
-  box-shadow: 0px 12px 37px -8px rgba(9, 18, 28, 0.09);
+  box-shadow: 0px 12px 37px -8px rgba(223, 130, 24, 0.250);
 }
 
 .new-nav{
@@ -20,7 +26,7 @@
     padding: 11px 10px;
     font-size: 28px;
     cursor: pointer;
-    color: #000;
+    color: $orange;
   }
   
   .linksList {
@@ -29,7 +35,7 @@
     top: 51px;
     left: 0;
     text-align: center;
-    background-color: #fff;
+    background-color: $black;
     width: 100vw;
     display: none;
     opacity: 90%;
@@ -46,13 +52,13 @@
   }
   
   .nav-list-container > .linksList  li a {
-    color: black;
+    color: $white;
     font-family: 'Lato', sans-serif;
 
   }
   
   .linksList li a:hover {
-    color: rgb(34, 131, 201);
+    color: $orange;
   }
   
   .socialMediaList{
@@ -70,15 +76,15 @@
   }
 
   #youtube-icon{
-    color: #fc2222;
+    color: $red-youtube;
   }
 
   #linkedin-icon{
-    color: #2283c9;
+    color: $blue-linkedin;
   }
 
   #github-icon{
-    color: black;
+    color: $white;
   }
 
   .logo{
@@ -111,10 +117,6 @@
     .nav-list-container > .linksList li a {
       font-size: 16px;
     }
-  
-    .nav-list-container > .linksList li a:hover {
-      color: rgb(34, 131, 201);
-    }
 
   }
 
@@ -139,6 +141,7 @@
     }
 
     .logo{
+      color: $orange;
       font-family: "Gagalin";
       font-size: 25px;
     }
