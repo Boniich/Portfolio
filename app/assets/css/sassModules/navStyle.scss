@@ -1,10 +1,17 @@
+.nav-container{
+  position: fixed;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+
+}
+
 .new-nav{
     margin: 0 20px;
     display: flex;
     justify-content:space-between;
     align-items: center;
     height: 50px;
-    background-color: #fff;
   }
   
   .nav-icon-mobile i {
@@ -51,18 +58,39 @@
   }
   
   .socialMediaIcon{
-    color: black;
     font-size: 26px;
+  }
+
+  .socialMediaIcon i:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+  }
+
+  #youtube-icon{
+    color: #fc2222;
+  }
+
+  #linkedin-icon{
+    color: #2283c9;
+  }
+
+  #github-icon{
+    color: black;
   }
   
   @media screen and (min-width: 1024px){
+    
+
+   .new-nav{
+     margin: 0 60px;
+     height: 64px;
+    }
     
     .linksList {
       position: relative;
       height: auto;
       top: 0;
       left: 0;
-      background-color: none;
       width: auto;
       display: flex;
       align-items: center;
@@ -82,6 +110,10 @@
   
     .nav-list-container > .linksList li a:hover {
       color: rgb(34, 131, 201);
+    }
+
+    .socialMediaIcon{
+      font-size: 30px;
     }
   
 }

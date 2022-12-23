@@ -1,14 +1,18 @@
 export function Nav() {
+  const $navContainer = document.createElement("div");
   const $nav = document.createElement("nav");
 
   $nav.classList.add("new-nav");
+  $navContainer.classList.add("nav-container");
 
   $nav.appendChild(MobileIcon());
   $nav.appendChild(Logo());
   $nav.appendChild(MainNav());
   $nav.appendChild(SocialMedia());
 
-  return $nav;
+  $navContainer.appendChild($nav);
+
+  return $navContainer;
 }
 
 function MobileIcon() {
@@ -56,10 +60,13 @@ function SocialMedia() {
   $socialMediaList.classList.add("socialMediaList");
 
   $socialMediaList.innerHTML = `
-    <li><a href="https://github.com/boniich" target="_blank"><span class="socialMediaIcon"><i class="fab fa-github"></i></span></a></li>
-    <li><a href="https://github.com/boniich" target="_blank"><span class="socialMediaIcon"><i class="fab fa-github"></i></span></a></li>
-    <li><a href="https://www.linkedin.com/in/ezequielboninodesarrolladorfrontend/" target="_blank">
+    <li><a href="https://www.youtube.com/channel/UC50c6pI2XhGQYzI1hmxMiOg" target="_blank"><span class="socialMediaIcon">
+    <i id="youtube-icon" class="fa-brands fa-youtube"></i></span></a></li>
+    <li><a id="linkedin-icon" href="https://www.linkedin.com/in/boniich/" target="_blank">
     <span class="socialMediaIcon"><i class="fab fa-linkedin"></i></span></a></li>
+    <li><a id="github-icon" href="https://github.com/boniich" target="_blank"><span class="socialMediaIcon">
+    <i class="fab fa-github"></i></span></a></li>
+
     `;
 
   $socialMediaContainer.appendChild($socialMediaList);
