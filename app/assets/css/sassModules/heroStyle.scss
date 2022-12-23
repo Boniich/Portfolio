@@ -1,0 +1,39 @@
+/* hero principal */
+
+.hero {
+    background: url("../img/fondo.jpg");
+    background-size: cover;
+    height: 100vh;
+    padding: 0 20px;
+}
+  
+  .hero-content {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+}
+  
+  .hero-texts {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+  
+ .hero-texts h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+ .hero-texts h2{
+    font-size: 35px;
+} 
+  
+  

@@ -1,5 +1,8 @@
 @use "./sassModules/mixin.scss";
 @use "./sassModules/navStyle.scss";
+@use "./sassModules/heroStyle.scss";
+
+
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Galada&display=swap');
 
@@ -129,28 +132,6 @@ body::-webkit-scrollbar-thumb {
   padding-bottom: 20px;
 }
 
-/* hero principal */
-
-.hero {
-  background: url("../img/fondo.jpg");
-  background-size: cover;
-  height: 100vh;
-  padding: 0 20px;
-}
-
-.hero-content {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap-reverse;
-  justify-content: space-between;
-}
-
-.hero-texts {
-  color: $white;
-  padding: 30px 20px;
-  border-radius: 4px;
-}
 
 .padding-bottom {
   padding-bottom: 20px;
@@ -158,23 +139,6 @@ body::-webkit-scrollbar-thumb {
 
 .padding-left {
   padding-left: 10px;
-}
-
-.hero-texts h1 {
-  font-size: 50px;
-}
-
-/* hero about me */
-
-.hero-about-me {
-  @include mixin.background;
-  height: 300px;
-}
-
-.hero-content-about-me {
-  height: 300px;
-  display: flex;
-  align-items: center;
 }
 
 .conteinerCards {
@@ -190,7 +154,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .box-about-me-conteiner,
-.hero-content-about-me,
 .contact-me {
   margin: 0 auto;
   width: 90vw;
@@ -479,7 +442,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media screen and (min-width: 740px) {
-  
+
   .skill-box {
     height: 16rem;
   }
@@ -513,7 +476,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   .box-about-me-conteiner,
-  .hero-content-about-me,
   .box-proyects,
   .contact-me {
     max-width: 1024px;

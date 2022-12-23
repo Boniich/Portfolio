@@ -1,23 +1,16 @@
-export function HeroTexts(){
+export function HeroTexts() {
+  const $HeroTexts = document.createElement("div"),
+    $author = document.createElement("h1"),
+    $role = document.createElement("h2");
 
-    const $HeroTexts = document.createElement("div"),
-    $tag = document.createElement("p"),
-    $title = document.createElement("h1"),
-    $author = document.createElement("p");
+  $HeroTexts.classList.add("hero-texts");
+  $role.classList.add("padding-bottom");
 
-    // css
-    $HeroTexts.classList.add("hero-texts");
-    $tag.classList.add("padding-bottom", "seccion-tag");
-    $title.classList.add("padding-bottom");
+  $author.innerHTML = "Ezequiel Bonino (Boniich)";
+  $role.innerHTML = "Game Developer";
 
-    $tag.innerHTML = "Portfolio";
-    $title.innerHTML = "Desarrollador Front End";
-    $author.innerHTML = "Por Ezequiel Bonino";
+  $HeroTexts.appendChild($author);
+  $HeroTexts.appendChild($role);
 
-    $HeroTexts.appendChild($tag)
-    $HeroTexts.appendChild($title)
-    $HeroTexts.appendChild($author);
-
-
-    return $HeroTexts;
+  return $HeroTexts;
 }
