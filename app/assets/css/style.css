@@ -100,6 +100,7 @@
 }
 
 .hero-texts {
+  margin: 0 auto;
   background-color: #1c191a;
   display: flex;
   gap: 24px;
@@ -117,10 +118,15 @@
 .hero-texts h1 {
   font-size: 50px;
   text-align: center;
+  font-family: "Lato";
+  font-weight: normal;
 }
 
 .hero-texts h2 {
   font-size: 35px;
+  font-family: "Gagalin";
+  font-weight: normal;
+  color: #fc5f22;
 }
 
 .conteiner-personal-img {
@@ -597,6 +603,7 @@ body::-webkit-scrollbar-thumb {
     font-size: 25px;
   }
   .hero-texts {
+    margin: 0 0;
     gap: 24px;
     padding: 30px 20px;
   }

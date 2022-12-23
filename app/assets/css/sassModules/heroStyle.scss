@@ -17,6 +17,8 @@ $orange: #fc5f22;
 }
   
   .hero-texts {
+    
+    margin: 0 auto;
     background-color: $black;
     display: flex;
     gap: 24px;
@@ -35,10 +37,16 @@ $orange: #fc5f22;
  .hero-texts h1 {
     font-size: 50px;
     text-align: center;
+    font-family: "Lato";
+    font-weight: normal;
+
 }
 
  .hero-texts h2{
     font-size: 35px;
+    font-family: "Gagalin";
+    font-weight: normal;
+    color: $orange;
 } 
 
 .conteiner-personal-img {
