@@ -28,7 +28,7 @@ function MobileIcon() {
 function Logo() {
   const $logoContainer = document.createElement("div");
 
-  $logoContainer.innerHTML = `<p>Boniich</p>`;
+  $logoContainer.innerHTML = `<p class="logo">Boniich</p>`;
 
   return $logoContainer;
 }

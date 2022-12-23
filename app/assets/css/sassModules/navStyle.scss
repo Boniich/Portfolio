@@ -80,15 +80,17 @@
   #github-icon{
     color: black;
   }
-  
-  @media screen and (min-width: 1024px){
-    
 
-   .new-nav{
-     margin: 0 60px;
-     height: 64px;
+  .logo{
+   display: none;
+  }
+
+  @media screen and (min-width: 740px) {
+ 
+    .nav-icon-mobile {
+      display: none;
     }
-    
+
     .linksList {
       position: relative;
       height: auto;
@@ -107,16 +109,38 @@
   
   
     .nav-list-container > .linksList li a {
-      color: #000;
-      font-size: 18px;
+      font-size: 16px;
     }
   
     .nav-list-container > .linksList li a:hover {
       color: rgb(34, 131, 201);
     }
 
+  }
+
+  
+  @media screen and (min-width: 1024px){
+    
+    .logo{
+      display: block;
+     }
+
+   .new-nav{
+     margin: 0 60px;
+     height: 64px;
+    }
+    
+    .nav-list-container > .linksList li a {
+      font-size: 18px;
+    }
+
     .socialMediaIcon{
       font-size: 30px;
+    }
+
+    .logo{
+      font-family: "Gagalin";
+      font-size: 25px;
     }
   
 }
