@@ -142,14 +142,18 @@
 }
 
 .hero-texts {
+  background-color: #1c191a;
   display: flex;
   gap: 24px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #fff;
-  padding: 0 10px;
+  padding: 30px 10px;
   border-radius: 4px;
+  opacity: 90%;
+  border-radius: 25px;
+  border: 2px solid #fc5f22;
 }
 
 .hero-texts h1 {
