@@ -57,3 +57,24 @@ $orange: #fc5f22;
     background: $orange;
     color: white;
 }
+
+.stack-box {
+    margin-bottom: 30px;
+    height: 5rem;
+    overflow-y: auto;
+    border-radius: 4px;
+    padding: 20px 10px;
+    box-shadow: rgb(174, 190, 205) 0px 1px 4px;
+}
+
+.stack-list li {
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+.stacks-string{
+    font-size: 18px;
+    color: $black2;
+    margin: 0 5px 15px;
+    font-family: "Gagalin";
+}

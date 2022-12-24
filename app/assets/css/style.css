@@ -196,6 +196,27 @@
   color: white;
 }
 
+.stack-box {
+  margin-bottom: 30px;
+  height: 5rem;
+  overflow-y: auto;
+  border-radius: 4px;
+  padding: 20px 10px;
+  box-shadow: rgb(174, 190, 205) 0px 1px 4px;
+}
+
+.stack-list li {
+  display: inline-block;
+  padding: 5px 8px;
+}
+
+.stacks-string {
+  font-size: 18px;
+  color: #1c191a;
+  margin: 0 5px 15px;
+  font-family: "Gagalin";
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -475,19 +496,6 @@ body::-webkit-scrollbar-thumb {
   width: 90vw;
 }
 
-.skill-box {
-  height: 22rem;
-  overflow-y: auto;
-  border-radius: 4px;
-  padding: 20px 10px;
-  box-shadow: rgb(174, 190, 205) 0px 1px 4px;
-}
-
-.skills-list li {
-  display: inline-block;
-  padding: 5px 8px;
-}
-
 .footer {
   background-color: #fff;
   padding: 0 20px;
@@ -628,8 +636,8 @@ body::-webkit-scrollbar-thumb {
   .title-sections {
     font-size: 40px;
   }
-  .skill-box {
-    height: 16rem;
+  .stack-box {
+    height: 6rem;
   }
   .skills-box-conteiner {
     width: 740px;
