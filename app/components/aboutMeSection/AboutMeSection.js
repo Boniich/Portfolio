@@ -11,48 +11,20 @@ export function AboutMeSection() {
   const $aboutMeSection = document.createElement("section"),
     $aboutMeTitle = document.createElement("h6");
 
-  // conteiner of text and button
-  const $boxAboutMeConteiner = document.createElement("div"),
-    // box of text and text himself
-    $aboutMeBox = document.createElement("div"),
-    $textBox = document.createElement("div"),
-    $text = document.createElement("p");
-
   // classes
   $aboutMeSection.id = "aboutMe-section";
   $aboutMeSection.classList.add("conteiner");
   $aboutMeSection.classList.add("about-me-intro");
 
-  // class of text
-
-  $boxAboutMeConteiner.classList.add("box-about-me-conteiner");
-
-  // classes of text
-
-  $aboutMeBox.classList.add("about-me-box");
-  $textBox.classList.add("text-box");
-
   // title and text content
   $aboutMeTitle.classList.add("title-sections");
   $aboutMeTitle.innerHTML = "Sobre Mi";
 
-  $text.innerHTML = fakeApi();
-
   // appeding main divs
   $aboutMeSection.appendChild($aboutMeTitle);
   $aboutMeSection.appendChild(AboutMeButtons());
-  $aboutMeSection.appendChild($boxAboutMeConteiner);
+  $aboutMeSection.appendChild(AboutMe());
   $aboutMeSection.appendChild(Stacks());
-
-  // added the text to the box text
-  $textBox.appendChild($text);
-
-  // added the box in the text box
-  $aboutMeBox.appendChild($textBox);
-
-  // added the text box and button box in his main div
-
-  $boxAboutMeConteiner.appendChild($aboutMeBox);
 
   return $aboutMeSection;
 }
@@ -76,6 +48,38 @@ function AboutMeButtons() {
   buttonContainer.appendChild($stacksBtn);
 
   return buttonContainer;
+}
+
+function AboutMe() {
+  // conteiner of text and button
+  const $aboutMeContainer = document.createElement("div"),
+    // box of text and text himself
+    $aboutMeBox = document.createElement("div"),
+    $textBox = document.createElement("div"),
+    $text = document.createElement("p");
+
+  // class of text
+
+  $aboutMeContainer.classList.add("box-about-me-conteiner");
+
+  // classes of text
+
+  $aboutMeBox.classList.add("about-me-box");
+  $textBox.classList.add("text-box");
+
+  $text.innerHTML = fakeApi();
+
+  // added the text to the box text
+  $textBox.appendChild($text);
+
+  // added the box in the text box
+  $aboutMeBox.appendChild($textBox);
+
+  // added the text box and button box in his main div
+
+  $aboutMeContainer.appendChild($aboutMeBox);
+
+  return $aboutMeContainer;
 }
 
 function Stacks() {
