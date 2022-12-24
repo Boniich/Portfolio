@@ -1,0 +1,108 @@
+$orange: #fc5f22;
+$black2: #1c191a;
+
+.proyectCardConteiner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 450px;
+}
+  
+.proyectCard {
+    width: 290px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0px 1px 4px rgb(174, 190, 205);
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+}
+  
+.proyectCard:hover,
+.btn-proyect-aboutMe:hover {
+    box-shadow: 3px 3px 10px rgb(174, 190, 205);
+}
+
+.image-box{
+    margin-bottom: 16px;
+}
+
+
+.title-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.title-box > h1{
+    font-size: 25px;
+    font-family: "Gagalin";
+    color: $black2;
+}
+
+.project-description {
+    padding: 0px 12px;
+    //padding-bottom: 34px;
+}
+
+.project-description > p {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.tag-type-container{
+    margin-bottom: 16px;
+}
+
+.group-tag{
+    background-color: $orange;
+    width: 180px;
+    height: 29px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    color: $black2;
+    font-family: "Inter";
+
+}
+
+.group-tag > p{
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-box {
+    padding: 34px 0px 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button-proyect {
+    width: 120px;
+    height: 38px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 1px 4px #aebecd;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color: #0e0d0d;
+}
+  
+.button-proyect:hover {
+    background-color: $orange;
+    border-color: $black2;
+    color: #fff;
+    transition: all 1s;
+}
+
+.proyects-icons {
+    color: $black2;
+    font-size: 20px;
+  }
+  
+  
