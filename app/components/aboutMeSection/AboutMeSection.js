@@ -1,6 +1,8 @@
 import { buttons } from "../../helpers/buttons.js";
 import { fakeApi } from "../../helpers/fakeApi.js";
+import { OtherStack, ReactStack } from "../../helpers/stackObject.js";
 import { AboutMeIntroCards } from "./aboutMeCards/AboutMeIntroCards.js";
+import { PrintStack } from "./stacks/PrintStacks.js";
 
 export function AboutMeSection() {
   // one of main conteiner of aboutMeIntro and title of section
@@ -82,9 +84,10 @@ function AboutMeButtons() {
 function Stacks() {
   const $stackContainer = document.createElement("div");
 
-  $stackContainer.innerHTML = "stack container";
-
   $stackContainer.classList.add("stacks-container");
+
+  $stackContainer.appendChild(PrintStack("(WEB) Stack 1: React", ReactStack));
+  $stackContainer.appendChild(PrintStack("General", OtherStack));
 
   return $stackContainer;
 }
