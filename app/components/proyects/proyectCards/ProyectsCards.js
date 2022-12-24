@@ -1,5 +1,5 @@
 export function ProyectsCards(props) {
-  let { name, img, description, urlDemo, urlRepo } = props;
+  let { name, img, description, urlDemo, urlRepo, tagProject } = props;
 
   const $doc = document;
 
@@ -45,28 +45,30 @@ export function ProyectsCards(props) {
   $imgBox.appendChild($img);
   $conteinerBoxCard.appendChild($imgBox);
   $titleBox.appendChild($title);
-  $infoBox.appendChild(ProjectTagType());
+  $infoBox.appendChild(ProjectTagType(tagProject));
   $infoBox.appendChild($titleBox);
   $infoBox.appendChild($description);
   $infoBox.appendChild($footerBox);
   $conteinerBoxCard.appendChild($infoBox);
-  //$footerProyectCards.appendChild($footerBox);
   $card.appendChild($conteinerBoxCard);
   $card.appendChild($footerProyectCards);
 
   return $card;
 }
 
-function ProjectTagType() {
+function ProjectTagType(tagProject) {
   const $tagTypeContainer = document.createElement("div"),
-    $groupTag = document.createElement("div");
+    $amountPersonType = document.createElement("div");
 
-  $groupTag.classList.add("tag-type-container");
-  $groupTag.classList.add("group-tag");
+  $amountPersonType.classList.add("tag-type-container");
+  $amountPersonType.classList.add("amount-person-type");
 
-  $groupTag.innerHTML = `<span class="proyects-icons"><i class="fa-solid fa-user"></i></span><p>Individual Project</p>`;
+  for (let e = 0; e < tagProject.length; e++) {
+    $amountPersonType.id = tagProject[e].idTag;
+    $amountPersonType.innerHTML = `<span class="proyects-icons" id="${tagProject[e].idIconTypeProject}"><i class="${tagProject[e].iconTag}"></i></span><p>${tagProject[e].typeTag}</p>`;
+  }
 
-  $tagTypeContainer.appendChild($groupTag);
+  $tagTypeContainer.appendChild($amountPersonType);
 
   return $tagTypeContainer;
 }

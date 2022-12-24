@@ -5,7 +5,15 @@
   "img": "app/assets/img/calculadoraImg.jpg",
   "description":"Una calculadora similar a la de Windows - Modo Estandar",
   "urlDemo": "https://boniich.github.io/Calculator/",
-  "urlRepo":"https://github.com/boniich/Calculator"
+  "urlRepo":"https://github.com/boniich/Calculator",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ]
 },
 {
   "id": 2,
@@ -14,14 +22,30 @@
   "description": "Home Banking desarrollado bajo la iniciativa Idea for Idea" 
   ,
   "urlDemo": "https://home-banking-psi.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking"
+  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+  "tagProject":[
+    {
+      "idTag": "group-project-tag",
+      "idIconTypeProject": "",
+      "iconTag":"fa-solid fa-users",
+      "typeTag":"Group Project"
+    }
+  ]
 },{
   "id": 3,
   "name": "Somos Mas",
   "img": "app/assets/img/somos_mas_img.jpg",
   "description": "App desarrollada en la aceleracion de React en Alkemy",
   "urlDemo": "https://somos-mas-ten.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/OT161-React-client"
+  "urlRepo": "https://github.com/Boniich/OT161-React-client",
+  "tagProject":[
+    {
+      "idTag": "group-project-tag",
+      "idIconTypeProject": "",
+      "iconTag":"fa-solid fa-users",
+      "typeTag":"Group Project"
+    }
+  ]
 }
 
 ]

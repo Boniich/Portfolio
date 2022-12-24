@@ -268,20 +268,28 @@
   margin-bottom: 16px;
 }
 
-.group-tag {
+#individual-project-tag {
+  background-color: #1c191a;
+  color: white;
+}
+
+#group-project-tag {
   background-color: #fc5f22;
-  width: 180px;
+  color: #1c191a;
+}
+
+.amount-person-type {
+  width: 170px;
   height: 29px;
   display: flex;
   gap: 8px;
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  color: #1c191a;
   font-family: "Inter";
 }
 
-.group-tag > p {
+.amount-person-type > p {
   font-size: 14px;
   color: #fff;
 }
@@ -315,6 +323,10 @@
 .proyects-icons {
   color: #1c191a;
   font-size: 20px;
+}
+
+#individual-project-icon {
+  color: #fc5f22;
 }
 
 * {
