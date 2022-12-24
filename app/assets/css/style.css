@@ -144,11 +144,42 @@
   border-radius: 50%;
 }
 
+.about-me-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-about-me-conteiner {
+  margin: 45px auto;
+  width: 90vw;
+}
+
 * {
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-weight: normal;
+}
+
+.about-me-stacks-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1c191a;
+  color: white;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 43px;
+  font-size: 20px;
+  border-radius: 4px;
+}
+
+.about-me-stacks-buttons:hover {
+  color: #fc5f22;
 }
 
 /*Tags*/
@@ -281,7 +312,6 @@ body::-webkit-scrollbar-thumb {
   margin: auto auto;
 }
 
-.box-about-me-conteiner,
 .contact-me {
   margin: 0 auto;
   width: 90vw;
@@ -412,7 +442,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title-sections {
-  color: rgb(34, 131, 201);
+  color: #fc5f22;
+  font-family: "Galada", cursive;
   text-align: center;
   font-size: 30px;
 }
@@ -502,7 +533,6 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.box-about-me-conteiner,
 .grid-fluid,
 .skills-box-conteiner,
 .contact-me {
@@ -573,6 +603,9 @@ body::-webkit-scrollbar-thumb {
   .nav-list-container > .linksList li a {
     font-size: 16px;
   }
+  .title-sections {
+    font-size: 40px;
+  }
   .skill-box {
     height: 16rem;
   }
@@ -624,9 +657,6 @@ body::-webkit-scrollbar-thumb {
 .box-proyects,
 .contact-me {
     max-width: 1024px;
-  }
-  .about-me-intro h6 {
-    font-size: 25px;
   }
   .about-me-box {
     padding-bottom: 1.5rem;

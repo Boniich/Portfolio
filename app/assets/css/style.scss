@@ -1,6 +1,7 @@
 @use "./sassModules/mixin.scss";
 @use "./sassModules/navStyle.scss";
 @use "./sassModules/heroStyle.scss";
+@use "./sassModules/aboutMeStyle.scss";
 
 
 
@@ -13,6 +14,7 @@
   padding: 0;
   text-decoration: none;
   list-style: none;
+  font-weight: normal;
 }
 
 //Variables
@@ -39,6 +41,28 @@ $black2: #1c191a;
 $orange: #fc5f22;
 $red-youtube: #fc2222;
 $blue-linkedin:#2283c9;
+
+
+//new css code
+
+.about-me-stacks-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $black2;
+  color: white;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 43px;
+  font-size: 20px;
+  border-radius: 4px;
+  //opacity: 90%;
+}
+
+.about-me-stacks-buttons:hover{
+  color: $orange;
+}
+
 
 /*Tags*/
 body::-webkit-scrollbar {
@@ -118,6 +142,7 @@ body::-webkit-scrollbar-thumb {
 /* Class */
 .main,
 .about-me {
+  //background-color: $black2;
   @include mixin.background;
 }
 
@@ -160,7 +185,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto auto;
 }
 
-.box-about-me-conteiner,
+
 .contact-me {
   margin: 0 auto;
   width: 90vw;
@@ -292,10 +317,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 .title-sections {
-  color: $blue;
+  color: $orange;
+  font-family: 'Galada', cursive;
   text-align: center;
   font-size: 30px;
 }
+
 
 .skills-box-conteiner {
   margin: 0 auto;
@@ -382,7 +409,8 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.box-about-me-conteiner,
+
+
 .grid-fluid,
 .skills-box-conteiner,
 .contact-me {
@@ -461,6 +489,10 @@ body::-webkit-scrollbar-thumb {
     }
 
 
+    .title-sections {
+      font-size: 40px;
+    }
+
 
   .skill-box {
     height: 16rem;
@@ -530,10 +562,6 @@ body::-webkit-scrollbar-thumb {
   .box-proyects,
   .contact-me {
     max-width: 1024px;
-  }
-
-  .about-me-intro h6 {
-    font-size: 25px;
   }
 
   .about-me-box {
