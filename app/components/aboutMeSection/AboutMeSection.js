@@ -1,11 +1,9 @@
-import { buttons } from "../../helpers/buttons.js";
 import { fakeApi } from "../../helpers/fakeApi.js";
 import {
   OtherStack,
   ReactStack,
   UnityStack,
 } from "../../helpers/stackObject.js";
-import { AboutMeIntroCards } from "./aboutMeCards/AboutMeIntroCards.js";
 import { PrintStack } from "./stacks/PrintStacks.js";
 
 export function AboutMeSection() {
@@ -19,8 +17,6 @@ export function AboutMeSection() {
     $aboutMeBox = document.createElement("div"),
     $textBox = document.createElement("div"),
     $text = document.createElement("p");
-
-  //stact sub section
 
   // classes
   $aboutMeSection.id = "aboutMe-section";
@@ -57,9 +53,6 @@ export function AboutMeSection() {
   // added the text box and button box in his main div
 
   $boxAboutMeConteiner.appendChild($aboutMeBox);
-
-  // added component of cards/box (interest, softskills and hobbies)
-  //$boxAboutMeConteiner.appendChild(AboutMeIntroCards());
 
   return $aboutMeSection;
 }
