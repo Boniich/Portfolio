@@ -1,6 +1,10 @@
 import { buttons } from "../../helpers/buttons.js";
 import { fakeApi } from "../../helpers/fakeApi.js";
-import { OtherStack, ReactStack } from "../../helpers/stackObject.js";
+import {
+  OtherStack,
+  ReactStack,
+  UnityStack,
+} from "../../helpers/stackObject.js";
 import { AboutMeIntroCards } from "./aboutMeCards/AboutMeIntroCards.js";
 import { PrintStack } from "./stacks/PrintStacks.js";
 
@@ -86,7 +90,8 @@ function Stacks() {
 
   $stackContainer.classList.add("stacks-container");
 
-  $stackContainer.appendChild(PrintStack("(WEB) Stack 1: React", ReactStack));
+  $stackContainer.appendChild(PrintStack("(Game) Stack 1: Unity", UnityStack));
+  $stackContainer.appendChild(PrintStack("(WEB) Stack 2: React", ReactStack));
   $stackContainer.appendChild(PrintStack("General", OtherStack));
 
   return $stackContainer;
