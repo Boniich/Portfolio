@@ -152,17 +152,10 @@
   justify-content: center;
 }
 
+.stacks-container,
 .box-about-me-conteiner {
   margin: 45px auto;
   width: 90vw;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  list-style: none;
-  font-weight: normal;
 }
 
 .about-me-stacks-buttons {
@@ -180,6 +173,35 @@
 
 .about-me-stacks-buttons:hover {
   color: #fc5f22;
+}
+
+.box-about-me-conteiner.show {
+  display: block;
+}
+
+.box-about-me-conteiner.hidden {
+  display: none;
+}
+
+.stacks-container {
+  display: none;
+}
+
+.stacks-container.show {
+  display: block;
+}
+
+.about-me-stacks-buttons.active {
+  background: #fc5f22;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-weight: normal;
 }
 
 /*Tags*/
@@ -653,7 +675,8 @@ body::-webkit-scrollbar-thumb {
   .box-main {
     max-width: 1024px;
   }
-  .box-about-me-conteiner,
+  .stacks-container,
+.box-about-me-conteiner,
 .box-proyects,
 .contact-me {
     max-width: 1024px;

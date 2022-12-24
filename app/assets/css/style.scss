@@ -45,24 +45,6 @@ $blue-linkedin:#2283c9;
 
 //new css code
 
-.about-me-stacks-buttons{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $black2;
-  color: white;
-  padding: 0 15px;
-  cursor: pointer;
-  height: 43px;
-  font-size: 20px;
-  border-radius: 4px;
-  //opacity: 90%;
-}
-
-.about-me-stacks-buttons:hover{
-  color: $orange;
-}
-
 
 /*Tags*/
 body::-webkit-scrollbar {
@@ -558,6 +540,7 @@ body::-webkit-scrollbar-thumb {
     max-width: 1024px;
   }
 
+  .stacks-container,
   .box-about-me-conteiner,
   .box-proyects,
   .contact-me {

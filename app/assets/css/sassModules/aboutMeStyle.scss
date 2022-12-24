@@ -1,3 +1,6 @@
+$black2: #1c191a;
+$orange: #fc5f22;
+
 .about-me-container{
     margin-top: 20px;
     display: flex;
@@ -6,7 +9,51 @@
     justify-content: center;
 }
 
+.stacks-container,
 .box-about-me-conteiner{
     margin: 45px auto;
     width: 90vw;
+}
+
+
+.about-me-stacks-buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $black2;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+    height: 43px;
+    font-size: 20px;
+    border-radius: 4px;
+    //opacity: 90%;
+  }
+  
+.about-me-stacks-buttons:hover{
+    color: $orange;
+}
+  
+
+
+.box-about-me-conteiner.show{
+    display: block;
+}
+
+.box-about-me-conteiner.hidden{
+    display: none;
+}
+
+.stacks-container{
+    display: none;
+}
+
+
+.stacks-container.show{
+    display: block;
+}
+
+.about-me-stacks-buttons.active{
+    background: $orange;
+    color: white;
 }

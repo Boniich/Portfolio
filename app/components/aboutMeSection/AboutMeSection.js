@@ -14,6 +14,14 @@ export function AboutMeSection() {
     $textBox = document.createElement("div"),
     $text = document.createElement("p");
 
+  //stact sub section
+
+  const $stackContainer = document.createElement("div");
+
+  $stackContainer.innerHTML = "stack container";
+
+  $stackContainer.classList.add("stacks-container");
+
   // classes
   $aboutMeSection.id = "aboutMe-section";
   $aboutMeSection.classList.add("conteiner");
@@ -38,6 +46,7 @@ export function AboutMeSection() {
   $aboutMeSection.appendChild($aboutMeTitle);
   $aboutMeSection.appendChild(AboutMeButtons());
   $aboutMeSection.appendChild($boxAboutMeConteiner);
+  $aboutMeSection.appendChild($stackContainer);
 
   // added the text to the box text
   $textBox.appendChild($text);
@@ -64,8 +73,11 @@ function AboutMeButtons() {
   $stacksBtn.innerHTML = "Stacks";
 
   buttonContainer.classList.add("about-me-container");
-  $aboutMeBtn.classList.add("about-me-stacks-buttons");
+  $aboutMeBtn.classList.add("about-me-stacks-buttons", "active");
   $stacksBtn.classList.add("about-me-stacks-buttons");
+
+  $aboutMeBtn.id = "about-me-btn";
+  $stacksBtn.id = "stacks-btn";
 
   buttonContainer.appendChild($aboutMeBtn);
   buttonContainer.appendChild($stacksBtn);
