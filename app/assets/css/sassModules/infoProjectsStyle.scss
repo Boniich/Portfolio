@@ -1,0 +1,43 @@
+$black: #1c191a;
+$orange: #fc5f22;
+
+#id-car-crash{
+    background: url("../img/car-crash-image.png");
+    background-size: cover;
+}
+
+.project-description {
+    
+    margin: 0 auto;
+    background-color: $black;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    padding: 30px 10px;
+    border-radius: 4px;
+    opacity: 90%;
+    border-radius: 25px;
+    border: 2px solid $orange;
+}
+
+.project-description h1{
+    font-size: 50px;
+    font-family: "Gagalin";
+    font-weight: normal;
+    color: $orange;
+} 
+
+
+
+.project-description h2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: "Lato";
+    font-weight: normal;
+
+}
+
+

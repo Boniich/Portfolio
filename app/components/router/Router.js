@@ -1,7 +1,6 @@
 import { Main } from "../main/Main.js";
-import { getProyects } from "../../helpers/getProyects.js";
 import { Hero } from "../hero/Hero.js";
-import { heroProject } from "../proyects/moreProjectHero/heroProject.js";
+import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
 
 export async function Router() {
   const $doc = document,
@@ -20,10 +19,10 @@ export async function Router() {
   ) {
     $heroConteiner.appendChild(Hero());
     $main.appendChild(Main());
-  } else if (hash === "#/proyectos") {
-    $heroConteiner.appendChild(heroProject());
-    $main.classList.add("grid-fluid");
+  } else if (hash === "#/car-crash") {
+    $heroConteiner.appendChild(InfoProjects());
+    //$main.classList.add("grid-fluid");
     //call async function that render proyects cards
-    getProyects($main);
+    //getProyects($main);
   }
 }

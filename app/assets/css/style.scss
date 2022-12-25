@@ -4,6 +4,7 @@
 @use "./sassModules/aboutMeStyle.scss";
 @use "./sassModules/projectStyle.scss";
 @use "./sassModules/footerStyle.scss";
+@use "./sassModules/infoProjectsStyle.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Inter&family=Lato&display=swap');
@@ -347,7 +348,7 @@ body::-webkit-scrollbar-thumb {
       font-size: 25px;
     }
 
-    .hero-texts {
+    .hero-texts, .project-description {
       margin: 0 0;
       gap: 24px;
       padding: 30px 20px;

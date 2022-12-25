@@ -386,6 +386,41 @@ footer {
   transition: all 0.2s;
 }
 
+#id-car-crash {
+  background: url("../img/car-crash-image.png");
+  background-size: cover;
+}
+
+.project-description {
+  margin: 0 auto;
+  background-color: #1c191a;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  padding: 30px 10px;
+  border-radius: 4px;
+  opacity: 90%;
+  border-radius: 25px;
+  border: 2px solid #fc5f22;
+}
+
+.project-description h1 {
+  font-size: 50px;
+  font-family: "Gagalin";
+  font-weight: normal;
+  color: #fc5f22;
+}
+
+.project-description h2 {
+  font-size: 25px;
+  text-align: center;
+  font-family: "Lato";
+  font-weight: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -676,7 +711,7 @@ body::-webkit-scrollbar-thumb {
     font-family: "Gagalin";
     font-size: 25px;
   }
-  .hero-texts {
+  .hero-texts, .project-description {
     margin: 0 0;
     gap: 24px;
     padding: 30px 20px;
