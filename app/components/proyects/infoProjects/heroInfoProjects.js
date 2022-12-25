@@ -17,7 +17,7 @@ function ProjectDescription() {
     $projectTitle = document.createElement("h1"),
     $projectDescription = document.createElement("h2");
 
-  $projectDescriptionContainer.classList.add("project-description");
+  $projectDescriptionContainer.classList.add("info-projects");
 
   $projectTitle.innerHTML = "Car Crash";
   $projectDescription.innerHTML = "A Game about crash obstacule and get points";
