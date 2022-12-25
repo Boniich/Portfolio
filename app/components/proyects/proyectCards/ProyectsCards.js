@@ -1,29 +1,29 @@
 export function ProyectsCards(props) {
-  let { name, img, description, urlDemo, urlRepo, tagProject } = props;
-
   const $doc = document;
 
-  const $card = $doc.createElement("div"),
-    $imgBox = $doc.createElement("div"),
-    $img = $doc.createElement("img"),
-    $infoBox = $doc.createElement("div"),
-    $titleBox = $doc.createElement("div"),
-    $title = $doc.createElement("h1"),
-    $description = $doc.createElement("p");
+  const $card = $doc.createElement("div");
+  $card.classList.add("proyectCard");
+
+  $card.appendChild(MainContentProject({ props }));
+
+  return $card;
+}
+
+function MainContentProject({ props }) {
+  let { name, img, description, urlDemo, urlRepo, tagProject } = props;
+
+  const $imgBox = document.createElement("div"),
+    $img = document.createElement("img"),
+    $infoBox = document.createElement("div"),
+    $titleBox = document.createElement("div"),
+    $title = document.createElement("h1"),
+    $description = document.createElement("p");
 
   // footer of cards
 
-  const $footerProyectCards = $doc.createElement("div"),
-    $footerBox = $doc.createElement("div");
-
-  $footerProyectCards.classList.add("footer-card-conteiner");
-  $footerBox.classList.add("footer-box");
-
   // will be contein title, description, and tags
-  const $conteinerBoxCard = $doc.createElement("div");
+  const $conteinerBoxCard = document.createElement("div");
   $conteinerBoxCard.classList.add("conteinerBoxCard");
-
-  $card.classList.add("proyectCard");
 
   $img.classList.add("imgCard");
   $imgBox.classList.add("image-box");
@@ -35,27 +35,17 @@ export function ProyectsCards(props) {
   $title.innerHTML = `${name}`;
   $description.innerHTML = `${description}`;
 
-  $footerBox.innerHTML = `
-       <a class="button-proyect" href="${urlRepo}" target="_blank"><span class="proyects-icons">
-      <i class="fa-solid fa-circle-info"></i></span>Information</a>
-      <a class="button-proyect" href="${urlDemo}" target="_blank"><span class="proyects-icons">
-      <i class="fas fa-desktop"></i></span>Ver Demo</a>
-`;
-
   $imgBox.appendChild($img);
   $conteinerBoxCard.appendChild($imgBox);
   $titleBox.appendChild($title);
   $infoBox.appendChild(ProjectTagType(tagProject));
   $infoBox.appendChild($titleBox);
   $infoBox.appendChild($description);
-  $infoBox.appendChild($footerBox);
+  $infoBox.appendChild(ProjectCardFooter(urlDemo, urlRepo));
   $conteinerBoxCard.appendChild($infoBox);
-  $card.appendChild($conteinerBoxCard);
-  $card.appendChild($footerProyectCards);
 
-  return $card;
+  return $conteinerBoxCard;
 }
-
 function ProjectTagType(tagProject) {
   const $tagTypeContainer = document.createElement("div"),
     $amountPersonType = document.createElement("div");
@@ -71,4 +61,23 @@ function ProjectTagType(tagProject) {
   $tagTypeContainer.appendChild($amountPersonType);
 
   return $tagTypeContainer;
+}
+
+function ProjectCardFooter(urlDemo, urlRepo) {
+  const $footerProyectCards = document.createElement("div"),
+    $footerBox = document.createElement("div");
+
+  $footerProyectCards.classList.add("footer-card-conteiner");
+  $footerBox.classList.add("footer-box");
+
+  $footerBox.innerHTML = `
+  <a class="button-proyect" href="${urlRepo}" target="_blank"><span class="proyects-icons">
+ <i class="fa-solid fa-circle-info"></i></span>Information</a>
+ <a class="button-proyect" href="${urlDemo}" target="_blank"><span class="proyects-icons">
+ <i class="fas fa-desktop"></i></span>Ver Demo</a>
+`;
+
+  $footerProyectCards.appendChild($footerBox);
+
+  return $footerProyectCards;
 }
