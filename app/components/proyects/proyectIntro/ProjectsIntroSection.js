@@ -6,13 +6,17 @@ export function ProjectsIntroSection(nameSection) {
     $cardProjectBox = document.createElement("div");
 
   const urlSection = nameSection;
+  const gameIcon = "fa-solid fa-gamepad";
+  const webIcon = "fa-solid fa-globe";
 
   // css class
 
   if (nameSection == "Game Developement") {
     $projectsIntroSection.id = "game-dev";
+    $projectTitle.innerHTML = `<i  class="fa-solid fa-gamepad title-section-icon"></i> ${nameSection}`;
   } else {
     $projectsIntroSection.id = "web-dev";
+    $projectTitle.innerHTML = `<i  class="fa-solid fa-globe title-section-icon"></i> ${nameSection}`;
   }
 
   $projectsIntroSection.classList.add("conteiner");
@@ -22,7 +26,6 @@ export function ProjectsIntroSection(nameSection) {
   // title
   $projectTitle.classList.add("title-sections");
   $projectTitle.id = "proyectos-titulo";
-  $projectTitle.innerHTML = nameSection;
 
   $projectsIntroSection.appendChild($projectTitle);
 

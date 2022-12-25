@@ -20,7 +20,7 @@ export function ContactMeSection() {
   $text.classList.add("contact-description");
   $textBox.classList.add("contactme-text");
 
-  $titleContactMe.innerHTML = "Lets Talk";
+  $titleContactMe.innerHTML = `<i  class="fa-solid fa-walkie-talkie title-section-icon"></i> Lets Talk`;
   $email.innerHTML = "BoniichDev@gmail.com";
   $text.innerHTML = `If you want talk with me for job, collaboration or another reason, you can send me an email or talk with me in 
   <a id="link-linkeding" href="${LINKEDIN_URL}" target="_blank">Linkedin</a>`;

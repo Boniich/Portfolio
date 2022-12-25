@@ -17,8 +17,9 @@ export function AboutMeSection() {
   $aboutMeSection.classList.add("about-me-intro");
 
   // title and text content
+
   $aboutMeTitle.classList.add("title-sections");
-  $aboutMeTitle.innerHTML = "Sobre Mi";
+  $aboutMeTitle.innerHTML = `<i  class="fa-solid fa-address-card title-section-icon"></i> About Me`;
 
   // appeding main divs
   $aboutMeSection.appendChild($aboutMeTitle);

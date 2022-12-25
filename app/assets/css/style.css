@@ -369,6 +369,11 @@ footer {
   font-weight: normal;
 }
 
+.title-section-icon {
+  color: #fc5f22;
+  font-size: 35px;
+}
+
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
