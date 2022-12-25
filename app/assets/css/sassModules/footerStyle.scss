@@ -9,12 +9,15 @@ footer {
   .footer-conteiner {
     height: 400px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
   }
 
 
 .author-box p {
+    text-align: center;
+    width: 250px;
     color: black;
     font-family: "Gagalin";
     font-size: 28px;

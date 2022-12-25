@@ -338,11 +338,14 @@ footer {
 .footer-conteiner {
   height: 400px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
 }
 
 .author-box p {
+  text-align: center;
+  width: 250px;
   color: black;
   font-family: "Gagalin";
   font-size: 28px;
@@ -583,6 +586,11 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 450px) {
+  .footer-conteiner {
+    justify-content: space-between;
+  }
+}
 @media screen and (min-width: 740px) {
   .nav-icon-mobile {
     display: none;
