@@ -54,6 +54,10 @@ $blue-linkedin:#2283c9;
   .nav-list-container > .linksList  li a {
     color: $white;
     font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 
   }
   
