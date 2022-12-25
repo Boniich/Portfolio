@@ -541,33 +541,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px 4px 0 0;
 }
 
-.skill-tag-box {
-  padding: 15px 12px 0 12px;
-}
-
-.skill-tag-list {
-  height: 56px;
-  overflow: auto;
-}
-
-.skill-tag-list::-webkit-scrollbar {
-  width: 7px;
-}
-
-.skill-tag-list::-webkit-scrollbar-thumb {
-  background-color: rgb(34, 131, 201);
-}
-
-.skill-tag-list li {
-  display: inline-block;
-  padding: 3px;
-}
-
-.skills-proyects {
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
 .title-sections {
   color: #fc5f22;
   font-family: "Galada", cursive;
@@ -575,23 +548,9 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
 }
 
-.skills-box-conteiner {
-  margin: 0 auto;
-  width: 90vw;
-}
-
 .button-conteiner {
   margin: 0 auto;
   width: 90vw;
-}
-
-.pagination {
-  display: flex;
-  justify-content: center;
-}
-
-.pagination li {
-  padding: 5px 5px;
 }
 
 .contactme-text h1 {
@@ -624,43 +583,6 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 
-.titleVersionBox {
-  display: flex;
-  justify-content: space-between;
-}
-
-.versionBox {
-  height: 28px;
-  box-shadow: 0px 1px 4px #aebecd;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.versionBox:hover {
-  background-color: rgb(34, 131, 201);
-  border-color: #fff;
-  transition: all 1s;
-}
-
-.version {
-  display: flex;
-  padding: 5px 5px;
-  font-size: 1rem;
-  color: #0e0d0d;
-}
-
-.version:hover {
-  color: #fff;
-  transition: all 1s;
-}
-
-@media screen and (min-width: 600px) {
-  .skills-box-conteiner {
-    width: 600px;
-  }
-}
 @media screen and (min-width: 740px) {
   .nav-icon-mobile {
     display: none;
@@ -687,9 +609,6 @@ body::-webkit-scrollbar-thumb {
   }
   .stack-box {
     height: 6rem;
-  }
-  .skills-box-conteiner {
-    width: 740px;
   }
   .contactme-text h1 {
     font-size: 25px;
@@ -722,9 +641,6 @@ body::-webkit-scrollbar-thumb {
   #id-about-me {
     border-right: 1px solid #ccc;
   }
-  .skills-box-conteiner {
-    width: 1000px;
-  }
   .hero-content {
     margin: 0 auto;
     max-width: 1500px;
@@ -750,62 +666,6 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     gap: 15px;
     justify-content: initial;
-  }
-  .interest-box li,
-.soft-skills-box li,
-.hobbies-box li {
-    padding: 5px 8px;
-  }
-  .interest-box p,
-.soft-skills-box p,
-.hobbies-box p {
-    padding: 10px 0;
-    font-size: 20px;
-  }
-  .titleCards {
-    text-align: center;
-  }
-  .conteinerCards {
-    display: flex;
-    justify-content: space-around;
-  }
-  .box {
-    position: relative;
-    overflow: hidden;
-  }
-  .box p,
-.box ul li {
-    position: relative;
-    z-index: 1;
-  }
-  .box:hover p,
-.box:hover li {
-    color: #fff;
-  }
-  .box .hover-animation {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 250px;
-    left: -170px;
-    border-radius: 100%;
-    transition: all 300ms;
-    background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(57, 159, 202));
-    /* background: linear-gradient(to bottom, rgb(34, 129, 199), rgb(45, 55, 59));  */
-  }
-  .box:hover .hover-animation {
-    width: 400px;
-    height: 400px;
-    top: -70px;
-    left: -70px;
-  }
-  .interest-box,
-.soft-skills-box,
-.hobbies-box {
-    width: 180px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px #aebecd;
   }
   .icon-skills:hover {
     transform: scale(1.2);
