@@ -94,3 +94,24 @@ $blue-linkedin:#2283c9;
   .logo{
    display: none;
   }
+
+  .cv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $orange;
+    font-size: 20px;
+    padding: 0 8px;
+    border-radius: 8px;
+    font-family: "Lato";
+    cursor: pointer;
+  }
+
+  .cv > a{
+    color: white;
+  }
+  
+  .cv:hover{
+    color: white;
+    background-color: $orange;  
+  }

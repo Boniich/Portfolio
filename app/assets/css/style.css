@@ -87,6 +87,27 @@
   display: none;
 }
 
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #fc5f22;
+  font-size: 20px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-family: "Lato";
+  cursor: pointer;
+}
+
+.cv > a {
+  color: white;
+}
+
+.cv:hover {
+  color: white;
+  background-color: #fc5f22;
+}
+
 .hero {
   background: url("../img/fondo.jpg");
   background-size: cover;
@@ -376,24 +397,6 @@ footer {
 .title-section-icon {
   color: #fc5f22;
   font-size: 35px;
-}
-
-.cv {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #fc5f22;
-  font-size: 20px;
-  padding: 0 8px;
-  border-radius: 8px;
-  font-family: "Lato";
-  cursor: pointer;
-}
-
-.cv:hover {
-  color: white;
-  background-color: #fc5f22;
 }
 
 /*Tags*/

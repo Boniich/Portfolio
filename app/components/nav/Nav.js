@@ -1,3 +1,9 @@
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  YOUTUBE_UTL,
+} from "../../helpers/helperObjects.js";
+
 export function Nav() {
   const $navContainer = document.createElement("div");
   const $nav = document.createElement("nav");
@@ -59,15 +65,16 @@ function SocialMedia() {
 
   $socialMediaList.classList.add("socialMediaList");
 
-  $socialMediaList.innerHTML = `
-    <li class="cv"><a target="_blank">CV</a></li>
-    <li><a href="https://www.youtube.com/channel/UC50c6pI2XhGQYzI1hmxMiOg" target="_blank"><span class="socialMediaIcon">
-    <i id="youtube-icon" class="fa-brands fa-youtube"></i></span></a></li>
-    <li><a id="linkedin-icon" href="https://www.linkedin.com/in/boniich/" target="_blank">
-    <span class="socialMediaIcon"><i class="fab fa-linkedin"></i></span></a></li>
-    <li><a id="github-icon" href="https://github.com/boniich" target="_blank"><span class="socialMediaIcon">
-    <i class="fab fa-github"></i></span></a></li>
+  const cv = "http://127.0.0.1:5500/app/assets/pdf/EzequielBonino-es.pdf";
 
+  $socialMediaList.innerHTML = `
+    <li class="cv"><a href=${cv} target="_blank">CV</a></li>
+    <li><a href=${YOUTUBE_UTL} target="_blank"><span class="socialMediaIcon">
+    <i id="youtube-icon" class="fa-brands fa-youtube"></i></span></a></li>
+    <li><a id="linkedin-icon" href=${LINKEDIN_URL} target="_blank">
+    <span class="socialMediaIcon"><i class="fab fa-linkedin"></i></span></a></li>
+    <li><a id="github-icon" href=${GITHUB_URL} target="_blank"><span class="socialMediaIcon">
+    <i class="fab fa-github"></i></span></a></li>
     `;
 
   $socialMediaContainer.appendChild($socialMediaList);
