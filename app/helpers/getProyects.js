@@ -18,7 +18,7 @@ export async function getProyects(element, urlSection) {
   }
 
   if (checkHash && urlSection == "Game Developement") {
-    urlProyects = `app/assets/json/DataProjectIntroduction.json`;
+    urlProyects = `app/assets/json/GameDevData.json`;
   }
 
   await ajax({
