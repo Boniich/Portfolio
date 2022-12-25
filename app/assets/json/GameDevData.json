@@ -5,7 +5,7 @@
   "img": "app/assets/img/car-crash-image.png",
   "description":"A Game about crash obstacule and get points",
   "urlDemo": "",
-  "urlRepo":"",
+  "urlInfo":"#/car-crash",
   "tagProject":[
     {
       "idTag": "individual-project-tag",

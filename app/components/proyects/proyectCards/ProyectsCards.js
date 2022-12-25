@@ -10,7 +10,7 @@ export function ProyectsCards(props) {
 }
 
 function MainContentProject({ props }) {
-  let { name, img, description, urlDemo, urlRepo, tagProject } = props;
+  let { name, img, description, urlDemo, urlInfo, tagProject } = props;
 
   const $imgBox = document.createElement("div"),
     $img = document.createElement("img"),
@@ -41,7 +41,7 @@ function MainContentProject({ props }) {
   $infoBox.appendChild(ProjectTagType(tagProject));
   $infoBox.appendChild($titleBox);
   $infoBox.appendChild($description);
-  $infoBox.appendChild(ProjectCardFooter(urlDemo, urlRepo));
+  $infoBox.appendChild(ProjectCardFooter(urlDemo, urlInfo));
   $conteinerBoxCard.appendChild($infoBox);
 
   return $conteinerBoxCard;
@@ -63,7 +63,7 @@ function ProjectTagType(tagProject) {
   return $tagTypeContainer;
 }
 
-function ProjectCardFooter(urlDemo, urlRepo) {
+function ProjectCardFooter(urlDemo, urlInfo) {
   const $footerProyectCards = document.createElement("div"),
     $footerBox = document.createElement("div");
 
@@ -71,7 +71,7 @@ function ProjectCardFooter(urlDemo, urlRepo) {
   $footerBox.classList.add("footer-box");
 
   $footerBox.innerHTML = `
-  <a class="button-proyect" href="${urlRepo}" target="_blank"><span class="proyects-icons">
+  <a class="button-proyect" href="${urlInfo}"><span class="proyects-icons">
  <i class="fa-solid fa-circle-info"></i></span>Information</a>
  <a class="button-proyect" href="${urlDemo}" target="_blank"><span class="proyects-icons">
  <i class="fas fa-desktop"></i></span>See Demo</a>
