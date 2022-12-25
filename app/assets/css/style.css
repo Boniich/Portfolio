@@ -416,11 +416,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 #link-linkeding {
+  font-weight: 600;
   color: #0e0d0d;
 }
 
 #link-linkeding:hover {
-  color: rgb(34, 131, 201);
+  color: #fc5f22;
 }
 
 /* Class */
