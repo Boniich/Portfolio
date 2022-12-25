@@ -60,6 +60,7 @@ function SocialMedia() {
   $socialMediaList.classList.add("socialMediaList");
 
   $socialMediaList.innerHTML = `
+    <li class="cv"><a target="_blank">CV</a></li>
     <li><a href="https://www.youtube.com/channel/UC50c6pI2XhGQYzI1hmxMiOg" target="_blank"><span class="socialMediaIcon">
     <i id="youtube-icon" class="fa-brands fa-youtube"></i></span></a></li>
     <li><a id="linkedin-icon" href="https://www.linkedin.com/in/boniich/" target="_blank">

@@ -52,6 +52,24 @@ $blue-linkedin:#2283c9;
   font-size: 35px;
 }
 
+.cv{
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $orange;
+  font-size: 20px;
+  padding: 0 8px;
+  border-radius: 8px;
+  font-family: "Lato";
+  cursor: pointer;
+}
+
+.cv:hover{
+  color: white;
+  background-color: $orange;  
+}
+
 
 /*Tags*/
 body::-webkit-scrollbar {
