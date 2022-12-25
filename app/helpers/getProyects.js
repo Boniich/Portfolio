@@ -14,7 +14,7 @@ export async function getProyects(element, urlSection) {
     hash === "#web-dev";
 
   if (checkHash && urlSection == "Web Developement") {
-    urlProyects = `app/assets/json/DataProjectIntroduction.json`;
+    urlProyects = `app/assets/json/WebDevData.json`;
   }
 
   if (checkHash && urlSection == "Game Developement") {
