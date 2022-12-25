@@ -1,5 +1,5 @@
 export function fakeApi() {
-  var text = `👦 Hello! Mi name is Ezequiel, i am from Argentina, Buenos Aires.
+  var text = `👦 Hello! Mi name is Ezequiel, but you can tell-me <b class="about-me-word">Boniich</b>. I am from Argentina, Buenos Aires.
 
               <br><br>
               🎮 In the last 4 months i was studing <b class="about-me-word">Game developement</b> using <b class="about-me-word">Unity</b> and <b class="about-me-word">C#</b> for create games.
