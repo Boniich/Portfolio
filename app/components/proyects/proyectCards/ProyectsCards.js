@@ -74,7 +74,7 @@ function ProjectCardFooter(urlDemo, urlRepo) {
   <a class="button-proyect" href="${urlRepo}" target="_blank"><span class="proyects-icons">
  <i class="fa-solid fa-circle-info"></i></span>Information</a>
  <a class="button-proyect" href="${urlDemo}" target="_blank"><span class="proyects-icons">
- <i class="fas fa-desktop"></i></span>Ver Demo</a>
+ <i class="fas fa-desktop"></i></span>See Demo</a>
 `;
 
   $footerProyectCards.appendChild($footerBox);

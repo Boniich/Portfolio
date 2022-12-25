@@ -399,6 +399,11 @@ footer {
   font-size: 35px;
 }
 
+.about-me-word {
+  font-weight: 600;
+  color: #fc5f22;
+}
+
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
