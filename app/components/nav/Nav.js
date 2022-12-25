@@ -41,11 +41,11 @@ function MainNav() {
   $linkList.classList.add("linksList");
 
   $linkList.innerHTML = `
-    <li><a href="#/">Inicio</a></li>
-    <li><a href="#aboutMe-section">Sobre Mi</a></li>
-    <li><a href="#projectIntro-section">Desarr. Web</a> 
-    <li><a href="#">Desarr. VideoJuegos</a></li>
-    <li><a href="#contact">Contactame</a></li>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#aboutMe-section">About Me</a></li>
+    <li><a href="#game-dev">Game Develop</a></li>
+    <li><a href="#web-dev">Web Devop</a> 
+    <li><a href="#contact">Lets Talk</a></li>
     `;
 
   $navLinksContainer.appendChild($linkList);

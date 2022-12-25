@@ -4,20 +4,18 @@ import { MainConteiner } from "./components/main/MainConteiner.js";
 import { Nav } from "./components/nav/Nav.js";
 import { Router } from "./components/router/Router.js";
 
+export function App() {
+  const $root = document.getElementById("root");
+  const $home = document.createElement("div");
 
-export function App(){
-    
-    const $root = document.getElementById("root");
+  $root.innerHTML = null;
+  $home.id = "home";
 
-    $root.innerHTML = null;
+  $root.appendChild($home);
+  $root.appendChild(Nav());
+  $root.appendChild(HeroConteiner());
+  $root.appendChild(MainConteiner());
+  $root.appendChild(Footer());
 
-    $root.appendChild(Nav());
-    $root.appendChild(HeroConteiner());
-    $root.appendChild(MainConteiner());
-    $root.appendChild(Footer());
-
-    Router();
-
-
-
+  Router();
 }

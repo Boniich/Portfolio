@@ -8,7 +8,13 @@ export function ProjectsIntroSection(nameSection) {
   const urlSection = nameSection;
 
   // css class
-  $projectsIntroSection.id = "projectIntro-section";
+
+  if (nameSection == "Game Developement") {
+    $projectsIntroSection.id = "game-dev";
+  } else {
+    $projectsIntroSection.id = "web-dev";
+  }
+
   $projectsIntroSection.classList.add("conteiner");
   $projectsIntroSection.classList.add("proyects");
   $cardProjectBox.classList.add("button-conteiner");

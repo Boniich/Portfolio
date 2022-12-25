@@ -7,11 +7,11 @@ export async function getProyects(element, urlSection) {
 
   const checkHash =
     !hash ||
-    hash === "#/" ||
+    hash === "#home" ||
     hash === "#contact" ||
     hash === "#aboutMe-section" ||
-    hash === "#projectIntro-section" ||
-    hash === "#skill-section";
+    hash === "#game-dev" ||
+    hash === "#web-dev";
 
   if (checkHash && urlSection == "Web Developement") {
     urlProyects = `app/assets/json/DataProjectIntroduction.json`;
