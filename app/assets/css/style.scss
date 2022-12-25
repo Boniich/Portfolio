@@ -3,6 +3,7 @@
 @use "./sassModules/heroStyle.scss";
 @use "./sassModules/aboutMeStyle.scss";
 @use "./sassModules/projectStyle.scss";
+@use "./sassModules/footerStyle.scss";
 
 
 @import url('https://fonts.googleapis.com/css2?family=Galada&family=Inter&family=Lato&display=swap');
@@ -261,41 +262,7 @@ body::-webkit-scrollbar-thumb {
   width: 90vw;
 }
 
-.footer {
-  background-color: #fff;
-  padding: 0 20px;
-  border-top: 1px solid #ccc;
-}
 
-.footer-conteiner {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-icon-list li {
-  display: inline-block;
-  padding: 5px 8px;
-}
-
-.footer-icons {
-  color: black;
-  font-size: 30px;
-}
-
-.footer-icons i:hover {
-  transform: scale(1.2);
-  transition: all 0.2;
-}
-
-.author-box p {
-  color: black;
-}
-
-.author-box p:hover {
-  color: $blue;
-}
 
 .button-conteiner {
   margin: 0 auto;

@@ -1,0 +1,32 @@
+
+footer {
+    background-image: url("../img/background-footer.svg");
+    background-size: cover;
+    padding: 0 20px;
+  }
+  
+  
+  .footer-conteiner {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+.author-box p {
+    color: black;
+    font-family: "Gagalin";
+    font-size: 28px;
+  }
+  
+
+.socialMediaIconInFooter{
+    font-size: 35px;
+    color: black;
+}
+
+.socialMediaIconInFooter i:hover{
+    transform: scale(1.2);
+    transition: all 0.2s;
+  }

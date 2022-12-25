@@ -1,34 +1,46 @@
-export function Footer(){
+import {
+  GITHUB_URL,
+  LINKEDIN_URL,
+  YOUTUBE_UTL,
+} from "../../helpers/helperObjects.js";
 
-    const $footer = document.createElement("footer"),
+export function Footer() {
+  const $footer = document.createElement("footer"),
     $footerConteiner = document.createElement("div"),
-    $iconsBox = document.createElement("div"),
-    $iconsList = document.createElement("ul"),
     $authorBox = document.createElement("div"),
     $authorName = document.createElement("p");
 
-    $footer.classList.add("footer");
-    $footerConteiner.classList.add("footer-conteiner");
-    $iconsBox.classList.add("icons-box");
-    $iconsList.classList.add("footer-icon-list");
-    $authorBox.classList.add("author-box");
+  $footer.classList.add("footer");
+  $footerConteiner.classList.add("footer-conteiner");
+  $authorBox.classList.add("author-box");
 
-    $iconsList.innerHTML = `
-    <li><a href="https://github.com/boniich" target="_blank"><span class="footer-icons"><i class="fab fa-github"></i></span></a></li>
-    <li><a href="https://www.linkedin.com/in/ezequielboninodesarrolladorfrontend/" target="_blank"><span class="footer-icons"><i class="fab fa-linkedin"></i></span></a></li>`
+  $authorName.innerHTML = `Ezequiel Bonino`;
 
-    $authorName.innerHTML = `© Ezequiel Bonino`
+  $authorBox.appendChild($authorName);
+  $footerConteiner.appendChild(SocialMediaInFooter());
+  $footerConteiner.appendChild($authorBox);
+  $footer.appendChild($footerConteiner);
 
+  return $footer;
+}
 
-    $iconsBox.appendChild($iconsList);
-    $authorBox.appendChild($authorName);
+function SocialMediaInFooter() {
+  const $socialMediaContainer = document.createElement("div"),
+    $socialMediaList = document.createElement("ul");
 
-    $footerConteiner.appendChild($iconsBox);
-    $footerConteiner.appendChild($authorBox);
-    $footer.appendChild($footerConteiner);
-    
+  $socialMediaList.classList.add("socialMediaList");
 
+  $socialMediaList.innerHTML = `
+    <li><a href="${YOUTUBE_UTL}" target="_blank"><span class="socialMediaIconInFooter">
+    <i  class="fa-brands fa-youtube"></i></span></a></li>
+    <li><a href="${GITHUB_URL}" target="_blank">
+    <span class="socialMediaIconInFooter"><i class="fab fa-linkedin"></i></span></a></li>
+    <li><a  href="${LINKEDIN_URL}" target="_blank"><span class="socialMediaIconInFooter">
+    <i class="fab fa-github"></i></span></a></li>
 
-    return $footer;
+    `;
 
+  $socialMediaContainer.appendChild($socialMediaList);
+
+  return $socialMediaContainer;
 }
