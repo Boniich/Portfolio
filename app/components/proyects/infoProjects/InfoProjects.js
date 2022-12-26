@@ -1,4 +1,3 @@
-import { fakeApi } from "../../../helpers/fakeApi.js";
 import { HeroInfoProjects } from "./heroInfoProjects.js";
 
 export function InfoProjects() {
@@ -28,10 +27,7 @@ function AboutMe() {
   // conteiner of text and button
   const $aboutMeContainer = document.createElement("div"),
     // box of text and text himself
-    $aboutMeBox = document.createElement("div"),
-    $textBox = document.createElement("div"),
-    $text = document.createElement("p");
-
+    $aboutMeBox = document.createElement("div");
   // class of text
 
   $aboutMeContainer.classList.add("box-about-me-conteiner");
@@ -39,12 +35,6 @@ function AboutMe() {
   // classes of text
 
   $aboutMeBox.classList.add("about-me-box");
-  $textBox.classList.add("text-box");
-
-  $text.innerHTML = "Repositorio y links";
-
-  // added the text to the box text
-  $textBox.appendChild($text);
 
   $aboutMeContainer.appendChild(InfoList());
   // added the text box and button box in his main div
