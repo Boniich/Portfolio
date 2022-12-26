@@ -391,6 +391,21 @@ footer {
   background-size: cover;
 }
 
+#id-calculator {
+  background: url("../img/calculadoraImg.jpg");
+  background-size: cover;
+}
+
+#id-home-banking {
+  background: url("../img/homebanking.jpg");
+  background-size: cover;
+}
+
+#id-game-of-life {
+  background: url("../img/gameoflife.jpg");
+  background-size: cover;
+}
+
 .info-projects {
   margin: 0 auto;
   background-color: #1c191a;

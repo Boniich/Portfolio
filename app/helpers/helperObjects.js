@@ -25,7 +25,7 @@ export const CarCrashData = {
 export const CalculatorData = {
   title: "Calculator",
   description: "A Windows-like calculator - Standard Mode",
-  cssId: "id-car-crash",
+  cssId: "id-calculator",
   repositoryAndLikns: {
     repo: "https://github.com/boniich/Calculator",
     links: "https://boniich.github.io/Calculator/",
@@ -44,7 +44,7 @@ export const CalculatorData = {
 export const HomeBankingData = {
   title: "Home Banking",
   description: "Home Banking developed by initiative Ide for Idea",
-  cssId: "id-car-crash",
+  cssId: "id-home-banking",
   repositoryAndLikns: {
     repo: "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
     links: "https://home-banking-psi.vercel.app/",
@@ -63,7 +63,7 @@ export const HomeBankingData = {
 export const GameOfLifeData = {
   title: "Game of Life",
   description: "Cell simulation created by the mathematical Convay",
-  cssId: "id-car-crash",
+  cssId: "id-game-of-life",
   repositoryAndLikns: {
     repo: "https://github.com/Boniich/GameOfLife",
     links: "https://game-of-life-boniich.vercel.app",

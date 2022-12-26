@@ -160,7 +160,7 @@ function insertPlataformsItem($infoList, dataObject) {
   $infoList.innerHTML += `
   <li class="list__item list__item--click">
   <div class="list__button list__button--click platforms">
-      <a class="nav__link platforms">Platforms</a>
+      <a class="nav__link platforms">Plataforms</a>
       <img src="app/assets/icons/arrow.svg" class="list__arrow platforms">
   </div>
   
