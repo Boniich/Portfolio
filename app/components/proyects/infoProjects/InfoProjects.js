@@ -71,11 +71,11 @@ function insertRepositoryItem($infoList, dataObject) {
 
   <ul class="list__show">
       <li class="list__inside">
-          <p class="nav__link nav__link--inside"><b class="bolt">Github</b>: <a class="info-links" href="${dataObject.repositoryAndLikns.repo}"> Ir a repo</a></p>
+          <p class="nav__link nav__link--inside"><b class="bolt">Github</b>: <a class="info-links" target="_blank" href="${dataObject.repositoryAndLikns.repo}"> Go to repo</a></p>
       </li>
 
       <li class="list__inside">
-      <p class="nav__link nav__link--inside"><b class="bolt">Demo</b>: <a class="info-links" href="${dataObject.repositoryAndLikns.link}"> Ir a la demo</a></p>
+      <p class="nav__link nav__link--inside"><b class="bolt">Demo</b>: <a class="info-links" target="_blank" href="${dataObject.repositoryAndLikns.links}"> Go to demo</a></p>
       </li>
   </ul>
 

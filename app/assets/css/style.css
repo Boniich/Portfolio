@@ -508,6 +508,10 @@ footer {
   color: #1c191a;
 }
 
+.info-links:hover {
+  color: #fc5f22;
+}
+
 .bolt {
   font-weight: 600;
 }
