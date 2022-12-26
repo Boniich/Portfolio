@@ -58,6 +58,12 @@ export const HomeBankingData = {
     pass: "BushidoTrooper123",
   },
   isAGroupProject: true,
+  members: {
+    frontend: "Ezequiel Bonino",
+    backend: "Alan Blangille",
+    ui: "Jhan Gonzales",
+    pm: "Jhonny Barrios Salazar and Cristina Diego Orihuela",
+  },
 };
 
 export const GameOfLifeData = {

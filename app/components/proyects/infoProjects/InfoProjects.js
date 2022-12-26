@@ -111,11 +111,23 @@ function insertGroupItem($infoList, dataObject) {
 
     <ul class="list__show">
       <li class="list__inside">
-        <a  class="nav__link nav__link--inside"></a>
+        <p  class="nav__link nav__link--inside">
+        <b class="bolt">Frontend</b>: ${dataObject.members.frontend} </p>
     </li>
 
     <li class="list__inside">
-        <a  class="nav__link nav__link--inside"></a>
+        <p class="nav__link nav__link--inside">
+        <b class="bolt">Backend</b>: ${dataObject.members.backend}</p>
+    </li>
+
+    <li class="list__inside">
+      <p  class="nav__link nav__link--inside">
+      <b class="bolt">UI</b>: ${dataObject.members.ui} </p>
+    </li>
+
+    <li class="list__inside">
+      <p  class="nav__link nav__link--inside">
+      <b class="bolt">PM</b>: ${dataObject.members.pm} </p>
     </li>
     </ul>
 
