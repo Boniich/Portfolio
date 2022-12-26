@@ -1,11 +1,11 @@
 [
 {
   "id": 1,
-  "name": "Calculadora",
+  "name": "Calculator",
   "img": "app/assets/img/calculadoraImg.jpg",
   "description":"A Windows-like calculator - Standard Mode",
   "urlDemo": "https://boniich.github.io/Calculator/",
-  "urlRepo":"https://github.com/boniich/Calculator",
+  "urlInfo":"#/calculator",
   "tagProject":[
     {
       "idTag": "individual-project-tag",
@@ -22,7 +22,7 @@
   "description": "Home Banking developed by initiative Ide for Idea" 
   ,
   "urlDemo": "https://home-banking-psi.vercel.app/",
-  "urlRepo": "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+  "urlInfo": "#/home-banking",
   "tagProject":[
     {
       "idTag": "group-project-tag",
@@ -35,9 +35,9 @@
   "id": 3,
   "name": "Game of Life",
   "img": "app/assets/img/gameoflife.jpg",
-  "description": "cell simulation created by the mathematical Convay",
+  "description": "Cell simulation created by the mathematical Convay",
   "urlDemo": "https://game-of-life-boniich.vercel.app",
-  "urlRepo": "https://github.com/Boniich/GameOfLife",
+  "urlInfo": "#/game-of-life",
   "tagProject":[
     {
       "idTag": "individual-project-tag",

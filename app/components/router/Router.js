@@ -1,7 +1,12 @@
 import { Main } from "../main/Main.js";
 import { Hero } from "../hero/Hero.js";
 import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
-import { CarCrashData } from "../../helpers/helperObjects.js";
+import {
+  CalculatorData,
+  CarCrashData,
+  GameOfLifeData,
+  HomeBankingData,
+} from "../../helpers/helperObjects.js";
 
 export async function Router() {
   const $doc = document,
@@ -22,5 +27,11 @@ export async function Router() {
     $main.appendChild(Main());
   } else if (hash === "#/car-crash") {
     $heroConteiner.appendChild(InfoProjects(CarCrashData));
+  } else if (hash === "#/calculator") {
+    $heroConteiner.appendChild(InfoProjects(CalculatorData));
+  } else if (hash === "#/home-banking") {
+    $heroConteiner.appendChild(InfoProjects(HomeBankingData));
+  } else if (hash === "#/game-of-life") {
+    $heroConteiner.appendChild(InfoProjects(GameOfLifeData));
   }
 }

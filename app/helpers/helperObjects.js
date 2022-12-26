@@ -21,3 +21,60 @@ export const CarCrashData = {
   },
   isAGroupProject: false,
 };
+
+export const CalculatorData = {
+  title: "Calculator",
+  description: "A Windows-like calculator - Standard Mode",
+  cssId: "id-car-crash",
+  repositoryAndLikns: {
+    repo: "https://github.com/boniich/Calculator",
+    links: "https://boniich.github.io/Calculator/",
+  },
+  technologies: "Javascript vainilla,css and html",
+  thereIsPlataform: false,
+  plataforms: "",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};
+
+export const HomeBankingData = {
+  title: "Home Banking",
+  description: "Home Banking developed by initiative Ide for Idea",
+  cssId: "id-car-crash",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/HomeBanking/tree/main/my-homebanking",
+    links: "https://home-banking-psi.vercel.app/",
+  },
+  technologies: "React, node.js, styledComponent",
+  thereIsPlataform: true,
+  plataforms: "web",
+  thereIsAccessData: true,
+  accessData: {
+    email: "anarod@gmail.com",
+    pass: "BushidoTrooper123",
+  },
+  isAGroupProject: true,
+};
+
+export const GameOfLifeData = {
+  title: "Game of Life",
+  description: "Cell simulation created by the mathematical Convay",
+  cssId: "id-car-crash",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/GameOfLife",
+    links: "https://game-of-life-boniich.vercel.app",
+  },
+  technologies: "React and Css",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};
