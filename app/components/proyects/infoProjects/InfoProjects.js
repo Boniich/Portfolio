@@ -15,7 +15,7 @@ function InfoSection(dataObject) {
 
   // classes
   $aboutMeSection.id = "aboutMe-section";
-  $aboutMeSection.classList.add("conteiner");
+  $aboutMeSection.classList.add("container-info-section");
   $aboutMeSection.classList.add("about-me-intro");
 
   $aboutMeSection.appendChild(AboutMe(dataObject));
@@ -24,22 +24,11 @@ function InfoSection(dataObject) {
 }
 
 function AboutMe(dataObject) {
-  // conteiner of text and button
-  const $aboutMeContainer = document.createElement("div"),
-    // box of text and text himself
-    $aboutMeBox = document.createElement("div");
-  // class of text
+  const $aboutMeContainer = document.createElement("div");
 
   $aboutMeContainer.classList.add("box-about-me-conteiner");
 
-  // classes of text
-
-  $aboutMeBox.classList.add("about-me-box");
-
   $aboutMeContainer.appendChild(InfoList(dataObject));
-  // added the text box and button box in his main div
-
-  $aboutMeContainer.appendChild($aboutMeBox);
 
   return $aboutMeContainer;
 }
@@ -82,11 +71,11 @@ function insertRepositoryItem($infoList, dataObject) {
 
   <ul class="list__show">
       <li class="list__inside">
-          <p class="nav__link nav__link--inside">Github: <a href="${dataObject.repositoryAndLikns.repo}"> Ir a repo</a></p>
+          <p class="nav__link nav__link--inside"><b class="bolt">Github</b>: <a class="info-links" href="${dataObject.repositoryAndLikns.repo}"> Ir a repo</a></p>
       </li>
 
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">Link demo: </a>
+      <p class="nav__link nav__link--inside"><b class="bolt">Demo</b>: <a class="info-links" href="${dataObject.repositoryAndLikns.link}"> Ir a la demo</a></p>
       </li>
   </ul>
 
@@ -104,7 +93,7 @@ function insertTechnologiesItem($infoList, dataObject) {
   
   <ul class="list__show">
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">${dataObject.technologies}</a>
+          <p  class="nav__link nav__link--inside">${dataObject.technologies}</p>
       </li>
   </ul>
   
@@ -144,11 +133,11 @@ function insertDataItem($infoList, dataObject) {
 
 <ul class="list__show">
     <li class="list__inside">
-        <p  class="nav__link nav__link--inside">Email:${dataObject.accessData.email} </p>
+        <p  class="nav__link nav__link--inside"><b class="bolt">Email</b>: ${dataObject.accessData.email} </p>
     </li>
 
     <li class="list__inside">
-      <p  class="nav__link nav__link--inside">Pass: ${dataObject.accessData.pass}</p>
+      <p  class="nav__link nav__link--inside"><b class="bolt">Pass</b>: ${dataObject.accessData.pass}</p>
     </li>
 </ul>
 

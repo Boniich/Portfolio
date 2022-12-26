@@ -504,6 +504,18 @@ footer {
   height: 0;
 }
 
+.info-links {
+  color: #1c191a;
+}
+
+.bolt {
+  font-weight: 600;
+}
+
+.container-info-section {
+  padding: 250px 0;
+}
+
 * {
   margin: 0;
   padding: 0;

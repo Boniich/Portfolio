@@ -75,6 +75,8 @@ $orange: #fc5f22;
     font-family: "Lato";
 }
 
+
+
 .nav__link--inside:hover{
     background: #F6F8FA;
 }
@@ -124,6 +126,18 @@ $orange: #fc5f22;
     border-left: 2px solid $orange;
     transition: height .4s;
     height: 0;
+}
+
+.info-links{
+    color: $black;
+}
+
+.bolt{
+    font-weight: 600;
+}
+
+.container-info-section {
+    padding: 250px 0;
 }
 
 
