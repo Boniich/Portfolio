@@ -1,15 +1,15 @@
 import { HeroInfoProjects } from "./heroInfoProjects.js";
 
-export function InfoProjects() {
+export function InfoProjects(dataObject) {
   const $infoProjectsContainer = document.createElement("div");
 
-  $infoProjectsContainer.appendChild(HeroInfoProjects());
-  $infoProjectsContainer.appendChild(InfoSection());
+  $infoProjectsContainer.appendChild(HeroInfoProjects(dataObject));
+  $infoProjectsContainer.appendChild(InfoSection(dataObject));
 
   return $infoProjectsContainer;
 }
 
-function InfoSection() {
+function InfoSection(dataObject) {
   // one of main conteiner of aboutMeIntro and title of section
   const $aboutMeSection = document.createElement("section");
 
@@ -18,12 +18,12 @@ function InfoSection() {
   $aboutMeSection.classList.add("conteiner");
   $aboutMeSection.classList.add("about-me-intro");
 
-  $aboutMeSection.appendChild(AboutMe());
+  $aboutMeSection.appendChild(AboutMe(dataObject));
 
   return $aboutMeSection;
 }
 
-function AboutMe() {
+function AboutMe(dataObject) {
   // conteiner of text and button
   const $aboutMeContainer = document.createElement("div"),
     // box of text and text himself
@@ -36,7 +36,7 @@ function AboutMe() {
 
   $aboutMeBox.classList.add("about-me-box");
 
-  $aboutMeContainer.appendChild(InfoList());
+  $aboutMeContainer.appendChild(InfoList(dataObject));
   // added the text box and button box in his main div
 
   $aboutMeContainer.appendChild($aboutMeBox);
@@ -44,26 +44,26 @@ function AboutMe() {
   return $aboutMeContainer;
 }
 
-function InfoList() {
+function InfoList(dataObject) {
   const $infoListContainer = document.createElement("div"),
     $infoList = document.createElement("ul");
 
   $infoList.innerHTML = ``;
 
-  insertRepositoryItem($infoList);
+  insertRepositoryItem($infoList, dataObject);
 
-  insertTechnologiesItem($infoList);
+  insertTechnologiesItem($infoList, dataObject);
 
-  if (true) {
-    insertPlataformsItem($infoList);
+  if (dataObject.thereIsPlataform) {
+    insertPlataformsItem($infoList, dataObject);
   }
 
-  if (false) {
-    insertDataItem($infoList);
+  if (dataObject.thereIsAccessData) {
+    insertDataItem($infoList, dataObject);
   }
 
-  if (false) {
-    insertGroupItem($infoList);
+  if (dataObject.isAGroupProject) {
+    insertGroupItem($infoList, dataObject);
   }
 
   $infoListContainer.appendChild($infoList);
@@ -71,7 +71,7 @@ function InfoList() {
   return $infoListContainer;
 }
 
-function insertRepositoryItem($infoList) {
+function insertRepositoryItem($infoList, dataObject) {
   $infoList.innerHTML += `
     
   <li class="list__item list__item--click">
@@ -82,7 +82,7 @@ function insertRepositoryItem($infoList) {
 
   <ul class="list__show">
       <li class="list__inside">
-          <p class="nav__link nav__link--inside">Github: <a href="https://github.com/Boniich/Car-Crash"> Ir a repo</a></p>
+          <p class="nav__link nav__link--inside">Github: <a href="${dataObject.repositoryAndLikns.repo}"> Ir a repo</a></p>
       </li>
 
       <li class="list__inside">
@@ -94,7 +94,7 @@ function insertRepositoryItem($infoList) {
     `;
 }
 
-function insertTechnologiesItem($infoList) {
+function insertTechnologiesItem($infoList, dataObject) {
   $infoList.innerHTML += `
   <li class="list__item list__item--click">
   <div class="list__button list__button--click technologies">
@@ -104,7 +104,7 @@ function insertTechnologiesItem($infoList) {
   
   <ul class="list__show">
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">Unity and C#</a>
+          <a  class="nav__link nav__link--inside">${dataObject.technologies}</a>
       </li>
   </ul>
   
@@ -112,7 +112,7 @@ function insertTechnologiesItem($infoList) {
     `;
 }
 
-function insertGroupItem($infoList) {
+function insertGroupItem($infoList, dataObject) {
   $infoList.innerHTML += `
     <li class="list__item list__item--click">
     <div class="list__button list__button--click members">
@@ -134,7 +134,7 @@ function insertGroupItem($infoList) {
     `;
 }
 
-function insertDataItem($infoList) {
+function insertDataItem($infoList, dataObject) {
   $infoList.innerHTML += `
 <li class="list__item list__item--click">
 <div class="list__button list__button--click access-Data">
@@ -144,11 +144,11 @@ function insertDataItem($infoList) {
 
 <ul class="list__show">
     <li class="list__inside">
-        <p  class="nav__link nav__link--inside">Email: </p>
+        <p  class="nav__link nav__link--inside">Email:${dataObject.accessData.email} </p>
     </li>
 
     <li class="list__inside">
-      <p  class="nav__link nav__link--inside">Pass:</p>
+      <p  class="nav__link nav__link--inside">Pass: ${dataObject.accessData.pass}</p>
     </li>
 </ul>
 
@@ -156,7 +156,7 @@ function insertDataItem($infoList) {
     `;
 }
 
-function insertPlataformsItem($infoList) {
+function insertPlataformsItem($infoList, dataObject) {
   $infoList.innerHTML += `
   <li class="list__item list__item--click">
   <div class="list__button list__button--click platforms">
@@ -166,7 +166,7 @@ function insertPlataformsItem($infoList) {
   
   <ul class="list__show">
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">Window, linux, mac</a>
+          <a  class="nav__link nav__link--inside">${dataObject.plataforms}</a>
       </li>
   </ul>
   

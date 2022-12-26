@@ -1,26 +1,26 @@
-export function HeroInfoProjects() {
+export function HeroInfoProjects(dataObject) {
   const $hero = document.createElement("div"),
     $heroContent = document.createElement("div");
 
   $hero.classList.add("hero");
-  $hero.id = "id-car-crash";
+  $hero.id = dataObject.cssId;
   $heroContent.classList.add("hero-content");
 
-  $heroContent.appendChild(ProjectDescription());
+  $heroContent.appendChild(ProjectDescription(dataObject));
   $hero.appendChild($heroContent);
 
   return $hero;
 }
 
-function ProjectDescription() {
+function ProjectDescription(dataObject) {
   const $projectDescriptionContainer = document.createElement("div"),
     $projectTitle = document.createElement("h1"),
     $projectDescription = document.createElement("h2");
 
   $projectDescriptionContainer.classList.add("info-projects");
 
-  $projectTitle.innerHTML = "Car Crash";
-  $projectDescription.innerHTML = "A Game about crash obstacule and get points";
+  $projectTitle.innerHTML = dataObject.title;
+  $projectDescription.innerHTML = dataObject.description;
 
   $projectDescriptionContainer.appendChild($projectTitle);
   $projectDescriptionContainer.appendChild($projectDescription);

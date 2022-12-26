@@ -1,6 +1,7 @@
 import { Main } from "../main/Main.js";
 import { Hero } from "../hero/Hero.js";
 import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
+import { CarCrashData } from "../../helpers/helperObjects.js";
 
 export async function Router() {
   const $doc = document,
@@ -20,9 +21,6 @@ export async function Router() {
     $heroConteiner.appendChild(Hero());
     $main.appendChild(Main());
   } else if (hash === "#/car-crash") {
-    $heroConteiner.appendChild(InfoProjects());
-    //$main.classList.add("grid-fluid");
-    //call async function that render proyects cards
-    //getProyects($main);
+    $heroConteiner.appendChild(InfoProjects(CarCrashData));
   }
 }
