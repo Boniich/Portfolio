@@ -46,9 +46,6 @@ function AboutMe() {
   // added the text to the box text
   $textBox.appendChild($text);
 
-  // added the box in the text box
-  // $aboutMeBox.appendChild($textBox);
-
   $aboutMeContainer.appendChild(InfoList());
   // added the text box and button box in his main div
 
@@ -61,51 +58,128 @@ function InfoList() {
   const $infoListContainer = document.createElement("div"),
     $infoList = document.createElement("ul");
 
-  //$infoListContainer.classList.add("nav");
+  $infoList.innerHTML = ``;
 
-  //$infoList.classList.add("list");
+  insertRepositoryItem($infoList);
 
-  $infoList.innerHTML = `
-  
+  insertTechnologiesItem($infoList);
+
+  if (true) {
+    insertPlataformsItem($infoList);
+  }
+
+  if (false) {
+    insertDataItem($infoList);
+  }
+
+  if (false) {
+    insertGroupItem($infoList);
+  }
+
+  $infoListContainer.appendChild($infoList);
+
+  return $infoListContainer;
+}
+
+function insertRepositoryItem($infoList) {
+  $infoList.innerHTML += `
+    
   <li class="list__item list__item--click">
   <div class="list__button list__button--click repo_links">
-      <a class="nav__link  repo_links">Servicios</a>
+      <a class="nav__link  repo_links">Repository and Links</a>
       <img src="app/assets/icons/arrow.svg" class="list__arrow repo_links">
   </div>
 
   <ul class="list__show">
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">Estoy dentro</a>
+          <p class="nav__link nav__link--inside">Github: <a href="https://github.com/Boniich/Car-Crash"> Ir a repo</a></p>
       </li>
 
       <li class="list__inside">
-          <a  class="nav__link nav__link--inside">Estoy dentro</a>
+          <a  class="nav__link nav__link--inside">Link demo: </a>
       </li>
   </ul>
 
 </li>
+    `;
+}
 
+function insertTechnologiesItem($infoList) {
+  $infoList.innerHTML += `
+  <li class="list__item list__item--click">
+  <div class="list__button list__button--click technologies">
+      <a class="nav__link technologies">Technologies</a>
+      <img src="app/assets/icons/arrow.svg" class="list__arrow technologies">
+  </div>
+  
+  <ul class="list__show">
+      <li class="list__inside">
+          <a  class="nav__link nav__link--inside">Unity and C#</a>
+      </li>
+  </ul>
+  
+  </li>
+    `;
+}
+
+function insertGroupItem($infoList) {
+  $infoList.innerHTML += `
+    <li class="list__item list__item--click">
+    <div class="list__button list__button--click members">
+      <a class="nav__link members">Members team</a>
+      <img src="app/assets/icons/arrow.svg" class="list__arrow members">
+    </div>
+
+    <ul class="list__show">
+      <li class="list__inside">
+        <a  class="nav__link nav__link--inside"></a>
+    </li>
+
+    <li class="list__inside">
+        <a  class="nav__link nav__link--inside"></a>
+    </li>
+    </ul>
+
+</li>
+    `;
+}
+
+function insertDataItem($infoList) {
+  $infoList.innerHTML += `
 <li class="list__item list__item--click">
-<div class="list__button list__button--click technologies">
-    <a class="nav__link technologies">Servicios</a>
-    <img src="app/assets/icons/arrow.svg" class="list__arrow technologies">
+<div class="list__button list__button--click access-Data">
+    <a class="nav__link access-Data">Access Data</a>
+    <img src="app/assets/icons/arrow.svg" class="list__arrow access-Data">
 </div>
 
 <ul class="list__show">
     <li class="list__inside">
-        <a  class="nav__link nav__link--inside">Estoy dentro</a>
+        <p  class="nav__link nav__link--inside">Email: </p>
     </li>
 
     <li class="list__inside">
-        <a  class="nav__link nav__link--inside">Estoy dentro</a>
+      <p  class="nav__link nav__link--inside">Pass:</p>
     </li>
 </ul>
 
 </li>
+    `;
+}
 
-  `;
-
-  $infoListContainer.appendChild($infoList);
-
-  return $infoListContainer;
+function insertPlataformsItem($infoList) {
+  $infoList.innerHTML += `
+  <li class="list__item list__item--click">
+  <div class="list__button list__button--click platforms">
+      <a class="nav__link platforms">Platforms</a>
+      <img src="app/assets/icons/arrow.svg" class="list__arrow platforms">
+  </div>
+  
+  <ul class="list__show">
+      <li class="list__inside">
+          <a  class="nav__link nav__link--inside">Window, linux, mac</a>
+      </li>
+  </ul>
+  
+  </li>
+    `;
 }

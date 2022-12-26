@@ -14,6 +14,18 @@ document.addEventListener("click", (e) => {
   if (ifMatchCssClasses && match(e, ".technologies")) {
     openCloseDrowpDown(listElements, 1);
   }
+
+  if (ifMatchCssClasses && match(e, ".platforms")) {
+    openCloseDrowpDown(listElements, 2);
+  }
+
+  if (ifMatchCssClasses && match(e, ".access-Data")) {
+    openCloseDrowpDown(listElements, 3);
+  }
+
+  if (ifMatchCssClasses && match(e, ".members")) {
+    openCloseDrowpDown(listElements, 4);
+  }
 });
 
 function openCloseDrowpDown(listElements, index) {

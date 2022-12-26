@@ -426,16 +426,17 @@ footer {
 }
 
 .nav__link {
-  color: #303440;
+  color: #1c191a;
   display: block;
   padding: 15px 0;
-  text-decoration: none;
+  font-family: "Gagalin";
 }
 
 .nav__link--inside {
   border-radius: 6px;
   padding-left: 20px;
   text-align: left;
+  font-family: "Lato";
 }
 
 .nav__link--inside:hover {
@@ -483,8 +484,7 @@ footer {
 .list__show {
   width: 80%;
   margin-left: auto;
-  border-left: 2px solid #303440;
-  list-style: none;
+  border-left: 2px solid #fc5f22;
   transition: height 0.4s;
   height: 0;
 }
