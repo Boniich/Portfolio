@@ -65,7 +65,7 @@ function SocialMedia() {
 
   $socialMediaList.classList.add("socialMediaList");
 
-  const cv = "http://127.0.0.1:5500/app/assets/pdf/EzequielBonino-es.pdf";
+  const cv = "app/assets/pdf/EzequielBonino-es.pdf";
 
   $socialMediaList.innerHTML = `
     <li class="cv"><a href=${cv} target="_blank">CV</a></li>
