@@ -3,8 +3,8 @@
   "id": 1,
   "name": "Car Crash",
   "img": "app/assets/img/car-crash-image.png",
-  "description":"A Game about crash obstacule and get points",
-  "urlDemo": "",
+  "description":"A Game about crash obstacles and get points",
+  "urlDemo": "https://www.mediafire.com/file/c6z29rh413xphbl/Car_Crash_-_Boniich.rar/file",
   "urlInfo":"#/car-crash",
   "tagProject":[
     {
