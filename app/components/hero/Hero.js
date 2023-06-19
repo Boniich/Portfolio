@@ -37,7 +37,7 @@ function HeroTexts() {
   $HeroTexts.classList.add("hero-texts");
 
   $author.innerHTML = "Ezequiel Bonino (Boniich)";
-  $role.innerHTML = "Game Developer";
+  $role.innerHTML = "Software Developer | Laravel | C++";
 
   $HeroTexts.appendChild($author);
   $HeroTexts.appendChild($role);
