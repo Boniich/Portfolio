@@ -49,8 +49,9 @@ function MainNav() {
   $linkList.innerHTML = `
     <li><a href="#home"><i  class="fa-solid fa-house"></i> Home</a></li>
     <li><a href="#aboutMe-section"><i  class="fa-solid fa-address-card"></i> About Me</a></li>
+    <li><a href="#web-dev"><i  class="fa-solid fa-globe"></i> Web Develop</a> 
+    <li><a href="#desktop-dev"><i  class="fa-solid fa-display"></i> Desktop Developer</a> 
     <li><a href="#game-dev"><i  class="fa-solid fa-gamepad"></i> Game Develop</a></li>
-    <li><a href="#web-dev"><i  class="fa-solid fa-globe"></i> Web Devop</a> 
     <li><a href="#contact"><i  class="fa-solid fa-walkie-talkie"></i> Lets Talk</a></li>
     `;
 
