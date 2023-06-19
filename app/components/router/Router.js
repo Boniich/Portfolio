@@ -21,7 +21,8 @@ export async function Router() {
     hash === "#contact" ||
     hash === "#aboutMe-section" ||
     hash === "#game-dev" ||
-    hash === "#web-dev"
+    hash === "#web-dev" ||
+    hash === "#desktop-dev"
   ) {
     $heroConteiner.appendChild(Hero());
     $main.appendChild(Main());

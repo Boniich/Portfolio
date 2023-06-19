@@ -14,7 +14,14 @@ export function ProjectsIntroSection(nameSection) {
   if (nameSection == "Game Developement") {
     $projectsIntroSection.id = "game-dev";
     $projectTitle.innerHTML = `<i  class="fa-solid fa-gamepad title-section-icon"></i> ${nameSection}`;
-  } else {
+  }
+
+  if (nameSection == "Desktop Developement") {
+    $projectsIntroSection.id = "desktop-dev";
+    $projectTitle.innerHTML = `<i  class="fa-solid fa-display title-section-icon"></i> ${nameSection}`;
+  }
+
+  if (nameSection == "Web Developement") {
     $projectsIntroSection.id = "web-dev";
     $projectTitle.innerHTML = `<i  class="fa-solid fa-globe title-section-icon"></i> ${nameSection}`;
   }
