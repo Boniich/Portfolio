@@ -23,7 +23,7 @@ export async function getProyects(element, urlSection) {
   }
 
   if (checkHash && urlSection == "Desktop Developement") {
-    urlProyects = `app/assets/json/GameDevData.json`;
+    urlProyects = `app/assets/json/DesktopDevData.json`;
   }
 
   await ajax({

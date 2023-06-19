@@ -151,6 +151,7 @@
   font-family: "Gagalin";
   font-weight: normal;
   color: #fc5f22;
+  text-align: center;
 }
 
 .conteiner-personal-img {
@@ -404,6 +405,11 @@ footer {
 
 #id-game-of-life {
   background: url("../img/gameoflife.jpg");
+  background-size: cover;
+}
+
+#id-clothing-store {
+  background: url("../img/image-final-challange-quark.png");
   background-size: cover;
 }
 

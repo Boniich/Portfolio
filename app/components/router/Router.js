@@ -4,6 +4,7 @@ import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
 import {
   CalculatorData,
   CarCrashData,
+  ClothingStore,
   GameOfLifeData,
   HomeBankingData,
 } from "../../helpers/helperObjects.js";
@@ -34,5 +35,7 @@ export async function Router() {
     $heroConteiner.appendChild(InfoProjects(HomeBankingData));
   } else if (hash === "#/game-of-life") {
     $heroConteiner.appendChild(InfoProjects(GameOfLifeData));
+  } else if (hash === "#/clothing-store") {
+    $heroConteiner.appendChild(InfoProjects(ClothingStore));
   }
 }

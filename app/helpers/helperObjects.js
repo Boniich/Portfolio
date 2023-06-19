@@ -84,3 +84,22 @@ export const GameOfLifeData = {
   },
   isAGroupProject: false,
 };
+
+export const ClothingStore = {
+  title: "Clothing Store",
+  description: "A store created for Final challenge of Quark Academy",
+  cssId: "id-clothing-store",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/FinalQuarkChallenger",
+    links: "https://youtu.be/jybayLYxyvQ",
+  },
+  technologies: "C++",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};
