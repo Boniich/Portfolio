@@ -13,20 +13,8 @@
       "iconTag":"fa-solid fa-user",
       "typeTag":"Individual Project"
     }
-  ]
-},{
-  "id": 2,
-  "name": "Soldier Game",
-  "img": "app/assets/img/car-crash-image.png",
-  "description":"A Console Game develop during my curse in Quark Academy",
-  "urlDemo": "",
-  "urlInfo":"#/soldier-game",
-  "tagProject":[
-    {
-      "idTag": "individual-project-tag",
-      "idIconTypeProject": "individual-project-icon",
-      "iconTag":"fa-solid fa-user",
-      "typeTag":"Individual Project"
-    }
-  ]
+  ], "leng": {
+    "idLeng": "unity-csharp-leng",
+    "lengName": "Unity|C#"
+  }
 }]

@@ -10,7 +10,7 @@ export function ProyectsCards(props) {
 }
 
 function MainContentProject({ props }) {
-  let { name, img, description, urlDemo, urlInfo, tagProject } = props;
+  let { name, img, description, urlDemo, urlInfo, tagProject, leng } = props;
 
   const $imgBox = document.createElement("div"),
     $img = document.createElement("img"),
@@ -38,7 +38,7 @@ function MainContentProject({ props }) {
   $imgBox.appendChild($img);
   $conteinerBoxCard.appendChild($imgBox);
   $titleBox.appendChild($title);
-  $infoBox.appendChild(ProjectTagType(tagProject));
+  $infoBox.appendChild(ProjectTagType(tagProject, leng));
   $infoBox.appendChild($titleBox);
   $infoBox.appendChild($description);
   $infoBox.appendChild(ProjectCardFooter(urlDemo, urlInfo));
@@ -46,11 +46,12 @@ function MainContentProject({ props }) {
 
   return $conteinerBoxCard;
 }
-function ProjectTagType(tagProject) {
+function ProjectTagType(tagProject, leng) {
   const $tagTypeContainer = document.createElement("div"),
-    $amountPersonType = document.createElement("div");
+    $amountPersonType = document.createElement("div"),
+    $lenguage = document.createElement("div");
 
-  $amountPersonType.classList.add("tag-type-container");
+  $tagTypeContainer.classList.add("tag-type-container");
   $amountPersonType.classList.add("amount-person-type");
 
   for (let e = 0; e < tagProject.length; e++) {
@@ -58,7 +59,10 @@ function ProjectTagType(tagProject) {
     $amountPersonType.innerHTML = `<span class="proyects-icons" id="${tagProject[e].idIconTypeProject}"><i class="${tagProject[e].iconTag}"></i></span><p>${tagProject[e].typeTag}</p>`;
   }
 
+  $lenguage.innerHTML = `<span class="project-lengs" id="${leng.idLeng}">${leng.lengName}</span>`;
+
   $tagTypeContainer.appendChild($amountPersonType);
+  $tagTypeContainer.appendChild($lenguage);
 
   return $tagTypeContainer;
 }

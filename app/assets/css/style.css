@@ -243,6 +243,29 @@
   font-family: "Gagalin";
 }
 
+#laravel-leng {
+  background-color: #F05340;
+  color: #fff;
+}
+
+#js-leng {
+  background-color: yellow;
+}
+
+#react-leng {
+  background-color: #61dafb;
+}
+
+#cplusplus-leng {
+  background-color: rgb(12, 66, 138);
+  color: #fff;
+}
+
+#unity-csharp-leng {
+  background-color: #68006b;
+  color: #fff;
+}
+
 .proyectCardConteiner {
   display: flex;
   justify-content: space-between;
@@ -293,6 +316,15 @@
 
 .tag-type-container {
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-lengs {
+  padding: 5px 10px;
+  border-radius: 10%;
+  font-weight: 600;
 }
 
 #individual-project-tag {
