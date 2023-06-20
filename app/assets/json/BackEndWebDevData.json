@@ -1,0 +1,51 @@
+[
+{
+  "id": 1,
+  "name": "API ONG",
+  "img": "app/assets/img/calculadoraImg.jpg",
+  "description":"A Windows-like calculator - Standard Mode",
+  "urlDemo": "https://boniich.github.io/Calculator/",
+  "urlInfo":"#/calculator",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ]
+},
+{
+  "id": 2,
+  "name": "API HEROS",
+  "img": "app/assets/img/homebanking.jpg",
+  "description": "Home Banking developed by initiative Ide for Idea" 
+  ,
+  "urlDemo": "https://home-banking-psi.vercel.app/",
+  "urlInfo": "#/home-banking",
+  "tagProject":[
+    {
+      "idTag": "group-project-tag",
+      "idIconTypeProject": "",
+      "iconTag":"fa-solid fa-users",
+      "typeTag":"Group Project"
+    }
+  ]
+},{
+  "id": 3,
+  "name": "Game of Life",
+  "img": "app/assets/img/gameoflife.jpg",
+  "description": "Cell simulation created by the mathematical Convay",
+  "urlDemo": "https://game-of-life-boniich.vercel.app",
+  "urlInfo": "#/game-of-life",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ]
+}
+
+]

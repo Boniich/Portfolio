@@ -183,7 +183,7 @@
   width: 90vw;
 }
 
-.about-me-stacks-buttons {
+.about-me-stacks-buttons, .projects-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -197,7 +197,7 @@
   font-family: "Inter";
 }
 
-.about-me-stacks-buttons:hover {
+.about-me-stacks-buttons:hover, .projects-buttons:hover {
   color: #fc5f22;
 }
 
@@ -217,7 +217,7 @@
   display: block;
 }
 
-.about-me-stacks-buttons.active {
+.about-me-stacks-buttons.active, .projects-buttons.active {
   background: #fc5f22;
   color: white;
 }
@@ -644,11 +644,27 @@ body::-webkit-scrollbar-thumb {
   color: #0e0d0d;
 }
 
-.grid-fluid {
+.grid-fluid, .grid-fluid-2 {
   margin: 16px auto;
   max-width: 1024px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-fluid.show {
+  display: grid;
+}
+
+.grid-fluid.hidden {
+  display: none;
+}
+
+.grid-fluid-2 {
+  display: none;
+}
+
+.grid-fluid-2.show {
+  display: grid;
 }
 
 .conteiner {
@@ -732,7 +748,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
 }
 
-.button-conteiner {
+.button-conteiner, .button-conteiner-2 {
   margin: 0 auto;
   width: 90vw;
 }
@@ -755,7 +771,7 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.grid-fluid,
+.grid-fluid, .grid-fluid-2,
 .skills-box-conteiner,
 .contact-me {
   margin: 120px auto;
@@ -860,7 +876,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1.2);
     transition: all 0.2s;
   }
-  .button-conteiner {
+  .button-conteiner, .button-conteiner-2 {
     max-width: 1024px;
   }
   .footer-conteiner {

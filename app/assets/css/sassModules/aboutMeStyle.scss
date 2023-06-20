@@ -16,7 +16,7 @@ $orange: #fc5f22;
 }
 
 
-.about-me-stacks-buttons{
+.about-me-stacks-buttons,.projects-buttons{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,11 +31,9 @@ $orange: #fc5f22;
     //opacity: 90%;
   }
   
-.about-me-stacks-buttons:hover{
+.about-me-stacks-buttons:hover, .projects-buttons:hover{
     color: $orange;
 }
-  
-
 
 .box-about-me-conteiner.show{
     display: block;
@@ -44,6 +42,7 @@ $orange: #fc5f22;
 .box-about-me-conteiner.hidden{
     display: none;
 }
+
 
 .stacks-container{
     display: none;
@@ -54,7 +53,8 @@ $orange: #fc5f22;
     display: block;
 }
 
-.about-me-stacks-buttons.active{
+
+.about-me-stacks-buttons.active, .projects-buttons.active{
     background: $orange;
     color: white;
 }

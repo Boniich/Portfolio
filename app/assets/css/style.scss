@@ -149,12 +149,35 @@ body::-webkit-scrollbar-thumb {
   @include mixin.background;
 }
 
-.grid-fluid {
+.grid-fluid, .grid-fluid-2 {
   margin: 16px auto;
   max-width: 1024px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
+
+
+// project
+
+.grid-fluid.show{
+  display: grid;
+}
+
+.grid-fluid.hidden{
+  display: none;
+}
+
+// project
+
+.grid-fluid-2{
+  display: none;
+}
+
+
+.grid-fluid-2.show{
+  display: grid;
+}
+
 
 
 .conteiner {
@@ -242,7 +265,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
 }
 
-.button-conteiner {
+.button-conteiner,.button-conteiner-2 {
   margin: 0 auto;
   width: 90vw;
 }
@@ -268,7 +291,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-.grid-fluid,
+.grid-fluid,.grid-fluid-2,
 .skills-box-conteiner,
 .contact-me {
   margin: 120px auto;
@@ -403,7 +426,7 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.2s;
   }
 
-  .button-conteiner {
+  .button-conteiner, .button-conteiner-2{
     max-width: 1024px;
   }
   .footer-conteiner {
