@@ -545,6 +545,11 @@ footer {
   color: #fc5f22;
 }
 
+.about-me-underline-word {
+  font-style: italic;
+  text-decoration: underline solid #fc5f22;
+}
+
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
