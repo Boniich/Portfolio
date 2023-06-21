@@ -445,6 +445,11 @@ footer {
   background-size: cover;
 }
 
+#id-api-heros {
+  background: url("../img/apiHeros.png");
+  background-size: cover;
+}
+
 .info-projects {
   margin: 0 auto;
   background-color: #1c191a;

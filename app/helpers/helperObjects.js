@@ -103,3 +103,22 @@ export const ClothingStore = {
   },
   isAGroupProject: false,
 };
+
+export const ApiHeros = {
+  title: "Api Heros",
+  description: "Small API about heros to practice laravel",
+  cssId: "id-api-heros",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/apihero",
+    links: "https://youtu.be/gfcJ8M4CzlY",
+  },
+  technologies: "Laravel",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};

@@ -2,6 +2,7 @@ import { Main } from "../main/Main.js";
 import { Hero } from "../hero/Hero.js";
 import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
 import {
+  ApiHeros,
   CalculatorData,
   CarCrashData,
   ClothingStore,
@@ -37,5 +38,7 @@ export async function Router() {
     $heroConteiner.appendChild(InfoProjects(GameOfLifeData));
   } else if (hash === "#/clothing-store") {
     $heroConteiner.appendChild(InfoProjects(ClothingStore));
+  } else if (hash === "#/api-heros") {
+    $heroConteiner.appendChild(InfoProjects(ApiHeros));
   }
 }

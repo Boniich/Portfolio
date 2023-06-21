@@ -21,10 +21,10 @@
 {
   "id": 2,
   "name": "API HEROS",
-  "img": "app/assets/img/homebanking.jpg",
+  "img": "app/assets/img/apiheros.png",
   "description": "Small API about heros to practice laravel" 
   ,
-  "urlDemo": "https://home-banking-psi.vercel.app/",
+  "urlDemo": "https://youtu.be/gfcJ8M4CzlY",
   "urlInfo": "#/api-heros",
   "tagProject":[
     {
