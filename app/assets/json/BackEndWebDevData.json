@@ -2,9 +2,9 @@
 {
   "id": 1,
   "name": "API ONG",
-  "img": "app/assets/img/calculadoraImg.jpg",
+  "img": "app/assets/img/apiong.png",
   "description":"A Copy of API used in my React level skill",
-  "urlDemo": "https://boniich.github.io/Calculator/",
+  "urlDemo": "https://youtu.be/zlGqkokL_oM",
   "urlInfo":"#/api-ong",
   "tagProject":[
     {

@@ -3,6 +3,7 @@ import { Hero } from "../hero/Hero.js";
 import { InfoProjects } from "../proyects/infoProjects/InfoProjects.js";
 import {
   ApiHeros,
+  ApiONG,
   CalculatorData,
   CarCrashData,
   ClothingStore,
@@ -40,5 +41,7 @@ export async function Router() {
     $heroConteiner.appendChild(InfoProjects(ClothingStore));
   } else if (hash === "#/api-heros") {
     $heroConteiner.appendChild(InfoProjects(ApiHeros));
+  } else if (hash === "#/api-ong") {
+    $heroConteiner.appendChild(InfoProjects(ApiONG));
   }
 }

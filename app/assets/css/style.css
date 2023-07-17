@@ -450,6 +450,11 @@ footer {
   background-size: cover;
 }
 
+#id-api-ong {
+  background: url("../img/apiong.png");
+  background-size: cover;
+}
+
 .info-projects {
   margin: 0 auto;
   background-color: #1c191a;

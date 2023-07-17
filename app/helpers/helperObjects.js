@@ -122,3 +122,22 @@ export const ApiHeros = {
   },
   isAGroupProject: false,
 };
+
+export const ApiONG = {
+  title: "API ONG",
+  description: "A Copy of API used in my React level skill",
+  cssId: "id-api-ong",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/apiONG",
+    links: "https://youtu.be/zlGqkokL_oM",
+  },
+  technologies: "Laravel",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};
