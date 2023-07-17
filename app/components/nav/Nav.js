@@ -2,6 +2,7 @@ import {
   GITHUB_URL,
   LINKEDIN_URL,
   YOUTUBE_UTL,
+  cv,
 } from "../../helpers/helperObjects.js";
 
 export function Nav() {
@@ -65,8 +66,6 @@ function SocialMedia() {
     $socialMediaList = document.createElement("ul");
 
   $socialMediaList.classList.add("socialMediaList");
-
-  const cv = "app/assets/pdf/EzequielBonino-es.pdf";
 
   $socialMediaList.innerHTML = `
     <li class="cv"><a href=${cv} target="_blank">CV</a></li>
