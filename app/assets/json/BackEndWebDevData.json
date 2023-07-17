@@ -37,24 +37,5 @@
     "idLeng": "laravel-leng",
     "lengName": "Laravel"
   }
-},{
-  "id": 3,
-  "name": "Future project",
-  "img": "app/assets/img/gameoflife.jpg",
-  "description": "Future project",
-  "urlDemo": "https://game-of-life-boniich.vercel.app",
-  "urlInfo": "#/future-api",
-  "tagProject":[
-    {
-      "idTag": "individual-project-tag",
-      "idIconTypeProject": "individual-project-icon",
-      "iconTag":"fa-solid fa-user",
-      "typeTag":"Individual Project"
-    }
-  ],  "leng": {
-    "idLeng": "laravel-leng",
-    "lengName": "Laravel"
-  }
 }
-
 ]
