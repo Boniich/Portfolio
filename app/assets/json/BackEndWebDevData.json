@@ -1,0 +1,60 @@
+[
+{
+  "id": 1,
+  "name": "API ONG",
+  "img": "app/assets/img/calculadoraImg.jpg",
+  "description":"A Copy of API used in my React level skill",
+  "urlDemo": "https://boniich.github.io/Calculator/",
+  "urlInfo":"#/api-ong",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ],  "leng": {
+    "idLeng": "laravel-leng",
+    "lengName": "Laravel"
+  }
+},
+{
+  "id": 2,
+  "name": "API HEROS",
+  "img": "app/assets/img/apiheros.png",
+  "description": "Small API about heros to practice laravel" 
+  ,
+  "urlDemo": "https://youtu.be/gfcJ8M4CzlY",
+  "urlInfo": "#/api-heros",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ],  "leng": {
+    "idLeng": "laravel-leng",
+    "lengName": "Laravel"
+  }
+},{
+  "id": 3,
+  "name": "Future project",
+  "img": "app/assets/img/gameoflife.jpg",
+  "description": "Future project",
+  "urlDemo": "https://game-of-life-boniich.vercel.app",
+  "urlInfo": "#/future-api",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ],  "leng": {
+    "idLeng": "laravel-leng",
+    "lengName": "Laravel"
+  }
+}
+
+]

@@ -1,72 +1,13 @@
-export const OtherStack = [
-  {
-    id: 1,
-    src: "git",
-  },
-  {
-    id: 2,
-    src: "trello",
-  },
-  {
-    id: 3,
-    src: "terminal",
-  },
-  {
-    id: 4,
-    src: "jest",
-  },
-  {
-    id: 5,
-    src: "figma1",
-  },
-  {
-    id: 6,
-    src: "jira",
-  },
+export const OtherStack = ["git", "trello", "terminal", "figma1", "jira"];
+
+export const LaravelStack = [
+  "laravel",
+  "livewire",
+  "react",
+  "html",
+  "css",
+  "js",
+  "mysql2",
 ];
 
-export const ReactStack = [
-  {
-    id: 1,
-    src: "react",
-  },
-  {
-    id: 2,
-    src: "html",
-  },
-  {
-    id: 3,
-    src: "css",
-  },
-  {
-    id: 4,
-    src: "js",
-  },
-  {
-    id: 5,
-    src: "nodejs",
-  },
-  {
-    id: 6,
-    src: "sass",
-  },
-  {
-    id: 7,
-    src: "redux",
-  },
-  {
-    id: 8,
-    src: "styledcomponents",
-  },
-];
-
-export const UnityStack = [
-  {
-    id: 1,
-    src: "unity",
-  },
-  {
-    id: 2,
-    src: "cSharp",
-  },
-];
+export const CPlusPlus = ["c++"];

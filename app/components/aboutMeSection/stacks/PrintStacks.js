@@ -11,7 +11,7 @@ export function PrintStack(stackName, stackObj) {
   $stackString.innerHTML = stackName;
 
   stackObj.forEach((stack) => {
-    $stackList.innerHTML += `<li><img class="icon-skills" src="app/assets/icons/${stack.src}.svg" width="80px" height="80px"></img></<li>
+    $stackList.innerHTML += `<li><img class="icon-skills" src="app/assets/icons/${stack}.svg" width="80px" height="80px"></img></<li>
         `;
   });
 

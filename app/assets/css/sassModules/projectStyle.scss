@@ -1,6 +1,32 @@
 $orange: #fc5f22;
 $black2: #1c191a;
 
+$react: #61dafb;
+$laravel: #F05340;
+
+#laravel-leng{
+    background-color: $laravel;
+    color: #fff;
+}
+
+#js-leng{
+    background-color: yellow;
+}
+
+#react-leng{
+    background-color: $react;
+}
+
+#cplusplus-leng{
+    background-color: rgb(12, 66, 138);
+    color: #fff;
+}
+
+#unity-csharp-leng{
+    background-color: #68006b;
+    color: #fff;
+}
+
 .proyectCardConteiner {
     display: flex;
     justify-content: space-between;
@@ -52,6 +78,15 @@ $black2: #1c191a;
 
 .tag-type-container{
     margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-lengs{
+    padding: 5px 10px;
+    border-radius: 10%;
+    font-weight: 600;
 }
 
 #individual-project-tag{

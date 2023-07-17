@@ -1,7 +1,7 @@
 import { ajax } from "../helpers/ajax.js";
 import { ProyectsCards } from "../components/proyects/proyectCards/ProyectsCards.js";
 
-export async function getProyects(element, urlSection) {
+export async function getProyects(element, urlSection, $end = null) {
   let { hash } = location;
   let urlProyects = ``;
 
@@ -11,14 +11,23 @@ export async function getProyects(element, urlSection) {
     hash === "#contact" ||
     hash === "#aboutMe-section" ||
     hash === "#game-dev" ||
-    hash === "#web-dev";
+    hash === "#web-dev" ||
+    hash === "#desktop-dev";
 
   if (checkHash && urlSection == "Web Developement") {
-    urlProyects = `app/assets/json/WebDevData.json`;
+    if ($end === "front") {
+      urlProyects = `app/assets/json/FrontEndWebDevData.json`;
+    } else if ($end === "back") {
+      urlProyects = `app/assets/json/BackEndWebDevData.json`;
+    }
   }
 
   if (checkHash && urlSection == "Game Developement") {
     urlProyects = `app/assets/json/GameDevData.json`;
+  }
+
+  if (checkHash && urlSection == "Desktop Developement") {
+    urlProyects = `app/assets/json/DesktopDevData.json`;
   }
 
   await ajax({

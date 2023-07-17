@@ -84,3 +84,41 @@ export const GameOfLifeData = {
   },
   isAGroupProject: false,
 };
+
+export const ClothingStore = {
+  title: "Clothing Store",
+  description: "A store created for Final challenge of Quark Academy",
+  cssId: "id-clothing-store",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/FinalQuarkChallenger",
+    links: "https://youtu.be/jybayLYxyvQ",
+  },
+  technologies: "C++",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};
+
+export const ApiHeros = {
+  title: "Api Heros",
+  description: "Small API about heros to practice laravel",
+  cssId: "id-api-heros",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/apihero",
+    links: "https://youtu.be/gfcJ8M4CzlY",
+  },
+  technologies: "Laravel",
+  thereIsPlataform: false,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: false,
+  accessData: {
+    email: "",
+    pass: "",
+  },
+  isAGroupProject: false,
+};

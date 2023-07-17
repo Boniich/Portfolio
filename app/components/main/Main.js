@@ -8,8 +8,9 @@ export function Main() {
   $main.classList.add("main");
 
   $main.appendChild(AboutMeSection());
-  $main.appendChild(ProjectsIntroSection("Game Developement"));
   $main.appendChild(ProjectsIntroSection("Web Developement"));
+  $main.appendChild(ProjectsIntroSection("Desktop Developement"));
+  $main.appendChild(ProjectsIntroSection("Game Developement"));
   $main.appendChild(ContactMeSection());
   return $main;
 }

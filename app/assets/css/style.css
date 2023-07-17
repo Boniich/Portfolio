@@ -151,6 +151,7 @@
   font-family: "Gagalin";
   font-weight: normal;
   color: #fc5f22;
+  text-align: center;
 }
 
 .conteiner-personal-img {
@@ -182,7 +183,7 @@
   width: 90vw;
 }
 
-.about-me-stacks-buttons {
+.about-me-stacks-buttons, .projects-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,7 +197,7 @@
   font-family: "Inter";
 }
 
-.about-me-stacks-buttons:hover {
+.about-me-stacks-buttons:hover, .projects-buttons:hover {
   color: #fc5f22;
 }
 
@@ -216,7 +217,7 @@
   display: block;
 }
 
-.about-me-stacks-buttons.active {
+.about-me-stacks-buttons.active, .projects-buttons.active {
   background: #fc5f22;
   color: white;
 }
@@ -240,6 +241,29 @@
   color: #1c191a;
   margin: 0 5px 15px;
   font-family: "Gagalin";
+}
+
+#laravel-leng {
+  background-color: #F05340;
+  color: #fff;
+}
+
+#js-leng {
+  background-color: yellow;
+}
+
+#react-leng {
+  background-color: #61dafb;
+}
+
+#cplusplus-leng {
+  background-color: rgb(12, 66, 138);
+  color: #fff;
+}
+
+#unity-csharp-leng {
+  background-color: #68006b;
+  color: #fff;
 }
 
 .proyectCardConteiner {
@@ -292,6 +316,15 @@
 
 .tag-type-container {
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.project-lengs {
+  padding: 5px 10px;
+  border-radius: 10%;
+  font-weight: 600;
 }
 
 #individual-project-tag {
@@ -404,6 +437,16 @@ footer {
 
 #id-game-of-life {
   background: url("../img/gameoflife.jpg");
+  background-size: cover;
+}
+
+#id-clothing-store {
+  background: url("../img/image-final-challange-quark.png");
+  background-size: cover;
+}
+
+#id-api-heros {
+  background: url("../img/apiHeros.png");
   background-size: cover;
 }
 
@@ -543,6 +586,11 @@ footer {
   color: #fc5f22;
 }
 
+.about-me-underline-word {
+  font-style: italic;
+  text-decoration: underline solid #fc5f22;
+}
+
 /*Tags*/
 body::-webkit-scrollbar {
   width: 12px;
@@ -637,11 +685,27 @@ body::-webkit-scrollbar-thumb {
   color: #0e0d0d;
 }
 
-.grid-fluid {
+.grid-fluid, .grid-fluid-2 {
   margin: 16px auto;
   max-width: 1024px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.grid-fluid.show {
+  display: grid;
+}
+
+.grid-fluid.hidden {
+  display: none;
+}
+
+.grid-fluid-2 {
+  display: none;
+}
+
+.grid-fluid-2.show {
+  display: grid;
 }
 
 .conteiner {
@@ -725,7 +789,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 30px;
 }
 
-.button-conteiner {
+.button-conteiner, .button-conteiner-2 {
   margin: 0 auto;
   width: 90vw;
 }
@@ -748,10 +812,10 @@ body::-webkit-scrollbar-thumb {
   text-align: center;
 }
 
-.grid-fluid,
+.grid-fluid, .grid-fluid-2,
 .skills-box-conteiner,
 .contact-me {
-  margin: 120px auto;
+  margin: 45px auto;
 }
 
 .box-about-me-conteiner {
@@ -853,7 +917,7 @@ body::-webkit-scrollbar-thumb {
     transform: scale(1.2);
     transition: all 0.2s;
   }
-  .button-conteiner {
+  .button-conteiner, .button-conteiner-2 {
     max-width: 1024px;
   }
   .footer-conteiner {

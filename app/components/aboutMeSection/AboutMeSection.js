@@ -1,8 +1,8 @@
 import { fakeApi } from "../../helpers/fakeApi.js";
 import {
+  CPlusPlus,
+  LaravelStack,
   OtherStack,
-  ReactStack,
-  UnityStack,
 } from "../../helpers/stackObject.js";
 import { PrintStack } from "./stacks/PrintStacks.js";
 
@@ -88,8 +88,12 @@ function Stacks() {
 
   $stackContainer.classList.add("stacks-container");
 
-  $stackContainer.appendChild(PrintStack("(Game) Stack 1: Unity", UnityStack));
-  $stackContainer.appendChild(PrintStack("(WEB) Stack 2: React", ReactStack));
+  $stackContainer.appendChild(
+    PrintStack("(WEB) Stack 1: Laravel", LaravelStack)
+  );
+  $stackContainer.appendChild(
+    PrintStack("(Desktop and game) Stack 2: C++", CPlusPlus)
+  );
   $stackContainer.appendChild(PrintStack("General", OtherStack));
 
   return $stackContainer;

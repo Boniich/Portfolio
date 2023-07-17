@@ -1,0 +1,21 @@
+[
+{
+  "id": 1,
+  "name": "Clothing store",
+  "img": "app/assets/img/image-final-challange-quark.png",
+  "description":"A store created for Final challenge of Quark Academy",
+  "urlDemo": "https://youtu.be/jybayLYxyvQ",
+  "urlInfo":"#/clothing-store",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ],
+  "leng": {
+    "idLeng": "cplusplus-leng",
+    "lengName": "C++"
+  }
+}]
