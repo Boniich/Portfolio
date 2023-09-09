@@ -129,16 +129,16 @@ export const ApiONG = {
   description: "A Copy of API used in my React level skill",
   cssId: "id-api-ong",
   repositoryAndLikns: {
-    repo: "https://github.com/Boniich/apiONG",
-    links: "https://youtu.be/zlGqkokL_oM",
+    repo: "https://github.com/Boniich/api-ong2",
+    links: "https://youtu.be/pMBRVL9Zteg",
   },
-  technologies: "Laravel",
-  thereIsPlataform: false,
+  technologies: "Laravel, Docker, PostgreSQL",
+  thereIsPlataform: true,
   plataforms: "Window, linux, mac",
-  thereIsAccessData: false,
+  thereIsAccessData: true,
   accessData: {
-    email: "",
-    pass: "",
+    email: "admin@gmail.com",
+    pass: "123456",
   },
   isAGroupProject: false,
 };
