@@ -1,4 +1,5 @@
 import { LINKEDIN_URL } from "../../helpers/helperObjects.js";
+import { email } from "../../helpers/socialDataConst.js";
 
 export function ContactMeSection() {
   const $contactMeSection = document.createElement("section"),
@@ -21,7 +22,7 @@ export function ContactMeSection() {
   $textBox.classList.add("contactme-text");
 
   $titleContactMe.innerHTML = `<i  class="fa-solid fa-walkie-talkie title-section-icon"></i> Lets Talk`;
-  $email.innerHTML = "BoniichDev@gmail.com";
+  $email.innerHTML = `${email}`;
   $text.innerHTML = `If you want talk with me for job, collaboration or another reason, you can send me an email or talk with me in 
   <a id="link-linkeding" href="${LINKEDIN_URL}" target="_blank">Linkedin</a>`;
 
