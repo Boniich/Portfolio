@@ -2,7 +2,7 @@ import {
   GITHUB_URL,
   LINKEDIN_URL,
   YOUTUBE_UTL,
-} from "../../helpers/helperObjects.js";
+} from "../../helpers/socialDataConst.js";
 
 export function Footer() {
   const $footer = document.createElement("footer"),

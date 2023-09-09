@@ -3,7 +3,7 @@ import {
   LINKEDIN_URL,
   YOUTUBE_UTL,
   cv,
-} from "../../helpers/helperObjects.js";
+} from "../../helpers/socialDataConst.js";
 
 export function Nav() {
   const $navContainer = document.createElement("div");
