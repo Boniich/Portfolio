@@ -266,6 +266,11 @@
   color: #fff;
 }
 
+#code-igniter {
+  background-color: #343131;
+  color: #fff;
+}
+
 .proyectCardConteiner {
   display: flex;
   justify-content: space-between;
@@ -452,6 +457,11 @@ footer {
 
 #id-api-ong {
   background: url("../img/apiong.png");
+  background-size: cover;
+}
+
+#id-ecommerce-igniter {
+  background: url("../img/ecommerce-igniter.png");
   background-size: cover;
 }
 
