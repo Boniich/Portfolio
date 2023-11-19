@@ -7,6 +7,7 @@ import {
   CalculatorData,
   CarCrashData,
   ClothingStore,
+  EcommerceIgniter,
   GameOfLifeData,
   HomeBankingData,
 } from "../../helpers/helperObjects.js";
@@ -43,5 +44,7 @@ export async function Router() {
     $heroConteiner.appendChild(InfoProjects(ApiHeros));
   } else if (hash === "#/api-ong") {
     $heroConteiner.appendChild(InfoProjects(ApiONG));
+  } else if (hash === "#/ecommerce-igniter") {
+    $heroConteiner.appendChild(InfoProjects(EcommerceIgniter));
   }
 }

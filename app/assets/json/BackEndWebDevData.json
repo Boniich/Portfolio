@@ -20,6 +20,25 @@
 },
 {
   "id": 2,
+  "name": "Ecommerce Igniter 🔥",
+  "img": "app/assets/img/ecommerce-igniter.png",
+  "description": "Ecommerce develop for University's asignature" 
+  ,
+  "urlDemo": "https://youtu.be/PFp2sduYeCg",
+  "urlInfo": "#/ecommerce-igniter",
+  "tagProject":[
+    {
+      "idTag": "individual-project-tag",
+      "idIconTypeProject": "individual-project-icon",
+      "iconTag":"fa-solid fa-user",
+      "typeTag":"Individual Project"
+    }
+  ],  "leng": {
+    "idLeng": "code-igniter",
+    "lengName": "C.Igniter"
+  }
+},{
+  "id": 3,
   "name": "API HEROS",
   "img": "app/assets/img/apiheros.png",
   "description": "Small API about heros to practice laravel" 
