@@ -136,3 +136,22 @@ export const ApiONG = {
   },
   isAGroupProject: false,
 };
+
+export const EcommerceIgniter = {
+  title: "Ecommerce Igniter 🔥",
+  description: "Ecommerce develop for University's asignature",
+  cssId: "id-ecommerce-igniter",
+  repositoryAndLikns: {
+    repo: "https://github.com/Boniich/ecommerce-igniter",
+    links: "https://youtu.be/PFp2sduYeCg",
+  },
+  technologies: "CodeIgniter (Framework de PHP), Mysql, JS, HTML, CSS, JS",
+  thereIsPlataform: true,
+  plataforms: "Window, linux, mac",
+  thereIsAccessData: true,
+  accessData: {
+    email: "admin@gmail.com",
+    pass: "123456",
+  },
+  isAGroupProject: false,
+};
